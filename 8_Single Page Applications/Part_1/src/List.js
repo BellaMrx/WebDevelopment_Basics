@@ -2,14 +2,14 @@ const data = [
   {
     id: 1,
     firstName: 'Max',
-    lastName: 'Mustermann',
-    email: 'maxmustermann@example.com',
+    lastName: 'Miller',
+    email: 'maxmiller@example.com',
   },
   {
     id: 2,
     firstName: 'Erika',
-    lastName: 'Mustermann',
-    email: 'erikamustermann@example.com',
+    lastName: 'Taylor',
+    email: 'erikataylor@example.com',
   },
 ];
 
@@ -19,8 +19,8 @@ function List() {
       <thead>
         <tr>
           <th>ID</th>
-          <th>Vorname</th>
-          <th>Nachname</th>
+          <th>First name</th>
+          <th>Last name</th>
           <th>Email</th>
         </tr>
       </thead>
