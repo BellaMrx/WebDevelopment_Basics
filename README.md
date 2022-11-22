@@ -38,7 +38,7 @@
     - use of the different form elements
 
 
- ## 1 - CSS - design websites with CSS
+ ## 2 - CSS - design websites with CSS
 
   * ### Part_1 - Introduction
     - a simple CSS file
@@ -71,6 +71,67 @@
  ![Preview](Images/CSSpropertiesOfTheFlexboxLayout.png)
 
  ![Preview](Images/CSSpropertiesOfTheGridLayout.png)
+
+
+ ## 3 - JavaScript (JS) - making websites interactive with JavaScript
+
+  * ### Part_1 - Introduction
+    - JavaScript code that calls a function
+  * ### Part_2
+    - embedding JavaScript in HTML
+  * ### Part_3 
+    - a simple hint dialog generated via JavaScript (a simple information dialog generated via JavaScript only makes sense in exceptional cases: definitions of JavaScript directly in an HTML file)
+  * ### Part_4 - Use developer console
+    - output to the console via the "console" object
+  * ### Part_5
+    - using the "console" object
+  * ### Part_6 - Define variables
+    - declaration of variables with the "let" keyword
+  * ### Part_7 - Define constant
+    - declaration of a constant
+  * ### Part_8 - Use data types
+    - definition of different number variables
+  * ### Part_9
+    - examples for the definition of strings
+  * ### Part_10
+    - definition of boolean variables
+  * ### Part_11 - Control structures
+    - example of a conditional statement including branching
+  * ### Part_12
+    - example of a branch with several paths
+  * ### Part_13
+    - use of the "switch" application
+  * ### Part_14 - Use loops
+    - a simple "for" loop that outputs the numbers from 1 to 10
+  * ### Part_15
+    - a simple "while" loop that outputs the numbers from 1 to 10
+  * ### Part_16
+    - a simple "do-while" loop that outputs the numbers from 1 to 10
+  * ### Part_17 - Functions and error handling
+    - creating a function using a function declaration
+  * ### Part_18
+    - creating a function using a function expression
+  * ### Part_19
+    - create a function using the Arrow function notation
+  * ### Part_20
+    - call a function
+  * ### Part_21
+    - use of function parameters
+  * ### Part_22
+    - a function that returns a value
+  * ### Part_23
+    - example of the use of a "try-catch" block
+  * ### Part_24 - Objects and arrays
+    - creating an object via the objelt-literal notation
+  * ### Part_25
+    - create an array via the shorthand
+  * ### Part_26
+    - iteration over an array
+
+
+ ![Preview](Images/ImportantArrayMethods.png)
+
+ ![Preview](Images/important_methods_console.PNG)
 
 
  ## 8 - Single Page Applications (SPA)
