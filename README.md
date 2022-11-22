@@ -168,6 +168,29 @@
  ![Preview](Images/AudioVideoAttributes.png)
 
 
+ ##  6 - Web APIs
+  * ### Part_1 - Select elements
+    - selection of all elements with the CSS class "even" and subsequent iteration over the elements
+  * ### Part_2 - Change elements
+    - create and add a text node
+  * ### Part_3 - Dynamically create a table
+    - create an object using the object literal notation
+  * ### Part_4 - Load data asynchronously with Ajax and the Fetch API
+    - load JSON data via Ajax and via Fetch API
+
+  ### JavaScript - HTML DOM Methods
+   #### the different methods and properties for selecting elements
+
+
+ ![Preview](Images/DOM_1.PNG)
+
+
+   #### the different methods and properties for modifying elements
+
+
+ ![Preview](Images/DOM_2.PNG)
+
+
  ## 8 - Single Page Applications (SPA)
   * ### Part_1 - Structure of the application
     - create react app

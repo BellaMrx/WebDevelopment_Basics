@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Contact lists: Part_1</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tableRowsEven = document.getElementsByClassName('even');
+            if (tableRowsEven.length > 0) {
+                for (let i = 0; i < tableRowsEven.length; i++) {
+                    const tableRow = tableRowsEven.item(i);
+                    tableRow.style.backgroundColor = '#CCCCCC';
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <main id="main">
+        <h1>Contact lists</h1>
+        <table id="contact-list-table" summary="Kontaktliste">
+            <thead>
+                <tr>
+                    <th id="table-header-first-name">First Name</th>
+                    <th id="table-header-last-name">Last Name</th>
+                    <th id="table-header-email">E-mail address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row odd">
+                    <td>Albert</td>
+                    <td>Einstein</td>
+                    <td>albert.einstein@email.com</td>
+                </tr>
+                <tr class="row even">
+                    <td>Nikola</td>
+                    <td>Tesla</td>
+                    <td>nikola.tesla@email.com</td>
+                </tr>
+                <tr class="row odd">
+                    <td>Marie</td>
+                    <td>Curie</td>
+                    <td>marie.curie@email.com</td>
+                </tr>
+                <tr class="row even">
+                    <td>Elon</td>
+                    <td>Musk</td>
+                    <td>rich.guy@email.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
