@@ -6,14 +6,14 @@ function List() {
     {
       id: 1,
       firstName: 'Max',
-      lastName: 'Mustermann',
-      email: 'maxmustermann@example.com',
+      lastName: 'Miller',
+      email: 'maxmiller@example.com',
     },
     {
       id: 2,
       firstName: 'Erika',
-      lastName: 'Mustermann',
-      email: 'erikamustermann@example.com',
+      lastName: 'miller',
+      email: 'erikamiller@example.com',
     },
   ]);
 
@@ -25,14 +25,14 @@ function List() {
 
   return (
     <>
-      <h1 style={{ textDecoration: 'underline' }}>Kontaktliste</h1>
+      <h1 style={{ textDecoration: 'underline' }}>Contact list</h1>
       <table className="contactTable">
         <thead>
           <tr>
             <th>ID</th>
-            <th>Vorname</th>
-            <th>Nachname</th>
-            <th>E-Mail</th>
+            <th>First anme</th>
+            <th>Last name</th>
+            <th>Email</th>
           </tr>
         </thead>
         <tbody>

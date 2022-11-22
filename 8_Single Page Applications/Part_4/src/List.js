@@ -11,13 +11,13 @@ function List() {
 
   return (
     <>
-      <h1 style={{ textDecoration: 'underline' }}>Kontaktliste</h1>
+      <h1 style={{ textDecoration: 'underline' }}>Contact list</h1>
       <table>
         <thead>
           <tr>
             <th>ID</th>
-            <th>Vorname</th>
-            <th>Nachname</th>
+            <th>First name</th>
+            <th>Last name</th>
             <th>Email</th>
           </tr>
         </thead>

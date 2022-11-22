@@ -14,8 +14,8 @@ function List() {
       <thead>
         <tr>
           <th>ID</th>
-          <th>Vorname</th>
-          <th>Nachname</th>
+          <th>First Name</th>
+          <th>Last name</th>
           <th>Email</th>
         </tr>
       </thead>
