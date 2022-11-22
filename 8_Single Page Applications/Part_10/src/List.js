@@ -1,4 +1,5 @@
 import { useEffect, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { ContactContext } from './ContactContext';
 import Form from './Form';
 import './List.css';
@@ -27,13 +28,13 @@ function List() {
 
   return (
     <>
-      <h1 style={{ textDecoration: 'underline' }}>Kontaktliste</h1>
+      <h1 style={{ textDecoration: 'underline' }}>Contact list</h1>
       <table className="contactTable">
         <thead>
           <tr>
             <th>ID</th>
-            <th>Vorname</th>
-            <th>Nachname</th>
+            <th>First name</th>
+            <th>Last name</th>
             <th>Email</th>
             <th></th>
           </tr>
@@ -48,6 +49,7 @@ function List() {
           ))}
         </tbody>
       </table>
+      <Link to="/form">New</Link>
     </>
   );
 }

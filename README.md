@@ -18,13 +18,13 @@
     - inline styling in react components
   * Part_5 - CSS classes and external stylessheets
     - integration of the stylessheets (src/List.js)
-  * Part_6 - 
-    - 
-  * Part_7 - 
-    - 
-  * Part_8 - 
-    - 
-  * Part_9 - 
-    - 
-  * Part_10 - 
-    -  
+  * Part_6 - component hierarchy
+    - inclusion of the listItem component (src/List.js)
+  * Part_7 - Inverse data flow
+    - embedding the delete routine in the ListItem component (src/ListItem.js)
+  * Part_8 - Forms
+    - the form component for creating new records(src/Form.js)
+  * Part_9 - Context API
+    - adapting the list component to the context(src/List.js)
+  * Part_10 - Routing
+    - routine definitions in the app component(src/App.js)

@@ -38,7 +38,7 @@ function Form() {
       }}
     >
       <label>
-        Vorname:{' '}
+        First name:{' '}
         <input
           type="text"
           name="firstName"
@@ -47,7 +47,7 @@ function Form() {
         />
       </label>
       <label>
-        Nachname:{' '}
+        Last name:{' '}
         <input
           type="text"
           name="lastName"
@@ -56,7 +56,7 @@ function Form() {
         />
       </label>
       <label>
-        E-Mail:{' '}
+        Email:{' '}
         <input
           type="text"
           name="email"
@@ -64,7 +64,7 @@ function Form() {
           onChange={handleChange}
         />
       </label>
-      <button type="submit">speichern</button>
+      <button type="submit">save</button>
     </form>
   );
 }

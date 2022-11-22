@@ -23,7 +23,7 @@ function Form({ onSave }) {
       }}
     >
       <label>
-        Vorname:{' '}
+        Last name:{' '}
         <input
           type="text"
           name="firstName"
@@ -32,7 +32,7 @@ function Form({ onSave }) {
         />
       </label>
       <label>
-        Nachname:{' '}
+        Last name:{' '}
         <input
           type="text"
           name="lastName"
@@ -41,7 +41,7 @@ function Form({ onSave }) {
         />
       </label>
       <label>
-        E-Mail:{' '}
+        Email:{' '}
         <input
           type="text"
           name="email"
@@ -49,7 +49,7 @@ function Form({ onSave }) {
           onChange={handleChange}
         />
       </label>
-      <button type="submit">speichern</button>
+      <button type="submit">save</button>
     </form>
   );
 }

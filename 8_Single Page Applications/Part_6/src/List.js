@@ -11,38 +11,21 @@ function List() {
       .then((data) => setContacts(data));
   }, []);
 
-  function handleDelete(contact) {
-    fetch(`http://localhost:8001/api/contacts/${contact.id}`, {
-      method: 'DELETE',
-    }).then((response) => {
-      if (response.status === 200) {
-        setContacts((prevState) =>
-          prevState.filter((prevContact) => prevContact.id !== contact.id),
-        );
-      }
-    });
-  }
-
   return (
     <>
-      <h1 style={{ textDecoration: 'underline' }}>Kontaktliste</h1>
+      <h1 style={{ textDecoration: 'underline' }}>Contact list</h1>
       <table className="contactTable">
         <thead>
           <tr>
             <th>ID</th>
-            <th>Vorname</th>
-            <th>Nachname</th>
+            <th>First name</th>
+            <th>Last name</th>
             <th>Email</th>
-            <th></th>
           </tr>
         </thead>
         <tbody>
           {contacts.map((contact) => (
-            <ListItem
-              key={contact.id}
-              contact={contact}
-              onDelete={handleDelete}
-            />
+            <ListItem key={contact.id} contact={contact} />
           ))}
         </tbody>
       </table>
