@@ -1,0 +1,49 @@
+{
+  "contacts": [
+    {
+      "firstname": "Max",
+      "lastname": "Miller",
+      "phone": {
+        "type": "mobile",
+        "number": "01234567"
+      },
+      "email": "max.miller@example.com",
+      "address": {
+        "street": "Sample Street",
+        "number": 99,
+        "code": 12345,
+        "city": "Sampleville"
+      }
+    },
+    {
+      "firstname": "Paula",
+      "lastname": "Taylor",
+      "phone": {
+        "type": "mobile",
+        "number": "01234567"
+      },
+      "email": "paula.taylor@example.com",
+      "address": {
+        "street": "Sample Street",
+        "number": 99,
+        "code": 12345,
+        "city": "Sampleville"
+      }
+    },
+    {
+      "firstname": "Peter",
+      "lastname": "Smith",
+      "phone": {
+        "type": "landline",
+        "number": "3456789"
+      },
+      "email": "max.smith@example.com",
+      "address": {
+        "street": "Sample Street",
+        "number": 200,
+        "code": 12345,
+        "city": "Sampleville"
+      }
+    }
+  ]
+}

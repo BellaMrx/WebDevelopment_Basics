@@ -3,7 +3,7 @@
  ### Basics for fullstack developers
 
 
- ## 1 - HTML - Structure web pages with HTML
+ ## 1 - HTML - structure web pages with HTML
   * ### Part_1 - Use elements and attributes
     - a simple website
   * ### Part_2 - Parameterize elements via attributes
@@ -39,7 +39,6 @@
 
 
  ## 2 - CSS - design websites with CSS
-
   * ### Part_1 - Introduction
     - a simple CSS file
   * ### Part_2 - Include CSS in HTML
@@ -74,7 +73,6 @@
 
 
  ## 3 - JavaScript (JS) - making websites interactive with JavaScript
-
   * ### Part_1 - Introduction
     - JavaScript code that calls a function
   * ### Part_2
@@ -132,6 +130,42 @@
  ![Preview](Images/ImportantArrayMethods.png)
 
  ![Preview](Images/important_methods_console.PNG)
+
+
+ ## 4 - Weblogs
+
+
+ ![Preview](Images/Statuscodes.png)
+
+
+ ##  5 - Webformats - use web formats
+  * ### Part_1 - Data formats
+    - example of a CSV document
+  * ### Part_2
+    - example of XML document
+  * ### Part_3
+    - example of XML schema
+  * ### Part_4 - JSON
+    - example of a JSON document
+  * ### Part_5
+    - parsing JSON in JavaScript
+  * ### Part_6
+    - JSON can be embedded directly within JavaScript code
+  * ### Part_7
+    - example of a JSON schema
+  * ### Part_8 - Vector graphics with SVG format
+    - example of SVG document
+  * ### Part_9 - Audio and video formats
+    - embedding video files in HTML
+  * ### Part_10
+    - embedding video files in HTML
+  * ### Part_11
+    - embedding audio files in HTML
+
+
+ ![Preview](Images/ImageFormats.PNG)
+
+ ![Preview](Images/AudioVideoAttributes.png)
 
 
  ## 8 - Single Page Applications (SPA)
