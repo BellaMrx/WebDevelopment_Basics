@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Format fonts</title>
+  <style type="text/css">
+  body {
+    font-family: 'Times New Roman', Times, serif;
+
+    /* line height 1.5 times the normal font size  */
+    line-height: 1.5em;
+  }
+
+  h1, h2 {
+    font-family: Arial;
+
+    /* character spacing 0.2 times the normal font size  */
+    letter-spacing: 0.2em;
+
+    /* character spacing 0.3 times the normal font size  */
+    word-spacing: 0.3em;
+  }
+
+  h1 {
+    /* 150% of the normal font size */
+    font-size: 150%;
+  }
+
+  h2 {
+    /* 200% of the normal font size */
+    font-size: 100%;
+
+    /* all in capitals */
+    text-transform: uppercase;
+
+    /* text underlined */
+    text-decoration: underline;
+  }
+
+  p {
+    /* justified */
+    text-align: justify;
+  }
+
+  ul li {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  /* links */
+  a:link {
+    color: blue;
+  }
+
+  /* already visited links */
+  a:visited {
+    color: green;
+  }
+
+  /* links that are currently "touched" with the mouse */
+  a:hover {
+    color: black;
+    background-color: orange;
+  }
+
+  /* links that are currently clicked */
+  a:active {
+    color: red;
+  }
+
+  .introduction {
+    /* italics */
+    font-style: italic;
+
+    /* Bold font */
+    font-weight: bold;
+  }
+
+  .author {
+    font-family: Verdana;
+
+    /* line height 0.3 times the normal font size  */
+    line-height: 0.3em;
+
+    /* text aligned right */
+    text-align: right;
+  }
+
+  .date {
+    font-family: 'Courier New', Courier, monospace;
+
+    /* line height 0.3 times the normal font size  */
+    line-height: 0.3em;
+
+    /* text aligned right */
+    text-align: right;
+  }
+  </style>
+</head>
+<body>
+<h1>Blog posts</h1>
+<article>
+  <h2>New website</h2>
+  <p class="introduction">
+    Dear Readers,
+  </p>
+  <p>
+    here I give you a list of websites that provide free information about HTML, CSS.
+  </p>
+  <p>
+    News and updates in microblogging short form can also be found on Twitter: @bella_mrx
+  </p>
+  <p>
+    <ul>
+      <li>
+          <a href="https://www.w3schools.com/">w3school</a>
+      </li>
+      <li>
+        <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+    </li>
+    <li>
+        <a href="https://www.codecademy.com/">codeAcademy</a>
+    </li>
+      <li>
+          <a href="https://www.youtube.com/">YouTube</a>
+      </li>
+      <li>
+          <a href="https://stackoverflow.com/">stackoverflow</a>
+      </li>
+    </ul>
+  </p>
+  <p>
+    Have fun with it!
+  </p>
+  <p class="author">BellaMrx</p>
+  <p class="date">November 2022</p>
+</article>
+</body>
+</html>

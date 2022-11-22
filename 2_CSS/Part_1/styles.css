@@ -1,0 +1,13 @@
+/* styles.css */
+body {
+  font-family: Arial;
+  background-color: darkblue;
+}
+
+h1 {
+  color: lightgreen;
+}
+
+h2 {
+  text-transform: uppercase;
+}

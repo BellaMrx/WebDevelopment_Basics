@@ -38,6 +38,39 @@
     - use of the different form elements
 
 
+ ## 1 - CSS - design websites with CSS
+
+  * ### Part_1 - Introduction
+    - a simple CSS file
+  * ### Part_2 - Include CSS in HTML
+    - embed CSS file, external, inline, internal
+  * ### Part_3 - Texts
+    - format texts with CSS
+  * ### Part_4 - Lists
+    - format unordered lists with CSS
+  * ### Part_5
+    - formatting an ordered list
+  * ### Part_6
+    - use images as bullets
+  * ### Part_7
+    - setting the position of bullets
+  * ### Part_8 - Tables
+    - design tables with CSS
+  * ### Part_9 Forms
+    - designing forms with float layout
+  * ### Part_10
+    - designing forms with flexbox layout
+  * ### Part_11
+    - designing forms with grid layout
+
+
+ ![Preview](Images/PseudoElements.PNG)
+
+ ![Preview](Images/CSS_Selectors.png)
+
+ ![Preview](Images/CSSpropertiesOfTheFlexboxLayout.png)
+
+ ![Preview](Images/CSSpropertiesOfTheGridLayout.png)
 
 
  ## 8 - Single Page Applications (SPA)
