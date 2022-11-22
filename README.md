@@ -168,7 +168,7 @@
  ![Preview](Images/AudioVideoAttributes.png)
 
 
- ##  6 - Web APIs
+ ## 6 - Web APIs
   * ### Part_1 - Select elements
     - selection of all elements with the CSS class "even" and subsequent iteration over the elements
   * ### Part_2 - Change elements
@@ -189,6 +189,30 @@
 
 
  ![Preview](Images/DOM_2.PNG)
+
+
+ ## 7 - Accessibility (ally) - Optimize websites for accessibility
+  * ### Part_1 - Semantically structure web pages
+    - definition of structures with the help of the div
+    element (no longer up-to-date)
+  * ### Part_2
+    - definition of structure with the help of the semantic elements for it
+  * ### Part_3 - Making forms accessible
+    - use of different form elements
+  * ### Part_4 - Making tables accessible
+    - definition of table description, table header, table body and table footer
+  * ### Part_5 
+    - definition of table headings that refer to table columns
+  * ### Part_6
+    - definition of table headings that refer to table columns
+  * ### Part_7
+    - definition of table headings that refer to table columns
+  * ### Part_8 - Define language for web pages
+    - definition of the language used for the web page and for a single HTML element
+  * ### Part_9 - Offer keyboard support
+    - definition of keyboard shortcuts and tab order for links and form elements
+  * ### Part_10 - use subtitles
+    - defining alternative subtitles for videos
 
 
  ## 8 - Single Page Applications (SPA)
