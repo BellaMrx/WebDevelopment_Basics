@@ -64,13 +64,13 @@
     - designing forms with grid layout
 
 
- ![Preview](Images/PseudoElements.PNG)
+ ![Preview](PseudoElements.PNG)
 
- ![Preview](Images/CSS_Selectors.png)
+ ![Preview](CSS_Selectors.png)
 
- ![Preview](Images/CSSpropertiesOfTheFlexboxLayout.png)
+ ![Preview](CSSpropertiesOfTheFlexboxLayout.png)
 
- ![Preview](Images/CSSpropertiesOfTheGridLayout.png)
+ ![Preview](CSSpropertiesOfTheGridLayout.png)
 
 
  ## 8 - Single Page Applications (SPA)
