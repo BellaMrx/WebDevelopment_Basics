@@ -38,6 +38,11 @@
     - use of the different form elements
 
 
+ ![Preview](Images/html5_cheat_sheet_tags.png)
+
+ ![Preview](Images/html5_cheat_sheet_event_attributes.png)
+
+
  ## 2 - CSS - design websites with CSS
   * ### Part_1 - Introduction
     - a simple CSS file
