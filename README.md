@@ -241,3 +241,32 @@
     - adapting the list component to the context (src/List.js)
   * ### Part_10 - Routing
     - routine definitions in the app component (src/App.js)
+
+
+ ## 9 - Use Javascript on the server side - Node.js
+  ### before you start please install Node.js, you can do that at https://nodejs.org/en/download
+   - for macOS download the pkd file
+   - for windows download the msi file
+   - for linux a binary package is available start there in the directory bin/node file
+  ### you can check if the installation was successful
+   - macOS - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
+   - window - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
+   - linux - $ "bin/node -v", $ "bin/npm -v", $ "bin/npx -v"
+  * ### Part_1 - A simple node.js application
+   - open the terminal and start the main.js with $ "node main.js" (pay attention to where the file is stored)
+   - "Server is running on http://localhost:8000" open this in your browser
+  * ### Part_2 - Use built-in modules
+    - read files, write files, delete files (synchronous, asynchronous)
+  * ### Part_3 - Deploy static files
+    - customized webserver now deploys the HTML file and CSS file
+     - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
+   - "Server is running on http://localhost:8000" open this in your browser
+  * ### Part_4 - Use web framework "express" (http://expressjs.com)
+   - #### first please install express, open the project and open the terminal and enter "npm install express" then express will be installed locally for this project
+   - a webserver with the web framework express
+   - customized webserver now deploys the HTML file and CSS file
+   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
+   - "Server is running on http://localhost:8000" open this in your browser
+
+
+    ![Preview](Images/nodeJSexpress.PNG)
