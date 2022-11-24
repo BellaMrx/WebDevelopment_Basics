@@ -268,10 +268,12 @@
    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
    - "Server is running on http://localhost:8000" open this in your browser
 * ### Part_5 - Use web framework "express" (http://expressjs.com)customized webserver processes the data
-   - angepasster webserver verarbeitet die daten
+   - customized webserver processes the data
    - customized webserver now deploys the HTML file and CSS file
    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
    - "Server is running on http://localhost:8000" open this in your browser
 
 
  ![Preview](Images/nodeJSexpress.PNG)
+
+ - if the installation of express was successful the folder node_module should have been created
