@@ -222,7 +222,7 @@
 
  ## 8 - Single Page Applications (SPA)
   * ### Part_1 - Structure of the application
-    - create react app
+    - create react app https://create-react-app.dev/docs/getting-started  /  https://reactjs.org
   * ### Part_2 - Local state of a component
     - local state in the list component
   * ### Part_3 - The life cycle of a component
