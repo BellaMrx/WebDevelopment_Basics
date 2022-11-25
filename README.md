@@ -289,7 +289,7 @@
     - defining alternative subtitles for videos
 
 
-   ### Basic knowledge - Web APIs
+   ### Basic knowledge - Ally
    - Web accessibility means that the content of websites is accessible and understandable for all users, especially for people with disabilities.
    - The Web Content Accessibility Guidelines (WCAG) define guidelines that a web page must meet to be accessible.
    - Where possible, you should use semantic HTML elements, for example for the definition of header, footer and navigation, etc.
