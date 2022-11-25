@@ -367,7 +367,7 @@
 
  ![Preview](Images/nodeJSexpress.PNG)
 
- - if the installation of express was successful the folder node_module should have been created
+ ##### if the installation of express was successful the folder node_module should have been created
 
 
    ### Basic knowledge - Javascript on the server side
