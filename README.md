@@ -46,7 +46,7 @@
  ![Preview](Images/html5_cheat_sheet_event_attributes.png)
 
 
-   ### Basics HTML
+   ###  Basic knowledge - HTML
    - HTML stands for Hypertext Markup Language and is a markup language that allows defining the structure and semantics of web pages using elements.
    - HTML elements have an opening and a closing tag
    - Attributes can be used to pass additional information to an opening tag.
@@ -90,7 +90,7 @@
  ![Preview](Images/CSSpropertiesOfTheGridLayout.png)
 
 
-   ### Basics CSS
+   ###  Basic knowledge - CSS
    - CSS rules let you define how the content of certain HTML elements should be displayed.
    - CSS rules consist of two parts: The selector defines which HTML elements the CSS rule should be applied to. The declaration defines how exactly these HTML elements are to be displayed.
    - Individual declarations in turn consist of a property and a value. 
@@ -159,7 +159,7 @@
  ![Preview](Images/important_methods_console.PNG)
 
 
-   ### Basics JavaScript
+   ###  Basic knowledge - JavaScript
    - JavaScript can be included in a web page in several ways. However, you should get into the habit of managing JavaScript code in separate files.
    - Variables can be defined in JavaScript using the let keyword, while constants can be defined using the const keyword.
    - There are different data types in JavaScript: on the one hand, the standard primitive data types for numbers, strings, and Boolean values, as well as the special data types undefined and null, and on the other hand, objects.
@@ -177,7 +177,7 @@
  ![Preview](Images/Statuscodes.png)
 
 
-   ### Basics Weblogs
+   ###  Basic knowledge - Weblogs
    - HTTP, the Hypertext Transfer Protocol is a unidirectional client/server protocol where the HTTP client makes HTTP requests to the HTTP server and the server responds with an HTTP response.
    - Using headers, it can pass additional meta-information to HTTP requests and HTTP responses.
    - HTTP methods define what actions should be performed on the HTTP server.
@@ -218,7 +218,14 @@
  ![Preview](Images/AudioVideoAttributes.png)
 
 
-   ### Basics Webformats
+   ### Basic knowledge - Webformats
+   - CSV format is a very simple data format, suitable for defining records line by line and separated by commas.
+   - For the structuring of complex data, for example nested data, the XML and JSON data formats are suitable.
+   - XML and JSON are the two most important data exchange formats on the web.
+   - JSON has become somewhat more popular over XML in recent years because it is much leaner and much easier to process in JavaScript.
+   - For saving images and graphics you can use different formats: JPG, GIF, PNG, SVG, WebP.
+   - For embedding video and audio files, since HTML5 you can use the video and audio elements.
+   - There are many different video and audio formats, but thanks to the HTML elements you can include several formats for one video or for one audio file.
 
 
  ## 6 - Web APIs
@@ -242,6 +249,20 @@
 
 
  ![Preview](Images/DOM_2.PNG)
+
+
+   ### Basic knowledge - Web APIs
+   - The DOM API allows programmatic access to the Document Object Model(DOM), a hierarchical tree structure that represents the object model for a web page.
+   - The individual components in this tree structure are called nodes, and there are several types of nodes. The most important are document nodes, element nodes, text nodes, and attribute nodes.
+   - The DOM API defines properties and methods that you can use to access or modify the DOM tree of a web page.
+   - For example, you can use the DOM API to add elements, delete elements, modify text, and add or delete attributes .
+   - Elements on a web page can be selected in various ways by: ID, CSS class, element name, name attribute, CSS selector.
+   - Starting from an element/node, the parent element/node, child elements/child nodes and sibling elements/sibling nodes can be selected via various properties.
+   - Via the property textContent they can access the text content of a node, via the property innerHTML they can access the HTML content of an element.
+   - You can create text nodes using the createTextNode() method, element nodes using createElement(), and attribute nodes using createAttribute().
+   - After creating an element, you must first add it to the DOM tree, using different methods: insertBefore(), appendChild(), replaceChild().
+   - Using the Fetch API, they can load data asynchronously from servers.
+   - Beyond that, there is a veritable wealth of web APIs to explore. 
 
 
  ## 7 - Accessibility (ally) - Optimize websites for accessibility
@@ -268,6 +289,13 @@
     - defining alternative subtitles for videos
 
 
+   ### Basic knowledge - Web APIs
+   - Web accessibility means that the content of websites is accessible and understandable for all users, especially for people with disabilities.
+   - The Web Content Accessibility Guidelines (WCAG) define guidelines that a web page must meet to be accessible.
+   - Where possible, you should use semantic HTML elements, for example for the definition of header, footer and navigation, etc.
+   - Where it is not possible or there is no standard HTML element for a particular UI component, you should define the semantics using ARIA (Accessible Rich Internet Applications).
+
+
  ## 8 - Single Page Applications (SPA)
   * #### Part_1 - Structure of the application
     - create react app https://create-react-app.dev/docs/getting-started  /  https://reactjs.org
@@ -289,6 +317,9 @@
     - adapting the list component to the context (src/List.js)
   * #### Part_10 - Routing
     - routine definitions in the app component (src/App.js)
+
+
+   ### Basic knowledge - SPA
 
 
  ## 9 - Use Javascript on the server side - Node.js
