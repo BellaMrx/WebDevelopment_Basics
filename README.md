@@ -287,4 +287,4 @@
   * ### Part_3
    - example for the resource https://www.alberteinstein.com/api/authors/1
   * ### Part_4
-   - implement a REST-API
+   - implement a REST-API (npm install express  -->  node start.js)
