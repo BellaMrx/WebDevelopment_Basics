@@ -1,0 +1,10 @@
+{
+  "id": "4",
+  "isbn": "321-4-8765-1110-9",
+  "title": "The Theory of Relativity",
+  "author": {
+    "firstName": "Albert",
+    "lastName": "Einstein",
+    "href": "https://www.alberteinstein.com/api/authors/1"
+  }
+}

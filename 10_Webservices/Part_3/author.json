@@ -1,0 +1,26 @@
+{
+  "firstName": "Alber",
+  "lastName": "Einstein",
+  "books": [
+    {
+      "title": "The Theory of Relativity",
+      "href": "https://www.alberteinstein.com/api/books/1"
+    },
+    {
+      "title": "The Ultimate Quotable Einstein",
+      "href": "https://www.alberteinstein.com/api/books/2"
+    },
+    {
+      "title": "Albert Einstein in His Own Voice",
+      "href": "https://alberteinstein.com/api/books/3"
+    },
+    {
+      "title": "Einstein on Cosmic Religion and Other Opinions and Aphorisms",
+      "href": "https://alberteinstein.com/api/books/4"
+    },
+    {
+      "title": "The World As I See It",
+      "href": "https://www.alberteinstein.com/api/books/5"
+    }
+  ]
+}

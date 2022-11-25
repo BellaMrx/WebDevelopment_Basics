@@ -277,3 +277,14 @@
  ![Preview](Images/nodeJSexpress.PNG)
 
  - if the installation of express was successful the folder node_module should have been created
+
+
+ ## 10 - Implementing web services 
+  * ### Part_1 - SOAP  (Simple Object Access Protocol)
+   - example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
+  * ### Part_2 - REST (Representational State Transfer)
+   - example for the resource https://www.alberteinstein.com/api/books/4
+  * ### Part_3
+   - example for the resource https://www.alberteinstein.com/api/authors/1
+  * ### Part_4
+   - implement a REST-API
