@@ -320,6 +320,18 @@
 
 
    ### Basic knowledge - SPA
+   - React is a library with a focus on user interface implementations and is complemented by a very rich ecosystem of third-party packages.
+   - You can either initilize a React app yourself, or use the Create React app project to do so.
+   - A React application consists of a tree of components.
+   - React uses JSX, a syntax extension for JavaScript, to build components. It distinguishes between elements, which are translated directly into HTML elements, and components, which you use to model the structure of your application.
+   - There are two types of components: the older class components, which have lost much of their importance in the meantime, and the function components, which have established themselves as a quasi-standard.
+   - A component can administer its own state. A change to this state causes the component to be redrawn. The state is managed with the help of the useState function.
+   - The lifecycle with the mount, update and unmount phases is mapped using the useEffect function.
+   - Child components receive information through attributes called props. A prop can be a string as well as an object or a function.
+   - Using functions as props, child components can communicate with their parent components.
+   - React provides predefined props, such as onclick, for event handling, where they can register their callback functions.
+   - The context API allows you to break out of the classic data flow from parent to child components and make values available to all child nodes.
+   - React Router gives you a way to navigate within a React application without completely reloading the page.  
 
 
  ## 9 - Use Javascript on the server side - Node.js
@@ -358,6 +370,16 @@
  - if the installation of express was successful the folder node_module should have been created
 
 
+   ### Basic knowledge - Javascript on the server side
+   - Node.js is a runtime environment for JavaScript, thanks to which JavaScript can be executed outside of browsers.
+   - In addition to the runtime environment, Node.js provides various modules, with the help of which they can, for example, access the file system, implement web servers and much more.
+   - About the Node.js Package Manager (npm) can also install many other packages.
+   - npm also helps with the initialization of own packages.
+   - The meta information of a package like name, version number and dependencies are managed in the configuration file named package.json.
+   - Node.js provides many methods in a synchronous variant and an ansynchronous variant. As a rule, it is recommended to use the ansynchronous variant.
+   - The web framework express is one of the most popular web frameworks and facilitates the implementation of web servers.
+
+
  ## 10 - Implementing web services 
   * #### Part_1 - SOAP  (Simple Object Access Protocol)
    - example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
@@ -369,3 +391,17 @@
    - implement a REST-API (npm install express  -->  node start.js)
 
   ##### Tip -> Postman https://postman.com/ (has a graphical interface instead of a command line)
+
+
+   ### Basic knowledge - Implementing web services
+   - Webservices stellen über eine API Funktionalität einer serverseitigen Komponente über das Web zur Verfügung.
+   - Webservices verwenden dabei Webstandards wie HTTP, XML und JSON.
+   - Prinzipell lassen sich Webservices auf verschiedene Art und Weise bzw. unter Verwendung verschiedener Technologien und Konzepte umsetzen. Drei der bekanntesten sind das Protokoll SOAP, der Architekturstil REST und die Anfragesprache GraphQL.
+   - SOAP-basierte Webservics verwenden als Datenaustauschformat XML und sind im Vergleich zu den anderen beiden Technologien eher als schwergewichtig einzuordnen.
+   - Die API SOAP-basierter Webservices kann durch die Web Services Description Language (WSDL) formal beschrieben werden.
+   - REST-basierte Webservices orientieren sich stark an den Möglichkeiten, die bereits durch HTTP vorgegeben sind.
+   - Die Aktionen, die bei REST-basierten Webservices angestoßen werden können, sind durch die HTTP-Methoden vordefiniert. Folgenden HTTP-Methoden kommt dabei eine besondere semantische Bedeutung zu, die vergleichbar mit der von CRUD-Operationen aus Datenbanken ist: POST-Anfragen(Create), GET-Anfragen(Read), PUT-Anfragen(Update), DELETE-Anfragen(Delete)
+   - REST-basierte Webservices verwenden verschiedene Formate als Datenaustauschformat, allen voran JSON und XML.
+   - REST-basierte Webservices dürften, den größten Teil der Webservice-Implentierungen ausmachen.
+   - Wenn damit zu rechnen ist, dass die Struktur der Daten, die ein Webservice bereitstellt, öfters an die clientseitigen Anforderungen angepasst werden muss, sind GraphQL-basierte Webservices die richtige Wahl. Bei ihnen kann der Client über eine GraphQL-Querry genau die Struktur der Daten definieren, so wie er sie benötigt.  
+
