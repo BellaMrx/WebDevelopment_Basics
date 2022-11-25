@@ -4,37 +4,37 @@
 
 
  ## 1 - HTML - structure web pages with HTML
-  * ### Part_1 - Use elements and attributes
+  * #### Part_1 - Use elements and attributes
     - a simple website
-  * ### Part_2 - Parameterize elements via attributes
+  * #### Part_2 - Parameterize elements via attributes
     - use attributes
-  * ### Part_3 - Lists
+  * #### Part_3 - Lists
     - ordered list
-  * ### Part_4
+  * #### Part_4
     - unordered list
-  * ### Part_5
+  * #### Part_5
     - definition list
-  * ### Part_6
+  * #### Part_6
     - nested lists
-  * ### Part_7 - Links
+  * #### Part_7 - Links
     - use of external links
-  * ### Part_8
+  * #### Part_8
     - relative links (links on the same page)
-  * ### Part_9
+  * #### Part_9
     - internal links (links on the same website)
-  * ### Part_10 - Images
+  * #### Part_10 - Images
     - embedding images
-  * ### Part_11 - Captions
+  * #### Part_11 - Captions
     - use of captions
-  * ### Part_12 - Tables
+  * #### Part_12 - Tables
     - representation of users with the help of tables
-  * ### Part_13
+  * #### Part_13
     - Definition of table header (thead), table body (tbody) table footer row (tfoot)
-  * ### Part_14
+  * #### Part_14
     - combine columns
-  * ### Part_15
+  * #### Part_15
     - merging rows
-  * ### Part_16 - Forms
+  * #### Part_16 - Forms
     - use of the different form elements
 
 
@@ -43,28 +43,38 @@
  ![Preview](Images/html5_cheat_sheet_event_attributes.png)
 
 
+   ### Basics HTML
+   - HTML stands for Hypertext Markup Language and is a markup language that allows defining the structure and semantics of web pages using elements.
+   - HTML elements have an opening and a closing tag
+   - Attributes can be used to pass additional information to an opening tag.
+   - Attributes consist of a name and an associated value.
+   - There are HTML elements that can contain other elements (child elements) and text, as well as empty elements that must not contain text or other elements.
+   - Web pages or HTML documents are simply text documents.
+   - There are many different HTML elements. Among the most important are headings, text paragraphs, lists, links, images, tables, and forms.
+
+
  ## 2 - CSS - design websites with CSS
-  * ### Part_1 - Introduction
+  * #### Part_1 - Introduction
     - a simple CSS file
-  * ### Part_2 - Include CSS in HTML
+  * #### Part_2 - Include CSS in HTML
     - embed CSS file, external, inline, internal
-  * ### Part_3 - Texts
+  * #### Part_3 - Texts
     - format texts with CSS
-  * ### Part_4 - Lists
+  * #### Part_4 - Lists
     - format unordered lists with CSS
-  * ### Part_5
+  * #### Part_5
     - formatting an ordered list
-  * ### Part_6
+  * #### Part_6
     - use images as bullets
-  * ### Part_7
+  * #### Part_7
     - setting the position of bullets
-  * ### Part_8 - Tables
+  * #### Part_8 - Tables
     - design tables with CSS
-  * ### Part_9 - Forms
+  * #### Part_9 - Forms
     - designing forms with float layout
-  * ### Part_10
+  * #### Part_10
     - designing forms with flexbox layout
-  * ### Part_11
+  * #### Part_11
     - designing forms with grid layout
 
 
