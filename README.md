@@ -358,7 +358,7 @@
    - customized webserver now deploys the HTML file and CSS file
    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
    - "Server is running on http://localhost:8000" open this in your browser
-* #### Part_5 - Use web framework "express" (http://expressjs.com)customized webserver processes the data
+  * #### Part_5 - Use web framework "express" (http://expressjs.com)customized webserver processes the data
    - customized webserver processes the data
    - customized webserver now deploys the HTML file and CSS file
    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
