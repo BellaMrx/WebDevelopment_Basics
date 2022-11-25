@@ -38,6 +38,9 @@
     - use of the different form elements
 
 
+ ### HTML-Tags
+
+
  ![Preview](Images/html5_cheat_sheet_tags.png)
 
  ![Preview](Images/html5_cheat_sheet_event_attributes.png)
@@ -87,58 +90,67 @@
  ![Preview](Images/CSSpropertiesOfTheGridLayout.png)
 
 
+   ### Basics CSS
+   - CSS rules let you define how the content of certain HTML elements should be displayed.
+   - CSS rules consist of two parts: The selector defines which HTML elements the CSS rule should be applied to. The declaration defines how exactly these HTML elements are to be displayed.
+   - Individual declarations in turn consist of a property and a value. 
+   - There are several ways to include CSS in an HTML document: External Stylesheet, Internal Stylesheet, Inline Styles.
+   - CSS can be used to design all components of a web page. For texts, for example, the font, font style, text color and alignment can be adjusted. It can also be used to design tables, lists, forms and much more. 
+   - In CSS there are several layout systems for arranging elements: Float layout, Flexbox layout, Grid layout.
+
+
  ## 3 - JavaScript (JS) - making websites interactive with JavaScript
-  * ### Part_1 - Introduction
+  * #### Part_1 - Introduction
     - JavaScript code that calls a function
-  * ### Part_2
+  * #### Part_2
     - embedding JavaScript in HTML
-  * ### Part_3 
+  * #### Part_3 
     - a simple hint dialog generated via JavaScript (a simple information dialog generated via JavaScript only makes sense in exceptional cases: definitions of JavaScript directly in an HTML file)
-  * ### Part_4 - Use developer console
+  * #### Part_4 - Use developer console
     - output to the console via the "console" object
-  * ### Part_5
+  * #### Part_5
     - using the "console" object
-  * ### Part_6 - Define variables
+  * #### Part_6 - Define variables
     - declaration of variables with the "let" keyword
-  * ### Part_7 - Define constant
+  * #### Part_7 - Define constant
     - declaration of a constant
-  * ### Part_8 - Use data types
+  * #### Part_8 - Use data types
     - definition of different number variables
-  * ### Part_9
+  * #### Part_9
     - examples for the definition of strings
-  * ### Part_10
+  * #### Part_10
     - definition of boolean variables
-  * ### Part_11 - Control structures
+  * #### Part_11 - Control structures
     - example of a conditional statement including branching
-  * ### Part_12
+  * #### Part_12
     - example of a branch with several paths
-  * ### Part_13
+  * #### Part_13
     - use of the "switch" application
-  * ### Part_14 - Use loops
+  * #### Part_14 - Use loops
     - a simple "for" loop that outputs the numbers from 1 to 10
-  * ### Part_15
+  * #### Part_15
     - a simple "while" loop that outputs the numbers from 1 to 10
-  * ### Part_16
+  * #### Part_16
     - a simple "do-while" loop that outputs the numbers from 1 to 10
-  * ### Part_17 - Functions and error handling
+  * #### Part_17 - Functions and error handling
     - creating a function using a function declaration
-  * ### Part_18
+  * #### Part_18
     - creating a function using a function expression
-  * ### Part_19
+  * #### Part_19
     - create a function using the Arrow function notation
-  * ### Part_20
+  * #### Part_20
     - call a function
-  * ### Part_21
+  * #### Part_21
     - use of function parameters
-  * ### Part_22
+  * #### Part_22
     - a function that returns a value
-  * ### Part_23
+  * #### Part_23
     - example of the use of a "try-catch" block
-  * ### Part_24 - Objects and arrays
+  * #### Part_24 - Objects and arrays
     - creating an object via the objelt-literal notation
-  * ### Part_25
+  * #### Part_25
     - create an array via the shorthand
-  * ### Part_26
+  * #### Part_26
     - iteration over an array
 
 
@@ -147,34 +159,57 @@
  ![Preview](Images/important_methods_console.PNG)
 
 
+   ### Basics JavaScript
+   - JavaScript can be included in a web page in several ways. However, you should get into the habit of managing JavaScript code in separate files.
+   - Variables can be defined in JavaScript using the let keyword, while constants can be defined using the const keyword.
+   - There are different data types in JavaScript: on the one hand, the standard primitive data types for numbers, strings, and Boolean values, as well as the special data types undefined and null, and on the other hand, objects.
+   - In JavaScript there are different types of operations available: arithmetic operators, operators for working with strings, logical operations for working with boolean values, bitwise operators for working with bits, operators for comparing values, special operators for type checking, among others.
+   - You can control the control flow of a JavaScript_program using conditional statements, branching, multiple branching, counting loops, and header-controlled and footer-controlled loops.
+   - You can define reusable program parts via functions. Functions can be called with arguments and return a return value.
+   - In JavaScript there are different types of errors: syntx errors, runtime errors, logical errors. 
+   - When an error occurs during the execution of a program, you can react to such errors: Using the keyword try you mark the statements that could potentially throw errors, using the keyword catch you define the statements that should be executed in case of an error.
+   - With JavaScript you have the possibility to generate HTML code dynamically.
+
+
  ## 4 - Weblogs
 
 
  ![Preview](Images/Statuscodes.png)
 
 
+   ### Basics Weblogs
+   - HTTP, the Hypertext Transfer Protocol is a unidirectional client/server protocol where the HTTP client makes HTTP requests to the HTTP server and the server responds with an HTTP response.
+   - Using headers, it can pass additional meta-information to HTTP requests and HTTP responses.
+   - HTTP methods define what actions should be performed on the HTTP server.
+   - The status code of an HTTP response defines whether an HTTP request was successfully processed or not. 
+   - MIME types define the format of the data that is transferred via an HTTP request or an HTTP response.
+   - Polling and long polling are techniques by which a cleint polls data from the server at regular intervals. The communication is unidirectional from the client to the server.
+   - Server-sent events allow data to be actively sent from the server to the client. The communication is unidirectional from the server to the client.
+   - The WebSocket client can send data to the WebSocket server, but also the server can actively send data to the client - provided that the client has previously established a Web socket connection to the server. 
+
+
  ##  5 - Webformats - use web formats
-  * ### Part_1 - Data formats
+  * #### Part_1 - Data formats
     - example of a CSV document
-  * ### Part_2
+  * #### Part_2
     - example of XML document
-  * ### Part_3
+  * #### Part_3
     - example of XML schema
-  * ### Part_4 - JSON
+  * #### Part_4 - JSON
     - example of a JSON document
-  * ### Part_5
+  * #### Part_5
     - parsing JSON in JavaScript
-  * ### Part_6
+  * #### Part_6
     - JSON can be embedded directly within JavaScript code
-  * ### Part_7
+  * #### Part_7
     - example of a JSON schema
-  * ### Part_8 - Vector graphics with SVG format
+  * #### Part_8 - Vector graphics with SVG format
     - example of SVG document
-  * ### Part_9 - Audio and video formats
+  * #### Part_9 - Audio and video formats
     - embedding video files in HTML
-  * ### Part_10
+  * #### Part_10
     - embedding video files in HTML
-  * ### Part_11
+  * #### Part_11
     - embedding audio files in HTML
 
 
@@ -183,14 +218,17 @@
  ![Preview](Images/AudioVideoAttributes.png)
 
 
+   ### Basics Webformats
+
+
  ## 6 - Web APIs
-  * ### Part_1 - Select elements
+  * #### Part_1 - Select elements
     - selection of all elements with the CSS class "even" and subsequent iteration over the elements
-  * ### Part_2 - Change elements
+  * #### Part_2 - Change elements
     - create and add a text node
-  * ### Part_3 - Dynamically create a table
+  * #### Part_3 - Dynamically create a table
     - create an object using the object literal notation
-  * ### Part_4 - Load data asynchronously with Ajax and the Fetch API
+  * #### Part_4 - Load data asynchronously with Ajax and the Fetch API
     - load JSON data via Ajax and via Fetch API
 
   ### JavaScript - HTML DOM Methods
@@ -207,49 +245,49 @@
 
 
  ## 7 - Accessibility (ally) - Optimize websites for accessibility
-  * ### Part_1 - Semantically structure web pages
+  * #### Part_1 - Semantically structure web pages
     - definition of structures with the help of the div
     element (no longer up-to-date)
-  * ### Part_2
+  * #### Part_2
     - definition of structure with the help of the semantic elements for it
-  * ### Part_3 - Making forms accessible
+  * #### Part_3 - Making forms accessible
     - use of different form elements
-  * ### Part_4 - Making tables accessible
+  * #### Part_4 - Making tables accessible
     - definition of table description, table header, table body and table footer
-  * ### Part_5 
+  * #### Part_5 
     - definition of table headings that refer to table columns
-  * ### Part_6
+  * #### Part_6
     - definition of table headings that refer to table columns
-  * ### Part_7
+  * #### Part_7
     - definition of table headings that refer to table columns
-  * ### Part_8 - Define language for web pages
+  * #### Part_8 - Define language for web pages
     - definition of the language used for the web page and for a single HTML element
-  * ### Part_9 - Offer keyboard support
+  * #### Part_9 - Offer keyboard support
     - definition of keyboard shortcuts and tab order for links and form elements
-  * ### Part_10 - use subtitles
+  * #### Part_10 - use subtitles
     - defining alternative subtitles for videos
 
 
  ## 8 - Single Page Applications (SPA)
-  * ### Part_1 - Structure of the application
+  * #### Part_1 - Structure of the application
     - create react app https://create-react-app.dev/docs/getting-started  /  https://reactjs.org
-  * ### Part_2 - Local state of a component
+  * #### Part_2 - Local state of a component
     - local state in the list component
-  * ### Part_3 - The life cycle of a component
+  * #### Part_3 - The life cycle of a component
     - server communication in the list component (src/List.js)
-  * ### Part_4 - styling of components
+  * #### Part_4 - styling of components
     - inline styling in react components
-  * ### Part_5 - CSS classes and external stylessheets
+  * #### Part_5 - CSS classes and external stylessheets
     - integration of the stylessheets (src/List.js)
-  * ### Part_6 - component hierarchy
+  * #### Part_6 - component hierarchy
     - inclusion of the listItem component (src/List.js)
-  * ### Part_7 - Inverse data flow
+  * #### Part_7 - Inverse data flow
     - embedding the delete routine in the ListItem component (src/ListItem.js)
-  * ### Part_8 - Forms
+  * #### Part_8 - Forms
     - the form component for creating new records (src/Form.js)
-  * ### Part_9 - Context API
+  * #### Part_9 - Context API
     - adapting the list component to the context (src/List.js)
-  * ### Part_10 - Routing
+  * #### Part_10 - Routing
     - routine definitions in the app component (src/App.js)
 
 
@@ -262,22 +300,22 @@
    - macOS - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
    - window - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
    - linux - $ "bin/node -v", $ "bin/npm -v", $ "bin/npx -v"
-  * ### Part_1 - A simple node.js application
+  * #### Part_1 - A simple node.js application
    - open the terminal and start the main.js with $ "node main.js" (pay attention to where the file is stored)
    - "Server is running on http://localhost:8000" open this in your browser
-  * ### Part_2 - Use built-in modules
+  * #### Part_2 - Use built-in modules
     - read files, write files, delete files (synchronous, asynchronous)
-  * ### Part_3 - Deploy static files
+  * #### Part_3 - Deploy static files
     - customized webserver now deploys the HTML file and CSS file
      - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
    - "Server is running on http://localhost:8000" open this in your browser
-  * ### Part_4 - Use web framework "express" (http://expressjs.com)
-   - #### first please install express, open the project and open the terminal and enter "npm install express" then express will be installed locally for this project
+  * #### Part_4 - Use web framework "express" (http://expressjs.com)
+   - ##### first please install express, open the project and open the terminal and enter "npm install express" then express will be installed locally for this project
    - a webserver with the web framework express
    - customized webserver now deploys the HTML file and CSS file
    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
    - "Server is running on http://localhost:8000" open this in your browser
-* ### Part_5 - Use web framework "express" (http://expressjs.com)customized webserver processes the data
+* #### Part_5 - Use web framework "express" (http://expressjs.com)customized webserver processes the data
    - customized webserver processes the data
    - customized webserver now deploys the HTML file and CSS file
    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
@@ -290,11 +328,13 @@
 
 
  ## 10 - Implementing web services 
-  * ### Part_1 - SOAP  (Simple Object Access Protocol)
+  * #### Part_1 - SOAP  (Simple Object Access Protocol)
    - example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
-  * ### Part_2 - REST (Representational State Transfer)
+  * #### Part_2 - REST (Representational State Transfer)
    - example for the resource https://www.alberteinstein.com/api/books/4
-  * ### Part_3
+  * #### Part_3
    - example for the resource https://www.alberteinstein.com/api/authors/1
-  * ### Part_4
+  * #### Part_4
    - implement a REST-API (npm install express  -->  node start.js)
+
+  ##### Tip -> Postman https://postman.com/ (has a graphical interface instead of a command line)
