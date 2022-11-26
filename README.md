@@ -361,7 +361,22 @@
  ## 10 - Programming languages on the server side
 
    ### Basics
-   - 
+   - Programming languages can be classified into several categories.
+   - Subdivision according to degree of abstraction:
+	 - Higher level programming languages abstract very far from the machine code the computer understands.
+	 - Assembly languages abstract less strongly, are however for developers usually not so simple to understand as higher programming languages.
+   - Division into compiled and interpreted languages:
+	 - In compiled programming languages, a computer translates the source code into machine code.
+	 - In interpreted programming languages, an interpreter interprets the source code and executes it.
+   - Subdivision by programming paradigm:
+	 - In imperative programming languages, a developer defines exactly how a program works.
+	 - With declarative programming languages, one defines what a program should do.
+	 - Subgroups of the imperative programming paradigm include structured programming, procedural programming, modular programming, and object-oriented programming.
+	 - Subgroups of the declarative programming paradigm include logical programming and functional programming.
+   - Some languages support multiple programming paradigms. For example, in JavaScript it is possible to program object-oriented and functional.
+   - Object-oriented programming focuses on objects. Object-oriented languages can also be divided into class-based and classless, depending on whether the object orientation is based on classes or objects.
+   - Functional programming focuses on functions. Here, functions are treated like objects and can be assigned to variables like these, used as parameters for other functions or as their return value.
+   - Developers are faced with a real variety of languages when choosing the right programming language. 
 
 
  ![Preview](Images/FrontendDev.png)
