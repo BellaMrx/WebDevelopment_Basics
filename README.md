@@ -440,21 +440,21 @@
    - to run jest just enter command "npx"(node.js) then "npx jest:" ( https://jestjs.io/docs/en/expect )
 
    ### Basic
-   - Automatisierte Tests helfen Ihnen dabei, robusteren Code zu produzieren, der eine saubere Schnittstelle hat, einfacher zu testen ist und den sie gefahrlos optimieren können.
-   - Man unterscheidet verschiedene Arten von Tests, von denenfolgende besonders relevant für die Webentwicklung sind:
-	 - Über Komponententestswie testen sie einzelne Komponenten aud Codeebene beispielsweise Klassen oder Funktionen.
-	 - Über Integrationstests sie das Zusammenspiel verschiedener Komponenten einen Anwendung.
-	 - Über End-To-End-Tests testen sie eine Anwendungvon einem Ende(Frontend) bis zum anderen Ende(Backend).
-	 - Über Performancetests testen Sie, wie sich eine Anwendung bei großer Auslastung(Load-Tests) oder extremer Auslastung (Stresstests) verhält.
-   - Bei der testgetriebenen Entwicklung formulieren sie vor der Implementierung einer neuen Komponente zunächst in einem Test über Assertion, welche Anforderungen die neue Komponente implementieren muss.
-   - Eine Iteration besteht bei der testgetriebenen Entwicklung aus den folgenden fünf Schritten: Schreiben der Test, Ausführen der Test, Implementieren der Funktionalität, erneutes ausführen der Tests, Optimierung/Refactoring der Implementierung
-   - Ein einzelner Test besteht aus vier Phasen:
-	 - In der Setup-Phase können Initialisierung durchgeführt werden.
-	 - In der Exercise-Phase wird die zu testende Komponente aufgerufen bzw. ausgeführt.
-	 - In der Verify-Phase werden die tatsächlichen Ergebnisse mit den erwarteten Ergebnissen verglichen.
-	 - In der Teardown-phase können Aufräumarbeitendurchgeführt werden.
-   - Mit Hilfe von speziellen Tools können sie die Testabdeckung ermitteln, also welcher Teil des Codes durch die Tests ausgeführt wird und welcher nicht.
-   - Mit Hilfe von Test-Doubles können sie externe Komponenten, von denen eine zu testende Komponente abhängig ist, sogenannte DOCs (Dependent-On Components), während des Tests ersetzen bzw. simulieren. Dabei gibt es verschiedene Arten von Test-Doubles:
-	 - Über Test-Spies lassen sich indirekte Ausgaben der zu testenden Komponente abfangen.
-	 - Über Test-Stubs lassen sich die indirekten Eingaben der zu testenden Komponente simulieren.
-	 - Über Mock-Objekte können die Indirekten Ausgaben der zu testenden Komponente überprüft werden.
+   - Automated tests help you produce more robust code that has a clean interface, is easier to test, and that you can safely optimize.
+   - There are several types of tests, of which the following are particularly relevant for web development:
+	    - Over component testsas they test individual components on code level for example classes or functions.
+	    - Over integration tests them the interaction of different components an application.
+	    - Over End-To-End-Tests they test an application from an end (Frontend) to the other end (Backend).
+	    - With performance tests, you test how an application behaves under high load (load tests) or extreme load (stress tests).
+   - In test-driven development, before implementing a new component, you first formulate in a test via assertion which requirements the new component must implement.
+   - An iteration consists with the test-driven development of the following five steps: Writing the test, executing the test, implementing the functionality, renewed execution of the tests, optimization/refactoring of the implementation.
+   - A single test consists of four phases:
+	    - In the Setup phase, initialization can be performed.
+	    - In the Exercise phase, the component under test is called or executed.
+	    - In the Verify phase, the actual results are compared with the expected results.
+	    - In the Teardown phase, cleanup tasks can be performed.
+   - With the help of special tools they can determine the test coverage, i.e. which part of the code is executed by the tests and which is not.
+   - With the help of test doubles they can replace or simulate external components on which a component under test depends, so-called DOCs (Dependent-On Components), during the test. There are different types of test doubles:
+	    - Test spies can be used to intercept indirect outputs of the component under test.
+	    - Test stubs can be used to simulate the indirect inputs of the component under test.
+	    - Mock objects can be used to check the indirect outputs of the component under test.
