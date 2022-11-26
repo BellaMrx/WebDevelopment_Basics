@@ -3,8 +3,19 @@
  ### Basics Guide for Fullstack Developers
 
 ---------------------------------------------------------------------------------------------------------------
-
  ## 1 - HTML - structure web pages with HTML
+
+
+   ###  Basics
+   - HTML stands for Hypertext Markup Language and is a markup language that allows defining the structure and semantics of web pages using elements.
+   - HTML elements have an opening and a closing tag
+   - Attributes can be used to pass additional information to an opening tag.
+   - Attributes consist of a name and an associated value.
+   - There are HTML elements that can contain other elements (child elements) and text, as well as empty elements that must not contain text or other elements.
+   - Web pages or HTML documents are simply text documents.
+   - There are many different HTML elements. Among the most important are headings, text paragraphs, lists, links, images, tables, and forms.
+
+
   * #### Part_1 - Use elements and attributes
     - a simple website
   * #### Part_2 - Parameterize elements via attributes
@@ -47,18 +58,19 @@
  ![Preview](Images/html5_cheat_sheet_event_attributes.png)
 
 
-   ###  Basic knowledge
-   - HTML stands for Hypertext Markup Language and is a markup language that allows defining the structure and semantics of web pages using elements.
-   - HTML elements have an opening and a closing tag
-   - Attributes can be used to pass additional information to an opening tag.
-   - Attributes consist of a name and an associated value.
-   - There are HTML elements that can contain other elements (child elements) and text, as well as empty elements that must not contain text or other elements.
-   - Web pages or HTML documents are simply text documents.
-   - There are many different HTML elements. Among the most important are headings, text paragraphs, lists, links, images, tables, and forms.
-
 ---------------------------------------------------------------------------------------------------------------
-
  ## 2 - CSS - design websites with CSS
+
+
+   ###  Basics
+   - CSS rules let you define how the content of certain HTML elements should be displayed.
+   - CSS rules consist of two parts: The selector defines which HTML elements the CSS rule should be applied to. The declaration defines how exactly these HTML elements are to be displayed.
+   - Individual declarations in turn consist of a property and a value. 
+   - There are several ways to include CSS in an HTML document: External Stylesheet, Internal Stylesheet, Inline Styles.
+   - CSS can be used to design all components of a web page. For texts, for example, the font, font style, text color and alignment can be adjusted. It can also be used to design tables, lists, forms and much more. 
+   - In CSS there are several layout systems for arranging elements: Float layout, Flexbox layout, Grid layout.
+
+
   * #### Part_1 - Introduction
     - a simple CSS file
   * #### Part_2 - Include CSS in HTML
@@ -92,17 +104,22 @@
  ![Preview](Images/CSSpropertiesOfTheGridLayout.png)
 
 
-   ###  Basic knowledge
-   - CSS rules let you define how the content of certain HTML elements should be displayed.
-   - CSS rules consist of two parts: The selector defines which HTML elements the CSS rule should be applied to. The declaration defines how exactly these HTML elements are to be displayed.
-   - Individual declarations in turn consist of a property and a value. 
-   - There are several ways to include CSS in an HTML document: External Stylesheet, Internal Stylesheet, Inline Styles.
-   - CSS can be used to design all components of a web page. For texts, for example, the font, font style, text color and alignment can be adjusted. It can also be used to design tables, lists, forms and much more. 
-   - In CSS there are several layout systems for arranging elements: Float layout, Flexbox layout, Grid layout.
-
 ---------------------------------------------------------------------------------------------------------------
-
  ## 3 - JavaScript (JS) - making websites interactive with JavaScript
+
+
+   ###  Basics
+   - JavaScript can be included in a web page in several ways. However, you should get into the habit of managing JavaScript code in separate files.
+   - Variables can be defined in JavaScript using the let keyword, while constants can be defined using the const keyword.
+   - There are different data types in JavaScript: on the one hand, the standard primitive data types for numbers, strings, and Boolean values, as well as the special data types undefined and null, and on the other hand, objects.
+   - In JavaScript there are different types of operations available: arithmetic operators, operators for working with strings, logical operations for working with boolean values, bitwise operators for working with bits, operators for comparing values, special operators for type checking, among others.
+   - You can control the control flow of a JavaScript_program using conditional statements, branching, multiple branching, counting loops, and header-controlled and footer-controlled loops.
+   - You can define reusable program parts via functions. Functions can be called with arguments and return a return value.
+   - In JavaScript there are different types of errors: syntx errors, runtime errors, logical errors. 
+   - When an error occurs during the execution of a program, you can react to such errors: Using the keyword try you mark the statements that could potentially throw errors, using the keyword catch you define the statements that should be executed in case of an error.
+   - With JavaScript you have the possibility to generate HTML code dynamically.
+
+
   * #### Part_1 - Introduction
     - JavaScript code that calls a function
   * #### Part_2
@@ -162,26 +179,11 @@
  ![Preview](Images/important_methods_console.PNG)
 
 
-   ###  Basic knowledge
-   - JavaScript can be included in a web page in several ways. However, you should get into the habit of managing JavaScript code in separate files.
-   - Variables can be defined in JavaScript using the let keyword, while constants can be defined using the const keyword.
-   - There are different data types in JavaScript: on the one hand, the standard primitive data types for numbers, strings, and Boolean values, as well as the special data types undefined and null, and on the other hand, objects.
-   - In JavaScript there are different types of operations available: arithmetic operators, operators for working with strings, logical operations for working with boolean values, bitwise operators for working with bits, operators for comparing values, special operators for type checking, among others.
-   - You can control the control flow of a JavaScript_program using conditional statements, branching, multiple branching, counting loops, and header-controlled and footer-controlled loops.
-   - You can define reusable program parts via functions. Functions can be called with arguments and return a return value.
-   - In JavaScript there are different types of errors: syntx errors, runtime errors, logical errors. 
-   - When an error occurs during the execution of a program, you can react to such errors: Using the keyword try you mark the statements that could potentially throw errors, using the keyword catch you define the statements that should be executed in case of an error.
-   - With JavaScript you have the possibility to generate HTML code dynamically.
-
 ---------------------------------------------------------------------------------------------------------------
-
  ## 4 - Weblogs
 
 
- ![Preview](Images/Statuscodes.png)
-
-
-   ###  Basic knowledge
+   ###  Basics
    - HTTP, the Hypertext Transfer Protocol is a unidirectional client/server protocol where the HTTP client makes HTTP requests to the HTTP server and the server responds with an HTTP response.
    - Using headers, it can pass additional meta-information to HTTP requests and HTTP responses.
    - HTTP methods define what actions should be performed on the HTTP server.
@@ -191,9 +193,24 @@
    - Server-sent events allow data to be actively sent from the server to the client. The communication is unidirectional from the server to the client.
    - The WebSocket client can send data to the WebSocket server, but also the server can actively send data to the client - provided that the client has previously established a Web socket connection to the server. 
 
----------------------------------------------------------------------------------------------------------------
 
+ ![Preview](Images/Statuscodes.png)
+
+
+---------------------------------------------------------------------------------------------------------------
  ##  5 - Webformats - use web formats
+
+
+   ### Basics
+   - CSV format is a very simple data format, suitable for defining records line by line and separated by commas.
+   - For the structuring of complex data, for example nested data, the XML and JSON data formats are suitable.
+   - XML and JSON are the two most important data exchange formats on the web.
+   - JSON has become somewhat more popular over XML in recent years because it is much leaner and much easier to process in JavaScript.
+   - For saving images and graphics you can use different formats: JPG, GIF, PNG, SVG, WebP.
+   - For embedding video and audio files, since HTML5 you can use the video and audio elements.
+   - There are many different video and audio formats, but thanks to the HTML elements you can include several formats for one video or for one audio file.
+
+
   * #### Part_1 - Data formats
     - example of a CSV document
   * #### Part_2
@@ -223,41 +240,11 @@
  ![Preview](Images/AudioVideoAttributes.png)
 
 
-   ### Basic knowledge
-   - CSV format is a very simple data format, suitable for defining records line by line and separated by commas.
-   - For the structuring of complex data, for example nested data, the XML and JSON data formats are suitable.
-   - XML and JSON are the two most important data exchange formats on the web.
-   - JSON has become somewhat more popular over XML in recent years because it is much leaner and much easier to process in JavaScript.
-   - For saving images and graphics you can use different formats: JPG, GIF, PNG, SVG, WebP.
-   - For embedding video and audio files, since HTML5 you can use the video and audio elements.
-   - There are many different video and audio formats, but thanks to the HTML elements you can include several formats for one video or for one audio file.
-
 ---------------------------------------------------------------------------------------------------------------
-
  ## 6 - Web APIs
-  * #### Part_1 - Select elements
-    - selection of all elements with the CSS class "even" and subsequent iteration over the elements
-  * #### Part_2 - Change elements
-    - create and add a text node
-  * #### Part_3 - Dynamically create a table
-    - create an object using the object literal notation
-  * #### Part_4 - Load data asynchronously with Ajax and the Fetch API
-    - load JSON data via Ajax and via Fetch API
-
-  ### JavaScript - HTML DOM Methods
-   #### the different methods and properties for selecting elements
 
 
- ![Preview](Images/DOM_1.PNG)
-
-
-   #### the different methods and properties for modifying elements
-
-
- ![Preview](Images/DOM_2.PNG)
-
-
-   ### Basic knowledge
+   ### Basics
    - The DOM API allows programmatic access to the Document Object Model(DOM), a hierarchical tree structure that represents the object model for a web page.
    - The individual components in this tree structure are called nodes, and there are several types of nodes. The most important are document nodes, element nodes, text nodes, and attribute nodes.
    - The DOM API defines properties and methods that you can use to access or modify the DOM tree of a web page.
@@ -268,11 +255,38 @@
    - You can create text nodes using the createTextNode() method, element nodes using createElement(), and attribute nodes using createAttribute().
    - After creating an element, you must first add it to the DOM tree, using different methods: insertBefore(), appendChild(), replaceChild().
    - Using the Fetch API, they can load data asynchronously from servers.
-   - Beyond that, there is a veritable wealth of web APIs to explore. 
+   - Beyond that, there is a veritable wealth of web APIs to explore.
+
+
+  * #### Part_1 - Select elements
+    - selection of all elements with the CSS class "even" and subsequent iteration over the elements
+  * #### Part_2 - Change elements
+    - create and add a text node
+  * #### Part_3 - Dynamically create a table
+    - create an object using the object literal notation
+  * #### Part_4 - Load data asynchronously with Ajax and the Fetch API
+    - load JSON data via Ajax and via Fetch API
+
+  ### JavaScript - HTML DOM Methods
+
+
+ ![Preview](Images/DOM_1.PNG)
+
+
+ ![Preview](Images/DOM_2.PNG)
+ 
 
 ---------------------------------------------------------------------------------------------------------------
-
  ## 7 - Accessibility (ally) - Optimize websites for accessibility
+
+
+   ### Basics
+   - Web accessibility means that the content of websites is accessible and understandable for all users, especially for people with disabilities.
+   - The Web Content Accessibility Guidelines (WCAG) define guidelines that a web page must meet to be accessible.
+   - Where possible, you should use semantic HTML elements, for example for the definition of header, footer and navigation, etc.
+   - Where it is not possible or there is no standard HTML element for a particular UI component, you should define the semantics using ARIA (Accessible Rich Internet Applications).
+
+
   * #### Part_1 - Semantically structure web pages
     - definition of structures with the help of the div
     element (no longer up-to-date)
@@ -296,15 +310,25 @@
     - defining alternative subtitles for videos
 
 
-   ### Basic knowledge
-   - Web accessibility means that the content of websites is accessible and understandable for all users, especially for people with disabilities.
-   - The Web Content Accessibility Guidelines (WCAG) define guidelines that a web page must meet to be accessible.
-   - Where possible, you should use semantic HTML elements, for example for the definition of header, footer and navigation, etc.
-   - Where it is not possible or there is no standard HTML element for a particular UI component, you should define the semantics using ARIA (Accessible Rich Internet Applications).
-
 ---------------------------------------------------------------------------------------------------------------
+ ## 8 - Single Page Applications (SPA)
 
- ## 9 - Single Page Applications (SPA)
+
+   ### Basics
+   - React is a library with a focus on user interface implementations and is complemented by a very rich ecosystem of third-party packages.
+   - You can either initilize a React app yourself, or use the Create React app project to do so.
+   - A React application consists of a tree of components.
+   - React uses JSX, a syntax extension for JavaScript, to build components. It distinguishes between elements, which are translated directly into HTML elements, and components, which you use to model the structure of your application.
+   - There are two types of components: the older class components, which have lost much of their importance in the meantime, and the function components, which have established themselves as a quasi-standard.
+   - A component can administer its own state. A change to this state causes the component to be redrawn. The state is managed with the help of the useState function.
+   - The lifecycle with the mount, update and unmount phases is mapped using the useEffect function.
+   - Child components receive information through attributes called props. A prop can be a string as well as an object or a function.
+   - Using functions as props, child components can communicate with their parent components.
+   - React provides predefined props, such as onclick, for event handling, where they can register their callback functions.
+   - The context API allows you to break out of the classic data flow from parent to child components and make values available to all child nodes.
+   - React Router gives you a way to navigate within a React application without completely reloading the page.
+
+
   * #### Part_1 - Structure of the application
     - create react app https://create-react-app.dev/docs/getting-started  /  https://reactjs.org
   * #### Part_2 - Local state of a component
@@ -325,24 +349,11 @@
     - adapting the list component to the context (src/List.js)
   * #### Part_10 - Routing
     - routine definitions in the app component (src/App.js)
-
-
-   ### Basic knowledge
-   - React is a library with a focus on user interface implementations and is complemented by a very rich ecosystem of third-party packages.
-   - You can either initilize a React app yourself, or use the Create React app project to do so.
-   - A React application consists of a tree of components.
-   - React uses JSX, a syntax extension for JavaScript, to build components. It distinguishes between elements, which are translated directly into HTML elements, and components, which you use to model the structure of your application.
-   - There are two types of components: the older class components, which have lost much of their importance in the meantime, and the function components, which have established themselves as a quasi-standard.
-   - A component can administer its own state. A change to this state causes the component to be redrawn. The state is managed with the help of the useState function.
-   - The lifecycle with the mount, update and unmount phases is mapped using the useEffect function.
-   - Child components receive information through attributes called props. A prop can be a string as well as an object or a function.
-   - Using functions as props, child components can communicate with their parent components.
-   - React provides predefined props, such as onclick, for event handling, where they can register their callback functions.
-   - The context API allows you to break out of the classic data flow from parent to child components and make values available to all child nodes.
-   - React Router gives you a way to navigate within a React application without completely reloading the page.  
+  
 
 ---------------------------------------------------------------------------------------------------------------
- ## 9 - Understanding and using web architectures
+ ## 9 - Understanding web architectures
+
 
    ### Basics
    - The architecture of software is about how to break down or divide the software into smaller components and how to organize the interaction of these components.
@@ -359,6 +370,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
  ## 10 - Programming languages on the server side
+
 
    ### Basics
    - Programming languages can be classified into several categories.
@@ -386,8 +398,19 @@
 
 
 ---------------------------------------------------------------------------------------------------------------
-
  ## 11 - Use Javascript on the server side - Node.js
+
+
+   ### Basics
+   - Node.js is a runtime environment for JavaScript, thanks to which JavaScript can be executed outside of browsers.
+   - In addition to the runtime environment, Node.js provides various modules, with the help of which they can, for example, access the file system, implement web servers and much more.
+   - About the Node.js Package Manager (npm) can also install many other packages.
+   - npm also helps with the initialization of own packages.
+   - The meta information of a package like name, version number and dependencies are managed in the configuration file named package.json.
+   - Node.js provides many methods in a synchronous variant and an ansynchronous variant. As a rule, it is recommended to use the ansynchronous variant.
+   - The web framework express is one of the most popular web frameworks and facilitates the implementation of web servers.
+
+
   ### before you start please install Node.js, you can do that at https://nodejs.org/en/download
    - for macOS download the pkd file
    - for windows download the msi file
@@ -424,15 +447,6 @@
 
  ##### if the installation of express was successful the folder node_module should have been created
 
-
-   ### Basic knowledge
-   - Node.js is a runtime environment for JavaScript, thanks to which JavaScript can be executed outside of browsers.
-   - In addition to the runtime environment, Node.js provides various modules, with the help of which they can, for example, access the file system, implement web servers and much more.
-   - About the Node.js Package Manager (npm) can also install many other packages.
-   - npm also helps with the initialization of own packages.
-   - The meta information of a package like name, version number and dependencies are managed in the configuration file named package.json.
-   - Node.js provides many methods in a synchronous variant and an ansynchronous variant. As a rule, it is recommended to use the ansynchronous variant.
-   - The web framework express is one of the most popular web frameworks and facilitates the implementation of web servers.
 
 ---------------------------------------------------------------------------------------------------------------
 
