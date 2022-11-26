@@ -1,7 +1,8 @@
 # WebDevelopment_Basics
 
- ### Basics for fullstack developers
+ ### Basics Guide for Fullstack Developers
 
+---------------------------------------------------------------------------------------------------------------
 
  ## 1 - HTML - structure web pages with HTML
   * #### Part_1 - Use elements and attributes
@@ -55,6 +56,7 @@
    - Web pages or HTML documents are simply text documents.
    - There are many different HTML elements. Among the most important are headings, text paragraphs, lists, links, images, tables, and forms.
 
+---------------------------------------------------------------------------------------------------------------
 
  ## 2 - CSS - design websites with CSS
   * #### Part_1 - Introduction
@@ -98,6 +100,7 @@
    - CSS can be used to design all components of a web page. For texts, for example, the font, font style, text color and alignment can be adjusted. It can also be used to design tables, lists, forms and much more. 
    - In CSS there are several layout systems for arranging elements: Float layout, Flexbox layout, Grid layout.
 
+---------------------------------------------------------------------------------------------------------------
 
  ## 3 - JavaScript (JS) - making websites interactive with JavaScript
   * #### Part_1 - Introduction
@@ -170,6 +173,7 @@
    - When an error occurs during the execution of a program, you can react to such errors: Using the keyword try you mark the statements that could potentially throw errors, using the keyword catch you define the statements that should be executed in case of an error.
    - With JavaScript you have the possibility to generate HTML code dynamically.
 
+---------------------------------------------------------------------------------------------------------------
 
  ## 4 - Weblogs
 
@@ -187,6 +191,7 @@
    - Server-sent events allow data to be actively sent from the server to the client. The communication is unidirectional from the server to the client.
    - The WebSocket client can send data to the WebSocket server, but also the server can actively send data to the client - provided that the client has previously established a Web socket connection to the server. 
 
+---------------------------------------------------------------------------------------------------------------
 
  ##  5 - Webformats - use web formats
   * #### Part_1 - Data formats
@@ -227,6 +232,7 @@
    - For embedding video and audio files, since HTML5 you can use the video and audio elements.
    - There are many different video and audio formats, but thanks to the HTML elements you can include several formats for one video or for one audio file.
 
+---------------------------------------------------------------------------------------------------------------
 
  ## 6 - Web APIs
   * #### Part_1 - Select elements
@@ -264,6 +270,7 @@
    - Using the Fetch API, they can load data asynchronously from servers.
    - Beyond that, there is a veritable wealth of web APIs to explore. 
 
+---------------------------------------------------------------------------------------------------------------
 
  ## 7 - Accessibility (ally) - Optimize websites for accessibility
   * #### Part_1 - Semantically structure web pages
@@ -295,6 +302,7 @@
    - Where possible, you should use semantic HTML elements, for example for the definition of header, footer and navigation, etc.
    - Where it is not possible or there is no standard HTML element for a particular UI component, you should define the semantics using ARIA (Accessible Rich Internet Applications).
 
+---------------------------------------------------------------------------------------------------------------
 
  ## 8 - Single Page Applications (SPA)
   * #### Part_1 - Structure of the application
@@ -333,6 +341,7 @@
    - The context API allows you to break out of the classic data flow from parent to child components and make values available to all child nodes.
    - React Router gives you a way to navigate within a React application without completely reloading the page.  
 
+---------------------------------------------------------------------------------------------------------------
 
  ## 9 - Use Javascript on the server side - Node.js
   ### before you start please install Node.js, you can do that at https://nodejs.org/en/download
@@ -381,6 +390,7 @@
    - Node.js provides many methods in a synchronous variant and an ansynchronous variant. As a rule, it is recommended to use the ansynchronous variant.
    - The web framework express is one of the most popular web frameworks and facilitates the implementation of web servers.
 
+---------------------------------------------------------------------------------------------------------------
 
  ## 10 - Implementing web services 
   * #### Part_1 - SOAP  (Simple Object Access Protocol)
@@ -458,3 +468,25 @@
 	    - Test spies can be used to intercept indirect outputs of the component under test.
 	    - Test stubs can be used to simulate the indirect inputs of the component under test.
 	    - Mock objects can be used to check the indirect outputs of the component under test.
+
+---------------------------------------------------------------------------------------------------------------
+
+ ## 13 - Deploying and hosting web applications
+  * #### Part_1 - Package a web application with Docker
+   - Install Docker ( https://docs.docker.com )
+   - all available commands can be found at https://docs.docker.com/engine/reference/builder
+   - Docker images for all major Node.js versions: https://github.com/nodejs/docker-node , https://hub.docker.com/_/node
+
+   
+   ### Basic
+   - For a web application to be accessible to users over the Internet, it must be hosted on a (hosting) server. You need web space on the one hand and a domain on the other.
+   - Basically, there are different types of hosting:
+	    - Shared hosting: here your web application shares the corresponding server with other web applications.
+	    - VPS Hosting: Here your web application is operated within a virtual private server.
+	    - Dedicated Hosting: where your web application is the only one running on the respective server.
+	    - Cloud Hosting: Here your web application runs on a cloud infrastructure based on a network of multiple servers.
+   - The step of copying an application to a server is called deployment.
+   - Using Docker, web applications, or applications in general, can be pegged so that they can be installed and run within the Docker runtime environment very easily.
+   - Docker Compose can be used to configure and launch setups of multiple Docker images ( https://docs.docker.com/compose/ and https://github.com/docker/awesome-compose ).
+
+---------------------------------------------------------------------------------------------------------------  
