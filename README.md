@@ -304,7 +304,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
- ## 8 - Single Page Applications (SPA)
+ ## 9 - Single Page Applications (SPA)
   * #### Part_1 - Structure of the application
     - create react app https://create-react-app.dev/docs/getting-started  /  https://reactjs.org
   * #### Part_2 - Local state of a component
@@ -342,8 +342,28 @@
    - React Router gives you a way to navigate within a React application without completely reloading the page.  
 
 ---------------------------------------------------------------------------------------------------------------
+ ## 9 - Understanding and using web architectures
 
- ## 9 - Use Javascript on the server side - Node.js
+   ###  Basic 
+   - The architecture of software is about how to break down or divide the software into smaller components and how to organize the interaction of these components.
+   - A client-server architecture divides an application into two parts: the client and the server are connected via a network. Because this architecture consists of two layers, it is also called a two-tier architecture.
+   - In an N-tier architecture, the server layer is divided into further layers: a data tier and the logic tier, which contains the application logic or business logic.
+   - In monolithic architecture, an application consists of a single unit that contains all the code.
+   - In service-oriented architecture (SOA), the application is divided into smaller reusable services.
+   - In microservice architecture, the application is divided into even smaller services.
+   - In component-based architecture, the front end of an application is divided into individual reusable UI components.
+   - Mircofrontends architecture divides the frontend of an application into individual features.
+   - The messaging architecture ensures that individual components of an application do not communicate with each other directly, but via a message broker or message bus.
+   - In the web service architecture, services are made available via the web. Web protocols are used for communication and web formats for data exchange.
+   - MV* architectures are used in the front end of an application and divide the responsibility into model, view and a component responsible for communication: Controller(MVC), Presenter(MVP), and View Model(MVVM). 
+
+---------------------------------------------------------------------------------------------------------------
+ ## 10 -
+
+   ###  Basic 
+---------------------------------------------------------------------------------------------------------------
+
+ ## 11 - Use Javascript on the server side - Node.js
   ### before you start please install Node.js, you can do that at https://nodejs.org/en/download
    - for macOS download the pkd file
    - for windows download the msi file
@@ -392,7 +412,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
- ## 10 - Implementing web services 
+ ## 12 - Implementing web services 
   * #### Part_1 - SOAP  (Simple Object Access Protocol)
    - example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
   * #### Part_2 - REST (Representational State Transfer)
@@ -419,7 +439,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
- ## 11 - Store data in databases
+ ## 13 - Store data in databases
   * #### Part_1 - using relational databases in Node.js
    - for this example I use SQLite under Node.js with sqlite3 (https://www.npmjs.com/package/sqlite3)
    - can be installed with the help of Node.js Package Manager using the command "npm install sqlite3".
@@ -443,7 +463,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
- ## 12 - Testing web applications (Testing)
+ ## 14 - Testing web applications (Testing)
   * #### Part_1 - Run automated test in JavaScript
    - Unit testing in JavaScript
    - for this example I use the test framework Jest ( https://jest.io/ ) to write unit tests for JavaScript
@@ -471,7 +491,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
- ## 13 - Deploying and hosting web applications
+ ## 15 - Deploying and hosting web applications
   * #### Part_1 - Package a web application with Docker
    - Install Docker ( https://docs.docker.com )
    - all available commands can be found at https://docs.docker.com/engine/reference/builder
@@ -488,5 +508,6 @@
    - The step of copying an application to a server is called deployment.
    - Using Docker, web applications, or applications in general, can be pegged so that they can be installed and run within the Docker runtime environment very easily.
    - Docker Compose can be used to configure and launch setups of multiple Docker images ( https://docs.docker.com/compose/ and https://github.com/docker/awesome-compose ).
-
+   - Types deployment: FPS, SCP, Container Management
+      - FileZilla (https://filezilla.project.org), Cyberduck (https://cyberduck), ForkLift (https.//binarynights.com)
 ---------------------------------------------------------------------------------------------------------------  
