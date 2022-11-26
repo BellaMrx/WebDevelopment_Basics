@@ -420,6 +420,7 @@
    - window - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
    - linux - $ "bin/node -v", $ "bin/npm -v", $ "bin/npx -v"
 
+-------
 
   * #### Part_1 - A simple node.js application
    - open the terminal and start the main.js with $ "node main.js" (pay attention to where the file is stored)
