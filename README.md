@@ -420,28 +420,27 @@
    - window - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
    - linux - $ "bin/node -v", $ "bin/npm -v", $ "bin/npx -v"
 
--------
 
   * #### Part_1 - A simple node.js application
-   - open the terminal and start the main.js with $ "node main.js" (pay attention to where the file is stored)
-   - "Server is running on http://localhost:8000" open this in your browser
+    - open the terminal and start the main.js with $ "node main.js" (pay attention to where the file is stored)
+    - "Server is running on http://localhost:8000" open this in your browser
   * #### Part_2 - Use built-in modules
     - read files, write files, delete files (synchronous, asynchronous)
   * #### Part_3 - Deploy static files
     - customized webserver now deploys the HTML file and CSS file
-     - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
-   - "Server is running on http://localhost:8000" open this in your browser
+    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
+    - "Server is running on http://localhost:8000" open this in your browser
   * #### Part_4 - Use web framework "express" (http://expressjs.com)
-   - ##### first please install express, open the project and open the terminal and enter "npm install express" then express will be installed locally for this project
-   - a webserver with the web framework express
-   - customized webserver now deploys the HTML file and CSS file
-   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
-   - "Server is running on http://localhost:8000" open this in your browser
+    - ##### first please install express, open the project and open the terminal and enter "npm install express" then express will be installed locally for this project
+    - a webserver with the web framework express
+    - customized webserver now deploys the HTML file and CSS file
+    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
+    - "Server is running on http://localhost:8000" open this in your browser
   * #### Part_5 - Use web framework "express" (http://expressjs.com)customized webserver processes the data
-   - customized webserver processes the data
-   - customized webserver now deploys the HTML file and CSS file
-   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
-   - "Server is running on http://localhost:8000" open this in your browser
+    - customized webserver processes the data
+    - customized webserver now deploys the HTML file and CSS file
+    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
+    - "Server is running on http://localhost:8000" open this in your browser
 
 
  ![Preview](Images/nodeJSexpress.PNG)
@@ -450,21 +449,10 @@
 
 
 ---------------------------------------------------------------------------------------------------------------
-
  ## 12 - Implementing web services 
-  * #### Part_1 - SOAP  (Simple Object Access Protocol)
-   - example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
-  * #### Part_2 - REST (Representational State Transfer)
-   - example for the resource https://www.alberteinstein.com/api/books/4
-  * #### Part_3
-   - example for the resource https://www.alberteinstein.com/api/authors/1
-  * #### Part_4
-   - implement a REST-API (npm install express  -->  node start.js)
-
-  ##### Tip -> Postman https://postman.com/ (has a graphical interface instead of a command line)
 
 
-   ### Basic knowledge
+   ### Basics
    - Web services make functionality of a server-side component available via the Web using an API.
    - Web services use web standards such as HTTP, XML and JSON.
    - In principle, web services can be implemented in different ways or using different technologies and concepts. Three of the best known are the SOAP protocol, the REST architectural style, and the GraphQL query language.
@@ -476,19 +464,24 @@
    - REST based web services are expected to make up, the majority of web service implementations.
    - If it is expected that the structure of the data provided by a web service will have to be adapted frequently to the client-side requirements, GraphQL-based web services are the right choice. With them, the client can define exactly the structure of the data as it needs it via a GraphQL query. 
 
+
+  * #### Part_1 - SOAP  (Simple Object Access Protocol)
+    - example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
+  * #### Part_2 - REST (Representational State Transfer)
+    - example for the resource https://www.alberteinstein.com/api/books/4
+  * #### Part_3
+    - example for the resource https://www.alberteinstein.com/api/authors/1
+  * #### Part_4
+    - implement a REST-API (npm install express  -->  node start.js)
+
+  ##### Tip -> Postman https://postman.com/ (has a graphical interface instead of a command line)
+
+
 ---------------------------------------------------------------------------------------------------------------
-
  ## 13 - Store data in databases
-  * #### Part_1 - using relational databases in Node.js
-   - for this example I use SQLite under Node.js with sqlite3 (https://www.npmjs.com/package/sqlite3)
-   - can be installed with the help of Node.js Package Manager using the command "npm install sqlite3".
-   - for starting the webservice again "node start.js".
 
 
- ##### A good introduction to the commands supported by SQLite can be found, for example, on the SQLite homepage at https://sqlite.org/lang.html.
-
-
-   ### Basic knowledge
+   ### Basics
    - Basically, a distinction is made between relational databases and non-relational databases.
    - Relational databases are called SQL (Structured Query Language) because of the query language used, while non-relational databases are called NoSQL databases, even if the latter is not quite correct, strictly speaking, because non-relational databases also use query languages that are very similar to SQL, at least in terms of syntax.
    - In relational databases, data is stored in relations. 
@@ -500,15 +493,21 @@
 	      - Graph databases store data in the form of graphs, where the nodes of the graph represent individual records and the edges represent the relationships between those records ( https://neo4j.com/ and https://www.arangodb.com/ )
 	      - Column-oriented databases store the data in columns, where the individual columns are not part of a table, but are managed separately ( https://cassandra.apache.org/ and https://hbase.apache.org )
 
+
+  * #### Part_1 - using relational databases in Node.js
+    - for this example I use SQLite under Node.js with sqlite3 (https://www.npmjs.com/package/sqlite3)
+    - can be installed with the help of Node.js Package Manager using the command "npm install sqlite3".
+    - for starting the webservice again "node start.js".
+
+
+ ##### A good introduction to the commands supported by SQLite can be found, for example, on the SQLite homepage at https://sqlite.org/lang.html.
+
+
 ---------------------------------------------------------------------------------------------------------------
-
  ## 14 - Testing web applications (Testing)
-  * #### Part_1 - Run automated test in JavaScript
-   - Unit testing in JavaScript
-   - for this example I use the test framework Jest ( https://jest.io/ ) to write unit tests for JavaScript
-   - to run jest just enter command "npx"(node.js) then "npx jest:" ( https://jestjs.io/docs/en/expect )
 
-   ### Basic
+
+   ### Basics
    - Automated tests help you produce more robust code that has a clean interface, is easier to test, and that you can safely optimize.
    - There are several types of tests, of which the following are particularly relevant for web development:
 	    - Over component testsas they test individual components on code level for example classes or functions.
@@ -528,16 +527,18 @@
 	    - Test stubs can be used to simulate the indirect inputs of the component under test.
 	    - Mock objects can be used to check the indirect outputs of the component under test.
 
+
+  * #### Part_1 - Run automated test in JavaScript
+    - Unit testing in JavaScript
+    - for this example I use the test framework Jest ( https://jest.io/ ) to write unit tests for JavaScript
+    - to run jest just enter command "npx"(node.js) then "npx jest:" ( https://jestjs.io/docs/en/expect )
+
+
 ---------------------------------------------------------------------------------------------------------------
-
  ## 15 - Deploying and hosting web applications
-  * #### Part_1 - Package a web application with Docker
-   - Install Docker ( https://docs.docker.com )
-   - all available commands can be found at https://docs.docker.com/engine/reference/builder
-   - Docker images for all major Node.js versions: https://github.com/nodejs/docker-node , https://hub.docker.com/_/node
 
-   
-   ### Basic
+
+   ### Basics
    - For a web application to be accessible to users over the Internet, it must be hosted on a (hosting) server. You need web space on the one hand and a domain on the other.
    - Basically, there are different types of hosting:
 	    - Shared hosting: here your web application shares the corresponding server with other web applications.
@@ -549,4 +550,12 @@
    - Docker Compose can be used to configure and launch setups of multiple Docker images ( https://docs.docker.com/compose/ and https://github.com/docker/awesome-compose ).
    - Types deployment: FPS, SCP, Container Management
       - FileZilla (https://filezilla.project.org), Cyberduck (https://cyberduck), ForkLift (https.//binarynights.com)
+
+
+  * #### Part_1 - Package a web application with Docker
+    - Install Docker ( https://docs.docker.com )
+    - all available commands can be found at https://docs.docker.com/engine/reference/builder
+    - Docker images for all major Node.js versions: https://github.com/nodejs/docker-node , https://hub.docker.com/_/node
+
+   
 ---------------------------------------------------------------------------------------------------------------  
