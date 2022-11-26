@@ -46,7 +46,7 @@
  ![Preview](Images/html5_cheat_sheet_event_attributes.png)
 
 
-   ###  Basic knowledge - HTML
+   ###  Basic knowledge
    - HTML stands for Hypertext Markup Language and is a markup language that allows defining the structure and semantics of web pages using elements.
    - HTML elements have an opening and a closing tag
    - Attributes can be used to pass additional information to an opening tag.
@@ -90,7 +90,7 @@
  ![Preview](Images/CSSpropertiesOfTheGridLayout.png)
 
 
-   ###  Basic knowledge - CSS
+   ###  Basic knowledge
    - CSS rules let you define how the content of certain HTML elements should be displayed.
    - CSS rules consist of two parts: The selector defines which HTML elements the CSS rule should be applied to. The declaration defines how exactly these HTML elements are to be displayed.
    - Individual declarations in turn consist of a property and a value. 
@@ -159,7 +159,7 @@
  ![Preview](Images/important_methods_console.PNG)
 
 
-   ###  Basic knowledge - JavaScript
+   ###  Basic knowledge
    - JavaScript can be included in a web page in several ways. However, you should get into the habit of managing JavaScript code in separate files.
    - Variables can be defined in JavaScript using the let keyword, while constants can be defined using the const keyword.
    - There are different data types in JavaScript: on the one hand, the standard primitive data types for numbers, strings, and Boolean values, as well as the special data types undefined and null, and on the other hand, objects.
@@ -177,7 +177,7 @@
  ![Preview](Images/Statuscodes.png)
 
 
-   ###  Basic knowledge - Weblogs
+   ###  Basic knowledge
    - HTTP, the Hypertext Transfer Protocol is a unidirectional client/server protocol where the HTTP client makes HTTP requests to the HTTP server and the server responds with an HTTP response.
    - Using headers, it can pass additional meta-information to HTTP requests and HTTP responses.
    - HTTP methods define what actions should be performed on the HTTP server.
@@ -218,7 +218,7 @@
  ![Preview](Images/AudioVideoAttributes.png)
 
 
-   ### Basic knowledge - Webformats
+   ### Basic knowledge
    - CSV format is a very simple data format, suitable for defining records line by line and separated by commas.
    - For the structuring of complex data, for example nested data, the XML and JSON data formats are suitable.
    - XML and JSON are the two most important data exchange formats on the web.
@@ -251,7 +251,7 @@
  ![Preview](Images/DOM_2.PNG)
 
 
-   ### Basic knowledge - Web APIs
+   ### Basic knowledge
    - The DOM API allows programmatic access to the Document Object Model(DOM), a hierarchical tree structure that represents the object model for a web page.
    - The individual components in this tree structure are called nodes, and there are several types of nodes. The most important are document nodes, element nodes, text nodes, and attribute nodes.
    - The DOM API defines properties and methods that you can use to access or modify the DOM tree of a web page.
@@ -289,7 +289,7 @@
     - defining alternative subtitles for videos
 
 
-   ### Basic knowledge - Ally
+   ### Basic knowledge
    - Web accessibility means that the content of websites is accessible and understandable for all users, especially for people with disabilities.
    - The Web Content Accessibility Guidelines (WCAG) define guidelines that a web page must meet to be accessible.
    - Where possible, you should use semantic HTML elements, for example for the definition of header, footer and navigation, etc.
@@ -319,7 +319,7 @@
     - routine definitions in the app component (src/App.js)
 
 
-   ### Basic knowledge - SPA
+   ### Basic knowledge
    - React is a library with a focus on user interface implementations and is complemented by a very rich ecosystem of third-party packages.
    - You can either initilize a React app yourself, or use the Create React app project to do so.
    - A React application consists of a tree of components.
@@ -343,6 +343,8 @@
    - macOS - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
    - window - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
    - linux - $ "bin/node -v", $ "bin/npm -v", $ "bin/npx -v"
+
+
   * #### Part_1 - A simple node.js application
    - open the terminal and start the main.js with $ "node main.js" (pay attention to where the file is stored)
    - "Server is running on http://localhost:8000" open this in your browser
@@ -370,7 +372,7 @@
  ##### if the installation of express was successful the folder node_module should have been created
 
 
-   ### Basic knowledge - Javascript on the server side
+   ### Basic knowledge
    - Node.js is a runtime environment for JavaScript, thanks to which JavaScript can be executed outside of browsers.
    - In addition to the runtime environment, Node.js provides various modules, with the help of which they can, for example, access the file system, implement web servers and much more.
    - About the Node.js Package Manager (npm) can also install many other packages.
@@ -393,15 +395,37 @@
   ##### Tip -> Postman https://postman.com/ (has a graphical interface instead of a command line)
 
 
-   ### Basic knowledge - Implementing web services
-   - Webservices stellen über eine API Funktionalität einer serverseitigen Komponente über das Web zur Verfügung.
-   - Webservices verwenden dabei Webstandards wie HTTP, XML und JSON.
-   - Prinzipell lassen sich Webservices auf verschiedene Art und Weise bzw. unter Verwendung verschiedener Technologien und Konzepte umsetzen. Drei der bekanntesten sind das Protokoll SOAP, der Architekturstil REST und die Anfragesprache GraphQL.
-   - SOAP-basierte Webservics verwenden als Datenaustauschformat XML und sind im Vergleich zu den anderen beiden Technologien eher als schwergewichtig einzuordnen.
-   - Die API SOAP-basierter Webservices kann durch die Web Services Description Language (WSDL) formal beschrieben werden.
-   - REST-basierte Webservices orientieren sich stark an den Möglichkeiten, die bereits durch HTTP vorgegeben sind.
-   - Die Aktionen, die bei REST-basierten Webservices angestoßen werden können, sind durch die HTTP-Methoden vordefiniert. Folgenden HTTP-Methoden kommt dabei eine besondere semantische Bedeutung zu, die vergleichbar mit der von CRUD-Operationen aus Datenbanken ist: POST-Anfragen(Create), GET-Anfragen(Read), PUT-Anfragen(Update), DELETE-Anfragen(Delete)
-   - REST-basierte Webservices verwenden verschiedene Formate als Datenaustauschformat, allen voran JSON und XML.
-   - REST-basierte Webservices dürften, den größten Teil der Webservice-Implentierungen ausmachen.
-   - Wenn damit zu rechnen ist, dass die Struktur der Daten, die ein Webservice bereitstellt, öfters an die clientseitigen Anforderungen angepasst werden muss, sind GraphQL-basierte Webservices die richtige Wahl. Bei ihnen kann der Client über eine GraphQL-Querry genau die Struktur der Daten definieren, so wie er sie benötigt.  
+   ### Basic knowledge
+   - Web services make functionality of a server-side component available via the Web using an API.
+   - Web services use web standards such as HTTP, XML and JSON.
+   - In principle, web services can be implemented in different ways or using different technologies and concepts. Three of the best known are the SOAP protocol, the REST architectural style, and the GraphQL query language.
+   - SOAP-based webservics use XML as their data exchange format and tend to be classified as heavyweight compared to the other two technologies.
+   - The API of SOAP-based web services can be formally described by the Web Services Description Language (WSDL).
+   - REST-based web services are strongly oriented towards the possibilities already provided by HTTP.
+   - The actions that can be triggered in REST-based web services are predefined by the HTTP methods. The following HTTP methods have a special semantic meaning, which is comparable to CRUD operations from databases: POST requests (Create), GET requests (Read), PUT requests (Update), DELETE requests (Delete).
+   - REST-based web services use various formats as data exchange formats, most notably JSON and XML.
+   - REST based web services are expected to make up, the majority of web service implementations.
+   - If it is expected that the structure of the data provided by a web service will have to be adapted frequently to the client-side requirements, GraphQL-based web services are the right choice. With them, the client can define exactly the structure of the data as it needs it via a GraphQL query. 
 
+
+ ## 11 - Store data in databases
+  * #### Part_1 - using relational databases in Node.js
+   - for this example I use SQLite under Node.js with sqlite3 (https://www.npmjs.com/package/sqlite3)
+   - can be installed with the help of Node.js Package Manager using the command "npm install sqlite3".
+   - for starting the webservice again "node start.js".
+
+
+ ##### A good introduction to the commands supported by SQLite can be found, for example, on the SQLite homepage at https://sqlite.org/lang.html.
+
+
+   ### Basic knowledge
+   - Basically, a distinction is made between relational databases and non-relational databases.
+   - Relational databases are called SQL (Structured Query Language) because of the query language used, while non-relational databases are called NoSQL databases, even if the latter is not quite correct, strictly speaking, because non-relational databases also use query languages that are very similar to SQL, at least in terms of syntax.
+   - In relational databases, data is stored in relations. 
+   - They have the possibility to communicate with databases via the SQL query language.
+   - In non-relational databases, the data is not stored in relations, but in a different way or in other data structures.
+   - Non-relational classes can be further classified:
+        - Key-value databases use associative arrays as data structure and store the data in the form of key-value pairs ( https://redis.io and https://memcached.org/ ).
+	      - Document-oriented databases are a special form of key-value databases and use so-called documents as values for storing data ( https://www.mongodb.com/ and https://couchdb.apache.org/ ).
+	      - Graph databases store data in the form of graphs, where the nodes of the graph represent individual records and the edges represent the relationships between those records ( https://neo4j.com/ and https://www.arangodb.com/ )
+	      - Column-oriented databases store the data in columns, where the individual columns are not part of a table, but are managed separately ( https://cassandra.apache.org/ and https://hbase.apache.org )
