@@ -344,7 +344,7 @@
 ---------------------------------------------------------------------------------------------------------------
  ## 9 - Understanding and using web architectures
 
-   ###  Basic 
+   ### Basics
    - The architecture of software is about how to break down or divide the software into smaller components and how to organize the interaction of these components.
    - A client-server architecture divides an application into two parts: the client and the server are connected via a network. Because this architecture consists of two layers, it is also called a two-tier architecture.
    - In an N-tier architecture, the server layer is divided into further layers: a data tier and the logic tier, which contains the application logic or business logic.
@@ -358,9 +358,18 @@
    - MV* architectures are used in the front end of an application and divide the responsibility into model, view and a component responsible for communication: Controller(MVC), Presenter(MVP), and View Model(MVVM). 
 
 ---------------------------------------------------------------------------------------------------------------
- ## 10 -
+ ## 10 - Programming languages on the server side
 
-   ###  Basic 
+   ### Basics
+   - 
+
+
+ ![Preview](Images/FrontendDev.png)
+
+
+ ![Preview](Images/BackendDev.png)
+
+
 ---------------------------------------------------------------------------------------------------------------
 
  ## 11 - Use Javascript on the server side - Node.js
