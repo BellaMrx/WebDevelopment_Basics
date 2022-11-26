@@ -407,6 +407,7 @@
    - REST based web services are expected to make up, the majority of web service implementations.
    - If it is expected that the structure of the data provided by a web service will have to be adapted frequently to the client-side requirements, GraphQL-based web services are the right choice. With them, the client can define exactly the structure of the data as it needs it via a GraphQL query. 
 
+---------------------------------------------------------------------------------------------------------------
 
  ## 11 - Store data in databases
   * #### Part_1 - using relational databases in Node.js
@@ -429,3 +430,31 @@
 	      - Document-oriented databases are a special form of key-value databases and use so-called documents as values for storing data ( https://www.mongodb.com/ and https://couchdb.apache.org/ ).
 	      - Graph databases store data in the form of graphs, where the nodes of the graph represent individual records and the edges represent the relationships between those records ( https://neo4j.com/ and https://www.arangodb.com/ )
 	      - Column-oriented databases store the data in columns, where the individual columns are not part of a table, but are managed separately ( https://cassandra.apache.org/ and https://hbase.apache.org )
+
+---------------------------------------------------------------------------------------------------------------
+
+ ## 12 - Testing web applications (Testing)
+  * #### Part_1 - Run automated test in JavaScript
+   - Unit testing in JavaScript
+   - for this example I use the test framework Jest ( https://jest.io/ ) to write unit tests for JavaScript
+   - to run jest just enter command "npx"(node.js) then "npx jest:" ( https://jestjs.io/docs/en/expect )
+
+   ### Basic
+   - Automatisierte Tests helfen Ihnen dabei, robusteren Code zu produzieren, der eine saubere Schnittstelle hat, einfacher zu testen ist und den sie gefahrlos optimieren können.
+   - Man unterscheidet verschiedene Arten von Tests, von denenfolgende besonders relevant für die Webentwicklung sind:
+	 - Über Komponententestswie testen sie einzelne Komponenten aud Codeebene beispielsweise Klassen oder Funktionen.
+	 - Über Integrationstests sie das Zusammenspiel verschiedener Komponenten einen Anwendung.
+	 - Über End-To-End-Tests testen sie eine Anwendungvon einem Ende(Frontend) bis zum anderen Ende(Backend).
+	 - Über Performancetests testen Sie, wie sich eine Anwendung bei großer Auslastung(Load-Tests) oder extremer Auslastung (Stresstests) verhält.
+   - Bei der testgetriebenen Entwicklung formulieren sie vor der Implementierung einer neuen Komponente zunächst in einem Test über Assertion, welche Anforderungen die neue Komponente implementieren muss.
+   - Eine Iteration besteht bei der testgetriebenen Entwicklung aus den folgenden fünf Schritten: Schreiben der Test, Ausführen der Test, Implementieren der Funktionalität, erneutes ausführen der Tests, Optimierung/Refactoring der Implementierung
+   - Ein einzelner Test besteht aus vier Phasen:
+	 - In der Setup-Phase können Initialisierung durchgeführt werden.
+	 - In der Exercise-Phase wird die zu testende Komponente aufgerufen bzw. ausgeführt.
+	 - In der Verify-Phase werden die tatsächlichen Ergebnisse mit den erwarteten Ergebnissen verglichen.
+	 - In der Teardown-phase können Aufräumarbeitendurchgeführt werden.
+   - Mit Hilfe von speziellen Tools können sie die Testabdeckung ermitteln, also welcher Teil des Codes durch die Tests ausgeführt wird und welcher nicht.
+   - Mit Hilfe von Test-Doubles können sie externe Komponenten, von denen eine zu testende Komponente abhängig ist, sogenannte DOCs (Dependent-On Components), während des Tests ersetzen bzw. simulieren. Dabei gibt es verschiedene Arten von Test-Doubles:
+	 - Über Test-Spies lassen sich indirekte Ausgaben der zu testenden Komponente abfangen.
+	 - Über Test-Stubs lassen sich die indirekten Eingaben der zu testenden Komponente simulieren.
+	 - Über Mock-Objekte können die Indirekten Ausgaben der zu testenden Komponente überprüft werden.
