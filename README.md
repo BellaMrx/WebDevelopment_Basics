@@ -2,6 +2,24 @@
 
  ### Basics Guide for Fullstack Developers
 
+  #### Contents:
+   1 - HTML - structure web pages with HTML
+   2 - CSS - design websites with CSS
+   3 - JavaScript (JS) - making websites interactive with JavaScript
+   4 - Weblogs
+   5 - 5 - Webformats - use web formats
+   6 - Web APIs
+   7 - Accessibility (ally) - Optimize websites for accessibility
+   8 - Single Page Applications (SPA)
+   9 - Understanding web architectures
+   10 - Programming languages on the server side
+   11 - Use Javascript on the server side - Node.js
+   12 - Implementing web services 
+   13 - Store data in databases
+   14 - Testing web applications (Testing)
+   15 - Deploying and hosting web applications
+
+
 ---------------------------------------------------------------------------------------------------------------
  ## 1 - HTML - structure web pages with HTML
 
@@ -488,10 +506,10 @@
    - They have the possibility to communicate with databases via the SQL query language.
    - In non-relational databases, the data is not stored in relations, but in a different way or in other data structures.
    - Non-relational classes can be further classified:
-        - Key-value databases use associative arrays as data structure and store the data in the form of key-value pairs ( https://redis.io and https://memcached.org/ ).
-	      - Document-oriented databases are a special form of key-value databases and use so-called documents as values for storing data ( https://www.mongodb.com/ and https://couchdb.apache.org/ ).
-	      - Graph databases store data in the form of graphs, where the nodes of the graph represent individual records and the edges represent the relationships between those records ( https://neo4j.com/ and https://www.arangodb.com/ )
-	      - Column-oriented databases store the data in columns, where the individual columns are not part of a table, but are managed separately ( https://cassandra.apache.org/ and https://hbase.apache.org )
+      - Key-value databases use associative arrays as data structure and store the data in the form of key-value pairs ( https://redis.io and https://memcached.org/ ).
+	    - Document-oriented databases are a special form of key-value databases and use so-called documents as values for storing data ( https://www.mongodb.com/ and https://couchdb.apache.org/ ).
+	    - Graph databases store data in the form of graphs, where the nodes of the graph represent individual records and the edges represent the relationships between those records ( https://neo4j.com/ and https://www.arangodb.com/ )
+	    - Column-oriented databases store the data in columns, where the individual columns are not part of a table, but are managed separately ( https://cassandra.apache.org/ and https://hbase.apache.org )
 
 
   * #### Part_1 - using relational databases in Node.js
