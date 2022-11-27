@@ -43,5 +43,5 @@ const requestHandler = (request, response) => {
 const server = http.createServer(requestHandler);
 
 server.listen(PORT, HOST, () => {
-  console.log(`Web server running under http://${HOST}:${PORT}`);
+  console.log(`Server started at http://${HOST}:${PORT}`);
 });

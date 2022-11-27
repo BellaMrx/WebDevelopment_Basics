@@ -25,5 +25,5 @@ app.post('/process-form', (request, response) => {
 });
 
 const server = app.listen(PORT, () => {
-  console.log(`Web server running under http://${HOST}:${PORT}`);
+  console.log(`Server started at http://${HOST}:${PORT}`);
 });

@@ -23,5 +23,5 @@ const server = http.createServer(requestHandler);
 // start HTTP server
 server.listen(PORT, HOST, () => {
   // HTTP server started
-  console.log(`Web server running under http://${HOST}:${PORT}`);
+  console.log(`Server started at http://${HOST}:${PORT}`);
 });

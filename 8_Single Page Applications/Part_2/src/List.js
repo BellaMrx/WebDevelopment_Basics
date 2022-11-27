@@ -10,8 +10,8 @@ const initialContacts = [
   {
     id: 2,
     firstName: 'Erika',
-    lastName: 'Taylor',
-    email: 'erikataylor@example.com',
+    lastName: 'Miller',
+    email: 'erikamiller@example.com',
   },
 ];
 
