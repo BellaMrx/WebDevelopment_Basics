@@ -576,4 +576,17 @@
     - Docker images for all major Node.js versions: https://github.com/nodejs/docker-node , https://hub.docker.com/_/node
 
    
----------------------------------------------------------------------------------------------------------------  
+---------------------------------------------------------------------------------------------------------------
+ ## 16 - Websecurity
+
+
+   ### Basics 
+   - 
+
+
+  * #### Part_1 - Configure CORS for express (https://github.com/express/cors)
+    - can be easily installed via node.js with "npm install cors"
+  * #### Part_2 - Configure CSP in HTML
+  * #### Part_3 - Configure CSP for express
+    - possible with for example Helmet (https://helmetjs.github.io)
+    - to install Helmet just use node.js "npm install helmet" -> "node start.js".
