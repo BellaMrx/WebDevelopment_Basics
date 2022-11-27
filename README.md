@@ -19,6 +19,8 @@
    - 14 - Testing web applications (Testing)
    - 15 - Deploying and hosting web applications
    - 16 - Websecurity
+   - 17 - Organize and manage web projects
+   - 18 - Manage web projects
 
 
 ---------------------------------------------------------------------------------------------------------------
@@ -632,3 +634,59 @@
 
 
 ---------------------------------------------------------------------------------------------------------------
+ ## 17 - Organize and manage web projects
+
+
+  #### Git https://git-scm.com/
+  #### GitHub https://github.com/ 
+  #### GitLab https://gitlab.com/
+  #### GitHub Desktop https://desktop.github.com
+  #### SourceTree https://www.sourcetreeapp.com
+  #### Visual Studio Code https://code.visualstudio.com/
+
+
+  ![Preview](Images/gitcommands.PNG)
+
+
+---------------------------------------------------------------------------------------------------------------
+ ## 18 - Manage web projects
+
+
+   ### Basics
+   - Basically, a distinction is made between classic project management and agile project management. For both categories, there are different process models that describe exactly how project management is to be implemented in each case.
+   - Scrum is an iterative and incremental process model to be implemented in each case.
+   - Srcum defines different roles, events and artifacts.
+   - The following roles are defined:
+	    - The Pruduct Owner is responsible for the product release and communication with the Business Owner and stakeholders.
+	    - The development team consists not only of developers, but of all persons responsible for the implementation of the requirements, for example also designers or UX professionals.
+	    - The Scrum Master supports the correct use of Scrum and, if necessary, conveys the required knowledge to the other Scrum team members.
+   - The following events are defined:
+	    - Sprint Planning is used to plan the tasks (user stories, tasks, etc.) for the upcoming sprint.
+	    - In the sprint, the tasks are then implemented the development team.
+	    - In daily Scrum, the development team meets to exchange information about the current status and any obstacles or problems.
+   - The following artifacts are defined:
+	    - The Product Backlog contains a prioritized list of planned requirements for the software.
+	    - The Sprint Backlog contains the entries from the Product Backlog that are to be implemented in a Sprint.
+	    - The Product Increment designates a new state of the software that contains the requirements or new features implemented in a Sprint.
+
+
+
+   ##### Agile manifest https://agilemanifesto.org
+
+
+---------------------------------------------------------------------------------------------------------------
+
+   ### Free learning websites
+  - Google https://www.google.com/
+  - YouTube https://www.youtube.com/
+  - GitHub https://github.com/
+  - FreeCodeCamp https://www.freecodecamp.org/
+  - w3school https://www.w3schools.com/
+  - codewars https://www.codewars.com/
+  - code Academy https://www.codecademy.com/
+  - stack oveflow https://stackoverflow.com/
+  - mdn https://developer.mozilla.org/
+
+
+  Thanks for reading. I hope you enjoyed it. 
+  https://twitter.com/bella_mrx
