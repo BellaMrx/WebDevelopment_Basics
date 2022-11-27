@@ -594,18 +594,21 @@
 	  - Injection of malicious JavaScript code Cross-Site Scripting
     - Insecure Deserialization
 	  - Using Components with Known Vulnerabilities
-    - Insufficient logging and monitoring Insufficient Logging $ Monitoring
+    - Insufficient logging and monitoring Insufficient Logging & Monitoring
+
 
     #### Cryptography, SSL, TSL, HTTPS:
     * In symmetric cryptography, data is encrypted and decrypted using the same key.
     * In contrast, asymmetric cryptography encrypts data with one key and decrypts it with another key.
     * Asymmetric cryptography is used, for example, in SSL(Secure Sockets Layer), TLS(Transport Layer Security) and HTTPS(Hypertext Transfer Protocol Secure).
 
+
     #### SOP, CORS, CSP:
     * Via Same Origin Policy (SOP), it is specified that code from one source (domain) must not access content from another source (domain).
     * Cross-Origin Resource Sharing (CORS) allows you to relax the SOP by allowing access to resources from one domain to certain other domains.
     * Via Content Security Policy (CSP), you can further restrict the SOP and, for example, determine very finely which Java Script code is allowed to run on a web page and which is not.
     
+
     #### Authentication:
     * Authentication refers to verifying that a user is who they say they are.
     * Authorization refers to checking whether a user is allowed to perform a particular action.
