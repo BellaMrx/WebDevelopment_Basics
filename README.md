@@ -570,7 +570,6 @@
    - Using Docker, web applications, or applications in general, can be pegged so that they can be installed and run within the Docker runtime environment very easily.
    - Docker Compose can be used to configure and launch setups of multiple Docker images ( https://docs.docker.com/compose/ and https://github.com/docker/awesome-compose ).
    - Types deployment: FPS, SCP, Container Management
-      - FileZilla (https://filezilla.project.org), Cyberduck (https://cyberduck), ForkLift (https.//binarynights.com)
 
 
   * #### Part_1 - Package a web application with Docker
