@@ -588,15 +588,15 @@
    - OWASP stands for Open Web Application Security Project and refers to an organization of security experts concerned with the security of Web applications and Web services (https://owasp.org/).
    - The OWASP Top Ten is a list of the ten most frequently encountered security vulnerabilities at present:
 	    - Injection of malicious code "Injection".
-		  - Incorrect authentication "Broken Authentication
+	    - Incorrect authentication "Broken Authentication
 	    - Sensitive Data Exposure
 	    - Attacks via XML External Entities
 	    - Broken Access Control
-      - Security Misconfiguration
+	    - Security Misconfiguration
 	    - Injection of malicious JavaScript code Cross-Site Scripting
-      - Insecure Deserialization
+	    - Insecure Deserialization
 	    - Using Components with Known Vulnerabilities
-      - Insufficient logging and monitoring Insufficient Logging & Monitoring
+	    - Insufficient logging and monitoring Insufficient Logging & Monitoring
 
 
     Cryptography, SSL, TSL, HTTPS :
