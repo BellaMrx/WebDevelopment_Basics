@@ -1,7 +1,7 @@
 # WebDevelopment_Basics
 
- ### Basics Guide for Web developers 
-  This is a small overview of what you should know as a web developer.
+ ### Basics Guide for web developers 
+    This is a small overview of what you should know as a web developer.
 
   #### Contents:
    - 1 - HTML - structure web pages with HTML
