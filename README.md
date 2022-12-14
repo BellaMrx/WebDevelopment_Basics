@@ -1,6 +1,7 @@
 # WebDevelopment_Basics
 
- ### Basics Guide for Fullstack Developers
+ ### Basics Guide for Web developers 
+  This is a small overview of what you should know as a web developer.
 
   #### Contents:
    - 1 - HTML - structure web pages with HTML
