@@ -35,7 +35,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - There are many different HTML elements. Among the most important are headings, text paragraphs, lists, links, images, tables, and forms.
 
 
-### Use elements and attributes
+### 1.1. Use elements and attributes
 * a simple website
   - example --> *1_HTML/Part_1/index.html*
     ```
@@ -64,7 +64,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </body>
     ```
 
-### Lists
+### 1.2. Lists
 * ordered list
   - example --> *1_HTML/Part_3/index.html*
     ```
@@ -133,7 +133,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </body>
     ```
 
-### Links
+### 1.3. Links
 * use of external links
   - example --> *1_HTML/Part_7/index.html*
     ```
@@ -230,7 +230,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </body>
     ```
 
-### Images
+### 1.4. Images
 * embedding images
   - example --> *1_HTML/Part_10/index.html*
     ```
@@ -241,7 +241,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </body>
     ```
 
-### Captions
+### 1.5. Captions
 * use of captions + embedding images
   - example --> *1_HTML/Part_11/index.html*
     ```
@@ -256,7 +256,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </body>
     ```
 
-### Tables
+### 1.6. Tables
 * representation of users with the help of tables
   - example --> *1_HTML/Part_12/index.html*
     ```
@@ -432,7 +432,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </body>
     ```
 
-### Forms
+### 1.7. Forms
 * use of the different form elements
   - example --> *1_HTML/Part_16/index.html*
     ```
@@ -508,7 +508,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </body>
     ```
 
-### HTML Tags
+### 1.8. HTML Tags
 
 
  ![Preview](Images/html5_cheat_sheet_tags.png)
@@ -528,7 +528,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - In CSS there are several layout systems for arranging elements: Float layout, Flexbox layout, Grid layout.
 
 
-### Introduction
+### 2.1. Introduction
 * a simple CSS file
   - example --> *2_CSS/Part_1/style.css*
     ```
@@ -546,7 +546,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       }
     ```
 
-### Include CSS in HTML
+### 2.2. Include CSS in HTML
 * embed CSS file, external, inline, internal
   - example --> *2_CSS/Part_2/external.html*
   - example --> *2_CSS/Part_2/inline.html*
@@ -580,7 +580,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </body>
     ```
 
-### Texts
+### 2.3. Texts
 * format texts with CSS
   - example --> *2_CSS/Part_3/index.html*
     ```
@@ -607,7 +607,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       }
     ```
 
-### Lists
+### 2.4. Lists
 * format unordered lists with CSS
   - example --> *2_CSS/Part_4/index.html*
     ```
@@ -725,7 +725,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </article>
     ```
 
-### Tables
+### 2.5. Tables
 * design tables with CSS
   - example --> *2_CSS/Part_8/index.html*
     ```
@@ -754,7 +754,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
         }
     ```
 
-### Forms
+### 2.6. Forms
 * designing forms with float layout
   - example --> *2_CSS/Part_9/index.html*
     ```
@@ -849,7 +849,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - When an error occurs during the execution of a program, you can react to such errors: Using the keyword try you mark the statements that could potentially throw errors, using the keyword catch you define the statements that should be executed in case of an error.
   - With JavaScript you have the possibility to generate HTML code dynamically.
 
-### Introduction
+### 3.1. Introduction
 * JavaScript code that calls a function
   - example --> *3_JS/Part_1/script.js*
     ```
@@ -874,7 +874,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </body>
     ```
 
-### Use developer console
+### 3.2. Use developer console
 * output to the console via the "console" object
   - example --> *3_JS/Part_4/script.js*
     ```
@@ -891,7 +891,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       console.warn('Hello world'); // output a warning message
     ```
 
-### Define variables
+### 3.3. Define variables
 * declaration of variables with the "let" keyword
   - example --> *3_JS/Part_6/script.js*
     ```
@@ -903,14 +903,14 @@ Basics Guide for web developers. This is a small overview of what you should kno
       console.log(lastName);          // "Doe".
     ```
 
-### Define constant
+### 3.4. Define constant
 * declaration of a constant
   - example --> *3_JS/Part_7/script.js*
     ```
       const MAXIMUM = 5000;
     ```
 
-### Use data types
+### 3.5. Use data types
 * definition of different number variables
   - example --> *3_JS/Part_8/script.js*
     ```
@@ -936,7 +936,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       const isAdmin = false;
     ```
 
-### Control structures
+### 3.6. Control structures
 * example of a conditional statement including branching
   - example --> *3_JS/Part_11/script.js*
     ```
@@ -993,7 +993,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       testResultElement.src = 'img/' + icon;
     ```
 
-### Use loops
+### 3.7. Use loops
 * a simple "for" loop that outputs the numbers from 1 to 10
   - example --> *3_JS/Part_14/script.js*
     ```
@@ -1021,7 +1021,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       } while (i <= 10)     // condition
     ```
 
-### Functions and error handling
+### 3.8. Functions and error handling
 * creating a function using a function declaration
   - example --> *3_JS/Part_17/script.js*
     ```
@@ -1107,7 +1107,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       }
     ```
 
-### Objects and arrays
+### 3.9. Objects and arrays
 * creating an object via the objelt-literal notation
   - example --> *3_JS/Part_24/script.js*
     ```
@@ -1198,7 +1198,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - There are many different video and audio formats, but thanks to the HTML elements you can include several formats for one video or for one audio file.
 
 
-### Data formats
+### 5.1. Data formats
 * example of a CSV document
   - example --> *5_Webformats/Part_1/data.csv*
     ```
@@ -1233,7 +1233,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
 * example of XML schema
   - example --> *5_Webformats/Part_3/contacts.xsd*
 
-### JSON
+### 5.2. JSON
 * example of a JSON document
   - example --> *5_Webformats/Part_4/contacts.json*
     ```
@@ -1322,7 +1322,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
 * example of a JSON schema
   - example --> *5_Webformats/Part_7/contacts.schema.json*
 
-### Vector graphics with SVG format
+### 5.3. Vector graphics with SVG format
 * example of SVG document
   - example --> *5_Webformats/Part_8/graphic.svg*
     ```
@@ -1356,7 +1356,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </svg>
     ```
 
-### Audio and video formats
+### 5.4. Audio and video formats
 * embedding video files in HTML
   - example --> *5_Webformats/Part_9/index.html*
     ```
@@ -1395,34 +1395,63 @@ Basics Guide for web developers. This is a small overview of what you should kno
  ![Preview](Images/AudioVideoAttributes.png)
 
 
----------------------------------------------------------------------------------------------------------------
- ## 6 - Web APIs
+-------------------------------------------------------------------------------------------------------------
+
+## 6. Web APIs
+### Basics
+  - The DOM API allows programmatic access to the Document Object Model(DOM), a hierarchical tree structure that represents the object model for a web page.
+  - The individual components in this tree structure are called nodes, and there are several types of nodes. The most important are document nodes, element nodes, text nodes, and attribute nodes.
+  - The DOM API defines properties and methods that you can use to access or modify the DOM tree of a web page.
+  - For example, you can use the DOM API to add elements, delete elements, modify text, and add or delete attributes .
+  - Elements on a web page can be selected in various ways by: ID, CSS class, element name, name attribute, CSS selector.
+  - Starting from an element/node, the parent element/node, child elements/child nodes and sibling elements/sibling nodes can be selected via various properties.
+  - Via the property textContent they can access the text content of a node, via the property innerHTML they can access the HTML content of an element.
+  - You can create text nodes using the createTextNode() method, element nodes using createElement(), and attribute nodes using createAttribute().
+  - After creating an element, you must first add it to the DOM tree, using different methods: insertBefore(), appendChild(), replaceChild().
+  - Using the Fetch API, they can load data asynchronously from servers.
+  - Beyond that, there is a veritable wealth of web APIs to explore.
+
+### 6.1. Select elements
+* selection of all elements with the CSS class "even" and subsequent iteration over the elements
+  - example --> *6_Web APIs/Part_1/index.html*
+    ```
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tableRowsEven = document.getElementsByClassName('even');
+            if (tableRowsEven.length > 0) {
+                for (let i = 0; i < tableRowsEven.length; i++) {
+                    const tableRow = tableRowsEven.item(i);
+                    tableRow.style.backgroundColor = '#CCCCCC';
+                }
+            }
+        });
+      </script>
+    ```
+
+### 6.2. Change elements
+* create and add a text node
+  - example --> *6_Web APIs/Part_2*
+    ```
+      document.addEventListener('DOMContentLoaded', () => {
+          const element = document.getElementById('container');
+          const textNode = document.createTextNode('Hello World');
+          element.appendChild(textNode);
+          const childElement = document.createElement('div');
+          childElement.textContent = 'Goodbye World';
+          element.appendChild(childElement);
+      });
+    ```
+
+### 6.3. Dynamically create a table
+* create an object using the object literal notation
+  - example --> *6_Web APIs/Part_3*
+
+### 6.4. Load data asynchronously with Ajax and the Fetch API
+* load JSON data via Ajax and via Fetch API
+  - example --> *6_Web APIs/Part_4*
 
 
-   ### Basics
-   - The DOM API allows programmatic access to the Document Object Model(DOM), a hierarchical tree structure that represents the object model for a web page.
-   - The individual components in this tree structure are called nodes, and there are several types of nodes. The most important are document nodes, element nodes, text nodes, and attribute nodes.
-   - The DOM API defines properties and methods that you can use to access or modify the DOM tree of a web page.
-   - For example, you can use the DOM API to add elements, delete elements, modify text, and add or delete attributes .
-   - Elements on a web page can be selected in various ways by: ID, CSS class, element name, name attribute, CSS selector.
-   - Starting from an element/node, the parent element/node, child elements/child nodes and sibling elements/sibling nodes can be selected via various properties.
-   - Via the property textContent they can access the text content of a node, via the property innerHTML they can access the HTML content of an element.
-   - You can create text nodes using the createTextNode() method, element nodes using createElement(), and attribute nodes using createAttribute().
-   - After creating an element, you must first add it to the DOM tree, using different methods: insertBefore(), appendChild(), replaceChild().
-   - Using the Fetch API, they can load data asynchronously from servers.
-   - Beyond that, there is a veritable wealth of web APIs to explore.
-
-
-  * #### Part_1 - Select elements
-    - selection of all elements with the CSS class "even" and subsequent iteration over the elements
-  * #### Part_2 - Change elements
-    - create and add a text node
-  * #### Part_3 - Dynamically create a table
-    - create an object using the object literal notation
-  * #### Part_4 - Load data asynchronously with Ajax and the Fetch API
-    - load JSON data via Ajax and via Fetch API
-
-  ### JavaScript - HTML DOM Methods
+### 6.5. JavaScript - HTML DOM Methods
 
 
  ![Preview](Images/DOM_1.PNG)
@@ -1431,38 +1460,307 @@ Basics Guide for web developers. This is a small overview of what you should kno
  ![Preview](Images/DOM_2.PNG)
  
 
----------------------------------------------------------------------------------------------------------------
- ## 7 - Accessibility (ally) - Optimize websites for accessibility
+-------------------------------------------------------------------------------------------------------------
+ 
+## 7. Accessibility (ally) - Optimize websites for accessibility
+### Basics
+  - Web accessibility means that the content of websites is accessible and understandable for all users, especially for people with disabilities.
+  - The Web Content Accessibility Guidelines (WCAG) define guidelines that a web page must meet to be accessible.
+  - Where possible, you should use semantic HTML elements, for example for the definition of header, footer and navigation, etc.
+  - Where it is not possible or there is no standard HTML element for a particular UI component, you should define the semantics using ARIA (Accessible Rich Internet Applications).
 
 
-   ### Basics
-   - Web accessibility means that the content of websites is accessible and understandable for all users, especially for people with disabilities.
-   - The Web Content Accessibility Guidelines (WCAG) define guidelines that a web page must meet to be accessible.
-   - Where possible, you should use semantic HTML elements, for example for the definition of header, footer and navigation, etc.
-   - Where it is not possible or there is no standard HTML element for a particular UI component, you should define the semantics using ARIA (Accessible Rich Internet Applications).
+### 7.1. Semantically structure web pages
+* definition of structures with the help of the div element (no longer up-to-date)
+  - example --> *7_Ally/Part_1/index.html*
+    ```
+      <body>
+        <div id="header">
+          Header
+        </div>
+        <div id="nav">
+          Navigation
+        </div>
+        <div class="article">
+          Article
+          <div class="section">
+            Section
+          </div>
+          <div class="section">
+            another Section
+          </div>
+        </div>
+        <div class="aside">
+          Aside
+        </div>
+        <div id="footer">
+          Footer
+        </div>
+      </body>
+    ```
 
+* definition of structure with the help of the semantic elements for it
+  - example --> *7_Ally/Part_2/index.html*
+    ```
+      <body>
+        <header>
+          Header
+        </header>
+        <nav>
+          Navigation
+        </nav>
+        <article>
+          Article
+          <section>
+            Section
+          </section>
+          <section>
+            another Section
+          </section>
+        </article>
+        <aside>
+          Aside
+        </aside>
+        <footer>
+          Footer
+        </footer>
+      </body>
+    ```
 
-  * #### Part_1 - Semantically structure web pages
-    - definition of structures with the help of the div
-    element (no longer up-to-date)
-  * #### Part_2
-    - definition of structure with the help of the semantic elements for it
-  * #### Part_3 - Making forms accessible
-    - use of different form elements
-  * #### Part_4 - Making tables accessible
-    - definition of table description, table header, table body and table footer
-  * #### Part_5 
-    - definition of table headings that refer to table columns
-  * #### Part_6
-    - definition of table headings that refer to table columns
-  * #### Part_7
-    - definition of table headings that refer to table columns
-  * #### Part_8 - Define language for web pages
-    - definition of the language used for the web page and for a single HTML element
-  * #### Part_9 - Offer keyboard support
-    - definition of keyboard shortcuts and tab order for links and form elements
-  * #### Part_10 - use subtitles
-    - defining alternative subtitles for videos
+### 7.2. Making forms accessible
+* use of different form elements
+  - example --> *7_Ally/Part_3/form.html*
+    ```
+      <form action="/services/handle-form" method="POST">
+        <fieldset>
+          <legend>Personal data</legend>
+          <label>
+            First name:
+            <input type="text" name="firstname" size="20" maxlength="50" /> </label>
+          <br />
+          ...
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Questionaire</legend>
+          <p>
+            <label for="browser">
+              Which browser do you use?
+            </label>
+            <select id="browser" name="browser">
+              <option value="chrome">Google Chrome</option>
+              <option value="edge">Microsoft Edge</option>
+              <option value="firefox">Mozilla Firefox</option>
+              <option value="opera">Opera</option>
+              <option value="safari">Safari</option>
+            </select>
+          </p>
+          <p>
+            Do you like our website?
+            <br />
+            <label>
+              <input type="radio" name="feedback" value="yes" />
+              Yes
+            </label>
+            <label>
+              <input type="radio" name="feedback" value="no" />
+              No
+            </label>
+          </p>
+          <p>
+            <br />
+            <label for="improvements">
+              Do you have any suggestions for improvement?
+            </label>
+            <br />
+            <textarea id="improvements" rows="5" cols="50"> </textarea>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="newsletter" />
+              Would you like to subscribe to our newsletter?
+            </label>
+          </p>
+        </fieldset>
+        <input type="submit" value="Formular abschicken" />
+      </form>
+
+    ```
+
+### 7.3. Making tables accessible
+* definition of table description, table header, table body and table footer
+  - example --> *7_Ally/Part_4/table.html*
+    ```
+    <table>
+      <caption>Users</caption>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Albert</td>
+          <td>Einstein</td>
+          <td>Genius</td>
+      </tr>
+      <tr>
+          <td>Nikola</td>
+          <td>Tesla</td>
+          <td>Inventor</td>
+      </tr>
+      <tr>
+          <td>Elon</td>
+          <td>Musk</td>
+          <td>CEO of everything</td>
+      </tr>
+      <tr>
+          <td>Marie</td>
+          <td>Curie</td>
+          <td>Physicist</td>
+      </tr>
+      <tr>
+          <td>Katherine</td>
+          <td>Johnson</td>
+          <td>Mathematician</td>
+      </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Title</th>
+        </tr>
+      </tfoot>
+    </table>
+    ```
+
+* definition of table headings that refer to table columns
+  - example --> *7_Ally/Part_5/table.html*
+
+* definition of table headings that refer to table columns
+  - example --> *7_Ally/Part_6/table.html*
+
+* definition of table headings that refer to table columns
+  - example --> *7_Ally/Part_7/list.html*
+    ```
+      <body>
+        <h3 id="tree_label">
+          File explorer
+        </h3>
+        <ul role="tree" aria-labelledby="tree_label">
+          <li role="treeitem" aria-expanded="false"> <span>
+              My files
+            </span>
+            <ul role="group">
+              <li role="treeitem"> file1.pdf
+              </li>
+              <li role="treeitem">
+                file2.pdf
+              </li>
+              <li role="treeitem" aria-expanded="false">
+                <span>
+                  Documents
+                </span>
+                <ul role="group">
+                  <li role="treeitem"> file1.docx
+                  </li>
+                  <li role="treeitem">
+                    file2.docx
+                  </li>
+                  <li role="treeitem">
+                    file3.docx
+                  </li>
+                </ul>
+              </li>
+              <li role="treeitem" aria-expanded="false">
+                <span>
+                  Images
+                </span>
+                <ul role="group">
+                  <li role="treeitem"> cat.jpg
+                  </li>
+                  <li role="treeitem">
+                    dog.jpg
+                  </li>
+                  <li role="treeitem"> bird.jpg
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </body>
+    ```
+
+### 7.4. Define language for web pages
+* definition of the language used for the web page and for a single HTML element
+  - example --> *7_Ally/Part_8/index.html*
+    ```
+      <body>
+        This is an english website.
+        <p lang="de">Aber dieser Absatz hier ist auf Englisch geschrieben.</p>
+      </body>
+    ```
+
+### 7.5. Offer keyboard support
+* definition of keyboard shortcuts and tab order for links and form elements
+  - example --> *7_Ally/Part_9/index.html*
+    ```
+      <body>
+        <a href="https://www.facebook.com/" 
+          accesskey="r"
+          tabindex="1">
+          Go to Facebook here:
+        </a>
+
+        <form action="/api/process-form" method="post">
+          <label
+            for="name"
+            tabindex="2">
+            Name:
+          </label>
+          <input
+            type="text"
+            id="name"
+            accesskey="n"
+            tabindex="3">
+          <input
+            type="submit"
+            id="submitform"
+            accesskey="s"
+            tabindex="4"
+            value="Send">
+        </form>
+      </body>
+    ```
+
+### 7.6. use subtitles
+* defining alternative subtitles for videos
+  - example --> *7_Ally/Part_9/index.html*
+    ```
+      <body>
+        <video controls>
+          <source src="/videos/example.webm" type="video/webm" />
+          <source src="/videos/example.mp4" type="video/mp4" />
+          <track
+            src="/videos/subtitles-en.vtt"
+            label="English captions"
+            kind="captions" srclang="en"
+            default
+          >
+          <track
+            src="subtitles-de.vtt"
+            label="Deutsche Untertitel"
+            kind="captions"
+            srclang="de"
+          >
+          <p>This browser does not support videos.</p>
+        </video>
+      </body>
+    ```
 
 
 ---------------------------------------------------------------------------------------------------------------
