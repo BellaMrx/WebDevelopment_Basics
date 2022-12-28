@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<contacts xmlns="https://xml.webhandbuch.de"
+<contacts xmlns="https://xml.web_manual.com"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="https://xml.webhandbuch.de
-  https://www.webhandbuch.de/schema.xsd"
+  xsi:schemaLocation="https://xml.web_manual.com.
+  https://www.web_manual.com/schema.xsd"
 >
   <contact>
     <firstname>Max</firstname>

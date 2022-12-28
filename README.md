@@ -851,13 +851,13 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ### Introduction
 * JavaScript code that calls a function
-  - example --> *1_JS/Part_1/script.js*
+  - example --> *3_JS/Part_1/script.js*
     ```
       alert('Hello World');
     ```
 
 * embedding JavaScript in HTML
-  - example --> *1_JS/Part_2/index.html*
+  - example --> *3_JS/Part_2/index.html*
     ```
       <body>
         <script src="scripts/script.js"></script>
@@ -865,7 +865,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * a simple hint dialog generated via JavaScript (a simple information dialog generated via JavaScript only makes sense in exceptional cases: definitions of JavaScript directly in an HTML file)
-  - example --> *1_JS/Part_3/index.html*
+  - example --> *3_JS/Part_3/index.html*
     ```
       <body>
       <script>
@@ -876,13 +876,13 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ### Use developer console
 * output to the console via the "console" object
-  - example --> *1_JS/Part_4/script.js*
+  - example --> *3_JS/Part_4/script.js*
     ```
       console.log('Hello World');
     ```
 
 * using the "console" object
-  - example --> *1_JS/Part_5/script.js*
+  - example --> *3_JS/Part_5/script.js*
     ```
       console.log('Hello world'); // output a normal message
       console.debug('Hello world'); // output a debug message
@@ -893,7 +893,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ### Define variables
 * declaration of variables with the "let" keyword
-  - example --> *1_JS/Part_6/script.js*
+  - example --> *3_JS/Part_6/script.js*
     ```
       let firstName;                  // variable declaration
       firstName = 'John';             // Variable initialization
@@ -905,14 +905,14 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ### Define constant
 * declaration of a constant
-  - example --> *1_JS/Part_7/script.js*
+  - example --> *3_JS/Part_7/script.js*
     ```
       const MAXIMUM = 5000;
     ```
 
 ### Use data types
 * definition of different number variables
-  - example --> *1_JS/Part_8/script.js*
+  - example --> *3_JS/Part_8/script.js*
     ```
       const number1 = 5; // Definition of an integer number
       const number2 = 0.5; // Definition of a decimal number
@@ -921,7 +921,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * examples for the definition of strings
-  - example --> *1_JS/Part_9/script.js*
+  - example --> *3_JS/Part_9/script.js*
     ```
       const firstName = 'John';        // single quotes
       const lastName = "Doe";         // double quotes
@@ -930,7 +930,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * definition of boolean variables
-  - example --> *1_JS/Part_10/script.js*
+  - example --> *3_JS/Part_10/script.js*
     ```
       const isLoggedIn = true;
       const isAdmin = false;
@@ -938,7 +938,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ### Control structures
 * example of a conditional statement including branching
-  - example --> *1_JS/Part_11/script.js*
+  - example --> *3_JS/Part_11/script.js*
     ```
       let passwordTooShort = password.length < 10;
       let message = '';
@@ -951,7 +951,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * example of a branch with several paths
-  - example --> *1_JS/Part_12/script.js*
+  - example --> *3_JS/Part_12/script.js*
     ```
       let passwordTooShort = password.length < 10;
       let passwordTooLong = password.length > 50;
@@ -967,7 +967,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * use of the "switch" application
-  - example --> *1_JS/Part_13/script.js*
+  - example --> *3_JS/Part_13/script.js*
     ```
       const testResultElement = document.getElementById('testResult');
 
@@ -995,7 +995,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ### Use loops
 * a simple "for" loop that outputs the numbers from 1 to 10
-  - example --> *1_JS/Part_14/script.js*
+  - example --> *3_JS/Part_14/script.js*
     ```
       for (let i = 1; i <= 10; i++) {
         console.log(i);
@@ -1003,7 +1003,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * a simple "while" loop that outputs the numbers from 1 to 10
-  - example --> *1_JS/Part_15/script.js*
+  - example --> *3_JS/Part_15/script.js*
     ```
       let i = 1;            // Initialization
       while (i <= 10) {     // condition
@@ -1013,7 +1013,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * a simple "do-while" loop that outputs the numbers from 1 to 10
-  - example --> *1_JS/Part_16/script.js*
+  - example --> *3_JS/Part_16/script.js*
     ```
       let i = 1; do {       // Initialization
         console.log(i);     // statement
@@ -1023,7 +1023,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ### Functions and error handling
 * creating a function using a function declaration
-  - example --> *1_JS/Part_17/script.js*
+  - example --> *3_JS/Part_17/script.js*
     ```
       function printNumbersFrom1To10() {
         for (let i = 1; i <= 10; i++) {
@@ -1033,7 +1033,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * creating a function using a function expression
-  - example --> *1_JS/Part_18/script.js*
+  - example --> *3_JS/Part_18/script.js*
     ```
       const printNumbersFrom1To10 = function() {
         for (let i = 1; i <= 10; i++) {
@@ -1043,7 +1043,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * create a function using the Arrow function notation
-  - example --> *1_JS/Part_19/script.js*
+  - example --> *3_JS/Part_19/script.js*
     ```
       const printNumbersFrom1To10 = () => {
         for (let i = 1; i <= 10; i++) {
@@ -1053,7 +1053,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * call a function
-  - example --> *1_JS/Part_20/script.js*
+  - example --> *3_JS/Part_20/script.js*
     ```
       const printNumbersFrom1To10 = () => {
           for (let i = 1; i <= 10; i++) {
@@ -1064,7 +1064,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * use of function parameters
-  - example --> *1_JS/Part_21/script.js*
+  - example --> *3_JS/Part_21/script.js*
     ```
       function printNumbersFromXToY(x, y) {
           for (let i = x; i <= y; i++) {
@@ -1077,7 +1077,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
     
 * a function that returns a value
-  - example --> *1_JS/Part_22/script.js*
+  - example --> *3_JS/Part_22/script.js*
     ```
       function sum(x, y) {
           let result = x + y;
@@ -1088,7 +1088,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * example of the use of a "try-catch" block
-  - example --> *1_JS/Part_23/script.js*
+  - example --> *3_JS/Part_23/script.js*
     ```
       function checkPassword(password) {
           if (password.length < 10) {
@@ -1109,7 +1109,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ### Objects and arrays
 * creating an object via the objelt-literal notation
-  - example --> *1_JS/Part_24/script.js*
+  - example --> *3_JS/Part_24/script.js*
     ```
       const book = {
           title: 'Christmas is bad',
@@ -1128,7 +1128,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * create an array via the shorthand
-  - example --> *1_JS/Part_25/script.js*
+  - example --> *3_JS/Part_25/script.js*
     ```
       // create an array with specified values
       const names = ['Max', 'John', 'Peter'];
@@ -1149,7 +1149,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 * iteration over an array
-  - example --> *1_JS/Part_26/script.js*
+  - example --> *3_JS/Part_26/script.js*
     ```
       const colors = [];
       colors.push('red');
@@ -1168,60 +1168,226 @@ Basics Guide for web developers. This is a small overview of what you should kno
  ![Preview](Images/important_methods_console.PNG)
 
 
----------------------------------------------------------------------------------------------------------------
- ## 4 - Weblogs
-
-
-   ###  Basics
-   - HTTP, the Hypertext Transfer Protocol is a unidirectional client/server protocol where the HTTP client makes HTTP requests to the HTTP server and the server responds with an HTTP response.
-   - Using headers, it can pass additional meta-information to HTTP requests and HTTP responses.
-   - HTTP methods define what actions should be performed on the HTTP server.
-   - The status code of an HTTP response defines whether an HTTP request was successfully processed or not. 
-   - MIME types define the format of the data that is transferred via an HTTP request or an HTTP response.
-   - Polling and long polling are techniques by which a cleint polls data from the server at regular intervals. The communication is unidirectional from the client to the server.
-   - Server-sent events allow data to be actively sent from the server to the client. The communication is unidirectional from the server to the client.
-   - The WebSocket client can send data to the WebSocket server, but also the server can actively send data to the client - provided that the client has previously established a Web socket connection to the server. 
+-------------------------------------------------------------------------------------------------------------
+ 
+## 4. Weblogs
+###  Basics
+  - HTTP, the Hypertext Transfer Protocol is a unidirectional client/server protocol where the HTTP client makes HTTP requests to the HTTP server and the server responds with an HTTP response.
+  - Using headers, it can pass additional meta-information to HTTP requests and HTTP responses.
+  - HTTP methods define what actions should be performed on the HTTP server.
+  - The status code of an HTTP response defines whether an HTTP request was successfully processed or not. 
+  - MIME types define the format of the data that is transferred via an HTTP request or an HTTP response.
+  - Polling and long polling are techniques by which a cleint polls data from the server at regular intervals. The communication is unidirectional from the client to the server.
+  - Server-sent events allow data to be actively sent from the server to the client. The communication is unidirectional from the server to the client.
+  - The WebSocket client can send data to the WebSocket server, but also the server can actively send data to the client - provided that the client has previously established a Web socket connection to the server. 
 
 
  ![Preview](Images/Statuscodes.png)
 
 
----------------------------------------------------------------------------------------------------------------
- ##  5 - Webformats - use web formats
+-------------------------------------------------------------------------------------------------------------
+ 
+##  5. Webformats - use web formats
+### Basics
+  - CSV format is a very simple data format, suitable for defining records line by line and separated by commas.
+  - For the structuring of complex data, for example nested data, the XML and JSON data formats are suitable.
+  - XML and JSON are the two most important data exchange formats on the web.
+  - JSON has become somewhat more popular over XML in recent years because it is much leaner and much easier to process in JavaScript.
+  - For saving images and graphics you can use different formats: JPG, GIF, PNG, SVG, WebP.
+  - For embedding video and audio files, since HTML5 you can use the video and audio elements.
+  - There are many different video and audio formats, but thanks to the HTML elements you can include several formats for one video or for one audio file.
 
 
-   ### Basics
-   - CSV format is a very simple data format, suitable for defining records line by line and separated by commas.
-   - For the structuring of complex data, for example nested data, the XML and JSON data formats are suitable.
-   - XML and JSON are the two most important data exchange formats on the web.
-   - JSON has become somewhat more popular over XML in recent years because it is much leaner and much easier to process in JavaScript.
-   - For saving images and graphics you can use different formats: JPG, GIF, PNG, SVG, WebP.
-   - For embedding video and audio files, since HTML5 you can use the video and audio elements.
-   - There are many different video and audio formats, but thanks to the HTML elements you can include several formats for one video or for one audio file.
+### Data formats
+* example of a CSV document
+  - example --> *5_Webformats/Part_1/data.csv*
+    ```
+      firstname,lastname,phone,email
+      Max,Miller,01234567,max.miller@example.com
+      Paula,Taylor,01234567,paula.taylor@example.com
+      Peter,Smith,3456789,peter.smith@example.com
+    ```
 
+* example of XML document
+  - example --> *5_Webformats/Part_2/contacts.xml*
+    ```
+      <?xml version="1.0" encoding="UTF-8"?>
+      <contacts xmlns="https://xml.web_manual.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://xml.web_manual.com.
+        https://www.web_manual.com/schema.xsd">
+        <contact>
+          <firstname>Max</firstname>
+          <lastname>Miller</lastname>
+          <phone type="mobile">01234567</phone>
+          <email>max.miller@example.com</email>
+          <address>
+            <street>Sample Street</street>
+            <number>99</number>
+            <code>12345</code>
+            <city>Sampleville</city>
+          </address>
+        </contact>
+    ```
 
-  * #### Part_1 - Data formats
-    - example of a CSV document
-  * #### Part_2
-    - example of XML document
-  * #### Part_3
-    - example of XML schema
-  * #### Part_4 - JSON
-    - example of a JSON document
-  * #### Part_5
-    - parsing JSON in JavaScript
-  * #### Part_6
-    - JSON can be embedded directly within JavaScript code
-  * #### Part_7
-    - example of a JSON schema
-  * #### Part_8 - Vector graphics with SVG format
-    - example of SVG document
-  * #### Part_9 - Audio and video formats
-    - embedding video files in HTML
-  * #### Part_10
-    - embedding video files in HTML
-  * #### Part_11
-    - embedding audio files in HTML
+* example of XML schema
+  - example --> *5_Webformats/Part_3/contacts.xsd*
+
+### JSON
+* example of a JSON document
+  - example --> *5_Webformats/Part_4/contacts.json*
+    ```
+      {
+        "contacts": [
+          {
+            "firstname": "Max",
+            "lastname": "Miller",
+            "phone": {
+              "type": "mobile",
+              "number": "01234567"
+            },
+            "email": "max.miller@example.com",
+            "address": {
+              "street": "Sample Street",
+              "number": 99,
+              "code": 12345,
+              "city": "Sampleville"
+            }
+          }
+        ]
+      }
+    ```
+
+* parsing JSON in JavaScript
+  - example --> *5_Webformats/Part_5/contacts.js*
+    ```
+      const jsonString = `{
+	      "firstname": "Max",
+	      "lastname": "Miller",
+	      "phone": {
+	        "type": "mobile",
+	        "number": "01234567"
+	      },
+	      "email": "max.miller@example.com",
+	      "address": {
+	        "street": "Sample Street",
+	        "number": 99,
+	        "code": 12345,
+	        "city": "Sampleville"
+	      }
+        }`;  
+
+      const person = JSON.parse(jsonString);
+      console.log(person.firstname);      // "Max"
+      console.log(person.lastname);       // "Miller"
+      console.log(person.phone.type);     // "mobile"
+      console.log(person.phone.number);   // "01234567"
+      console.log(person.email);          // "max.miller@example.com"
+      console.log(person.address.street); // "Sample Street"
+      console.log(person.address.number); // 99
+      console.log(person.address.code);   // 12345
+      console.log(person.address.city);   // "Sampleville"
+    ```
+
+* JSON can be embedded directly within JavaScript code
+  - example --> *5_Webformats/Part_6/contacts.js*
+    ```
+      const person = {
+	      "firstname": "Max",
+	      "lastname": "Miller",
+	      "phone": {
+	        "type": "mobile",
+	        "number": "01234567"
+	      },
+	      "email": "max.miller@example.com",
+	        "address": {
+	        "street": "Sample Street",
+	        "number": 99,
+	        "code": 12345,
+	        "city": "Sampleville"
+	      }
+      };  
+
+      console.log(person.firstname);      // "Max"
+      console.log(person.lastname);       // "Miller"
+      console.log(person.phone.type);     // "mobile"
+      console.log(person.phone.number);   // "01234567"
+      console.log(person.email);          // "max.miller@example.com"
+      console.log(person.address.street); // "Sample Street"
+      console.log(person.address.number); // 99
+      console.log(person.address.code);   // 12345
+      console.log(person.address.city);   // "Sampleville"
+    ```
+
+* example of a JSON schema
+  - example --> *5_Webformats/Part_7/contacts.schema.json*
+
+### Vector graphics with SVG format
+* example of SVG document
+  - example --> *5_Webformats/Part_8/graphic.svg*
+    ```
+      <?xml version="1.0"?>
+      <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+        "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <g style="fill-opacity:0.8;">
+          <circle
+            cx="8cm"
+            cy="2cm"
+            r="100"
+            style="fill:red; stroke:black; stroke-width:0.2cm"
+            transform="translate(0,50)"
+          />
+          <circle
+            cx="8cm"
+            cy="2cm"
+            r="100"
+            style="fill:blue; stroke:black; stroke-width:0.2cm"
+            transform="translate(70,150)"
+          />
+          <circle
+            cx="8cm"
+            cy="2cm"
+            r="100"
+            style="fill:green; stroke:black; stroke-width:0.2cm"
+            transform="translate(-70,150)"
+          />
+        </g>
+      </svg>
+    ```
+
+### Audio and video formats
+* embedding video files in HTML
+  - example --> *5_Webformats/Part_9/index.html*
+    ```
+      <body>
+          <video controls height="360" width="640">
+              <source src="my-video.mp4" type="video/mp4">
+              <source src="my-video.webm" type="video/webm">
+              <source src="my-video.ogg" type="video/ogg">
+              <p>The browser you are using does not support HTML5 video</p>
+          </video>
+      </body>
+    ```
+
+* embedding video files in HTML
+  - example --> *5_Webformats/Part_10/index.html*
+    ```
+      <body>
+          <video controls src="my-video.mp4"></video>
+      </body>
+    ```
+
+* embedding audio files in HTML
+  - example --> *5_Webformats/Part_11/index.html*
+    ```
+      <body>
+          <audio controls>
+              <source src="my-audio.m4a" type="audio/x-aac" />
+              <source src="my-audio.mp3" type="audio/mpeg" />
+          </audio>
+      </body>
+    ```
 
 
  ![Preview](Images/ImageFormats.PNG)
