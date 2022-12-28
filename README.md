@@ -23,9 +23,8 @@ Basics Guide for web developers. This is a small overview of what you should kno
 18. Manage web projects
 
 
---------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 ## 1. HTML - structure web pages with HTML
-
 ###  Basics
   - HTML stands for Hypertext Markup Language and is a markup language that allows defining the structure and semantics of web pages using elements.
   - HTML elements have an opening and a closing tag
@@ -64,6 +63,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
         <a href="https://github.com/BellaMrx">Here you can find my Github account.</a>
       </body>
     ```
+    
 ### Lists
 * ordered list
   - example --> *1_HTML/Part_3/index.html*
@@ -431,6 +431,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </table>
       </body>
     ```
+
 ### Forms
 * use of the different form elements
   - example --> *1_HTML/Part_16/index.html*
