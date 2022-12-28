@@ -2060,7 +2060,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - The web framework express is one of the most popular web frameworks and facilitates the implementation of web servers.
 
 
-#### before you start please install Node.js, you can do that at [Download/Node.js](https://nodejs.org/en/download)
+#### before you start please install Node.js, you can do that at [Node.js](https://nodejs.org/en/download)
   - for macOS download the pkd file
   - for windows download the msi file
   - for linux a binary package is available start there in the directory bin/node file
@@ -2100,97 +2100,96 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
   - "Server is running on http://localhost:8000" open this in your browser
 
+#### if the installation of express was successful the folder node_module should have been created
 
  ![Preview](Images/nodeJSexpress.PNG)
 
-#### if the installation of express was successful the folder node_module should have been created
+
+------------------------------------------------------------------------------------------------------------
+## 12. Implementing web services 
+### Basics
+  - Web services make functionality of a server-side component available via the Web using an API.
+  - Web services use web standards such as HTTP, XML and JSON.
+  - In principle, web services can be implemented in different ways or using different technologies and concepts. Three of the best known are the SOAP protocol, the REST architectural style, and the GraphQL query language.
+  - SOAP-based webservics use XML as their data exchange format and tend to be classified as heavyweight compared to the other two technologies.
+  - The API of SOAP-based web services can be formally described by the Web Services Description Language (WSDL).
+  - REST-based web services are strongly oriented towards the possibilities already provided by HTTP.
+  - The actions that can be triggered in REST-based web services are predefined by the HTTP methods. The following HTTP methods have a special semantic meaning, which is comparable to CRUD operations from databases: POST requests (Create), GET requests (Read), PUT requests (Update), DELETE requests (Delete).
+  - REST-based web services use various formats as data exchange formats, most notably JSON and XML.
+  - REST based web services are expected to make up, the majority of web service implementations.
+  - If it is expected that the structure of the data provided by a web service will have to be adapted frequently to the client-side requirements, GraphQL-based web services are the right choice. With them, the client can define exactly the structure of the data as it needs it via a GraphQL query. 
+
+### 12.1. SOAP  (Simple Object Access Protocol)
+* example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
+  - example --> *12_Webservices/Part_1*
+
+### 12.2. REST (Representational State Transfer)
+* example for the resource https://www.alberteinstein.com/api/books/4
+  - example --> *12_Webservices/Part_2/book.json*
+
+* example for the resource https://www.alberteinstein.com/api/authors/1
+  - example --> *12_Webservices/Part_3/book.json*
 
 
----------------------------------------------------------------------------------------------------------------
- ## 12 - Implementing web services 
+* implement a REST-API (npm install express  -->  node start.js)
+  - example --> *12_Webservices/Part_4/start.js*
 
 
-   ### Basics
-   - Web services make functionality of a server-side component available via the Web using an API.
-   - Web services use web standards such as HTTP, XML and JSON.
-   - In principle, web services can be implemented in different ways or using different technologies and concepts. Three of the best known are the SOAP protocol, the REST architectural style, and the GraphQL query language.
-   - SOAP-based webservics use XML as their data exchange format and tend to be classified as heavyweight compared to the other two technologies.
-   - The API of SOAP-based web services can be formally described by the Web Services Description Language (WSDL).
-   - REST-based web services are strongly oriented towards the possibilities already provided by HTTP.
-   - The actions that can be triggered in REST-based web services are predefined by the HTTP methods. The following HTTP methods have a special semantic meaning, which is comparable to CRUD operations from databases: POST requests (Create), GET requests (Read), PUT requests (Update), DELETE requests (Delete).
-   - REST-based web services use various formats as data exchange formats, most notably JSON and XML.
-   - REST based web services are expected to make up, the majority of web service implementations.
-   - If it is expected that the structure of the data provided by a web service will have to be adapted frequently to the client-side requirements, GraphQL-based web services are the right choice. With them, the client can define exactly the structure of the data as it needs it via a GraphQL query. 
+#### Tip -> [Postman](https://postman.com/) - has a graphical interface instead of a command line
 
 
-  * #### Part_1 - SOAP  (Simple Object Access Protocol)
-    - example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
-  * #### Part_2 - REST (Representational State Transfer)
-    - example for the resource https://www.alberteinstein.com/api/books/4
-  * #### Part_3
-    - example for the resource https://www.alberteinstein.com/api/authors/1
-  * #### Part_4
-    - implement a REST-API (npm install express  -->  node start.js)
-
-  ##### Tip -> Postman https://postman.com/ (has a graphical interface instead of a command line)
-
-
----------------------------------------------------------------------------------------------------------------
- ## 13 - Store data in databases
-
-
-   ### Basics
-   - Basically, a distinction is made between relational databases and non-relational databases.
-   - Relational databases are called SQL (Structured Query Language) because of the query language used, while non-relational databases are called NoSQL databases, even if the latter is not quite correct, strictly speaking, because non-relational databases also use query languages that are very similar to SQL, at least in terms of syntax.
-   - In relational databases, data is stored in relations. 
-   - They have the possibility to communicate with databases via the SQL query language.
-   - In non-relational databases, the data is not stored in relations, but in a different way or in other data structures.
-   - Non-relational classes can be further classified:
-	    - Key-value databases use associative arrays as data structure and store the data in the form of key-value pairs ( https://redis.io and https://memcached.org/ ).
-	  	- Document-oriented databases are a special form of key-value databases and use so-called documents as values for storing data ( https://www.mongodb.com/ and https://couchdb.apache.org/ ).
-      - Graph databases store data in the form of graphs, where the nodes of the graph represent individual records and the edges represent the relationships between those records ( https://neo4j.com/ and https://www.arangodb.com/ )
-      - Column-oriented databases store the data in columns, where the individual columns are not part of a table, but are managed separately ( https://cassandra.apache.org/ and https://hbase.apache.org )
+------------------------------------------------------------------------------------------------------------
+## 13. Store data in databases
+### Basics
+  - Basically, a distinction is made between relational databases and non-relational databases.
+  - Relational databases are called SQL (Structured Query Language) because of the query language used, while non-relational databases are called NoSQL databases, even if the latter is not quite correct, strictly speaking, because non-relational databases also use query languages that are very similar to SQL, at least in terms of syntax.
+  - In relational databases, data is stored in relations. 
+  - They have the possibility to communicate with databases via the SQL query language.
+  - In non-relational databases, the data is not stored in relations, but in a different way or in other data structures.
+  - Non-relational classes can be further classified:
+	  - Key-value databases use associative arrays as data structure and store the data in the form of key-value pairs ( https://redis.io and https://memcached.org/ ).
+	  - Document-oriented databases are a special form of key-value databases and use so-called documents as values for storing data ( https://www.mongodb.com/ and https://couchdb.apache.org/ ).
+    - Graph databases store data in the form of graphs, where the nodes of the graph represent individual records and the edges represent the relationships between those records ( https://neo4j.com/ and https://www.arangodb.com/ )
+    - Column-oriented databases store the data in columns, where the individual columns are not part of a table, but are managed separately ( https://cassandra.apache.org/ and https://hbase.apache.org )
 
 
-  * #### Part_1 - using relational databases in Node.js
-    - for this example I use SQLite under Node.js with sqlite3 (https://www.npmjs.com/package/sqlite3)
-    - can be installed with the help of Node.js Package Manager using the command "npm install sqlite3".
-    - for starting the webservice again "node start.js".
+### 13.1. using relational databases in Node.js
+  - for this example I use SQLite under Node.js with sqlite3 (https://www.npmjs.com/package/sqlite3)
+  - can be installed with the help of Node.js Package Manager using the command "npm install sqlite3".
+  - for starting the webservice again "node start.js".
+  - example --> *13_Databases/Part_1*
+
+#### A good introduction to the commands supported by SQLite can be found, for example, on the SQLite homepage at [SQLite](https://sqlite.org/lang.html).
 
 
- ##### A good introduction to the commands supported by SQLite can be found, for example, on the SQLite homepage at https://sqlite.org/lang.html.
+------------------------------------------------------------------------------------------------------------
+## 14. Testing web applications (Testing)
+### Basics
+  - Automated tests help you produce more robust code that has a clean interface, is easier to test, and that you can safely optimize.
+  - There are several types of tests, of which the following are particularly relevant for web development:
+	  - Over component testsas they test individual components on code level for example classes or functions.
+	  - Over integration tests them the interaction of different components an application.
+	  - Over End-To-End-Tests they test an application from an end (Frontend) to the other end (Backend).
+	  - With performance tests, you test how an application behaves under high load (load tests) or extreme load (stress tests).
+  - In test-driven development, before implementing a new component, you first formulate in a test via assertion which requirements the new component must implement.
+  - An iteration consists with the test-driven development of the following five steps: Writing the test, executing the test, implementing the functionality, renewed execution of the tests, optimization/refactoring of the implementation.
+  - A single test consists of four phases:
+	  - In the Setup phase, initialization can be performed.
+	  - In the Exercise phase, the component under test is called or executed.
+	  - In the Verify phase, the actual results are compared with the expected results.
+	  - In the Teardown phase, cleanup tasks can be performed.
+  - With the help of special tools they can determine the test coverage, i.e. which part of the code is executed by the tests and which is not.
+  - With the help of test doubles they can replace or simulate external components on which a component under test depends, so-called DOCs (Dependent-On Components), during the test. There are different types of test doubles:
+	  - Test spies can be used to intercept indirect outputs of the component under test.
+	  - Test stubs can be used to simulate the indirect inputs of the component under test.
+	  - Mock objects can be used to check the indirect outputs of the component under test.
 
 
----------------------------------------------------------------------------------------------------------------
- ## 14 - Testing web applications (Testing)
-
-
-   ### Basics
-   - Automated tests help you produce more robust code that has a clean interface, is easier to test, and that you can safely optimize.
-   - There are several types of tests, of which the following are particularly relevant for web development:
-	    - Over component testsas they test individual components on code level for example classes or functions.
-	    - Over integration tests them the interaction of different components an application.
-	    - Over End-To-End-Tests they test an application from an end (Frontend) to the other end (Backend).
-	    - With performance tests, you test how an application behaves under high load (load tests) or extreme load (stress tests).
-   - In test-driven development, before implementing a new component, you first formulate in a test via assertion which requirements the new component must implement.
-   - An iteration consists with the test-driven development of the following five steps: Writing the test, executing the test, implementing the functionality, renewed execution of the tests, optimization/refactoring of the implementation.
-   - A single test consists of four phases:
-	    - In the Setup phase, initialization can be performed.
-	    - In the Exercise phase, the component under test is called or executed.
-	    - In the Verify phase, the actual results are compared with the expected results.
-	    - In the Teardown phase, cleanup tasks can be performed.
-   - With the help of special tools they can determine the test coverage, i.e. which part of the code is executed by the tests and which is not.
-   - With the help of test doubles they can replace or simulate external components on which a component under test depends, so-called DOCs (Dependent-On Components), during the test. There are different types of test doubles:
-	    - Test spies can be used to intercept indirect outputs of the component under test.
-	    - Test stubs can be used to simulate the indirect inputs of the component under test.
-	    - Mock objects can be used to check the indirect outputs of the component under test.
-
-
-  * #### Part_1 - Run automated test in JavaScript
-    - Unit testing in JavaScript
-    - for this example I use the test framework Jest ( https://jest.io/ ) to write unit tests for JavaScript
-    - to run jest just enter command "npx"(node.js) then "npx jest:" ( https://jestjs.io/docs/en/expect )
-
+### 14.1. Run automated test in JavaScript
+  - Unit testing in JavaScript
+  - for this example I use the test framework [Jest](https://jest.io/) to write unit tests for JavaScript
+  - to run jest just enter command "npx"(node.js) then "npx jest:" ( https://jestjs.io/docs/en/expect )
+  - example --> *14_Testing/Part_1*
 
 ---------------------------------------------------------------------------------------------------------------
  ## 15 - Deploying and hosting web applications
