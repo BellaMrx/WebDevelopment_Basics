@@ -2128,7 +2128,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - example --> *12_Webservices/Part_2/book.json*
 
 * example for the resource https://www.alberteinstein.com/api/authors/1
-  - example --> *12_Webservices/Part_3/book.json*
+  - example --> *12_Webservices/Part_3/author.json*
 
 
 * implement a REST-API (npm install express  -->  node start.js)
@@ -2220,16 +2220,16 @@ Basics Guide for web developers. This is a small overview of what you should kno
 Security vulnerabilities:
   - OWASP stands for Open Web Application Security Project and refers to an organization of security experts concerned with the security of Web applications and Web services (https://owasp.org/).
   - The OWASP Top Ten is a list of the ten most frequently encountered security vulnerabilities at present:
-	  - Injection of malicious code "Injection".
-	  - Incorrect authentication "Broken Authentication
-	  - Sensitive Data Exposure
-	  - Attacks via XML External Entities
-	  - Broken Access Control
-	  - Security Misconfiguration
-	  - Injection of malicious JavaScript code Cross-Site Scripting
-	  - Insecure Deserialization
+    - Injection of malicious code "Injection".
+    - Incorrect authentication "Broken Authentication
+    - Sensitive Data Exposure
+    - Attacks via XML External Entities
+    - Broken Access Control
+    - Security Misconfiguration
+    - Injection of malicious JavaScript code Cross-Site Scripting
+    - Insecure Deserialization
     - Using Components with Known Vulnerabilities
-	  - Insufficient logging and monitoring Insufficient Logging & Monitoring
+    - Insufficient logging and monitoring Insufficient Logging & Monitoring
 
 
 Cryptography, SSL, TSL, HTTPS :
@@ -2261,7 +2261,7 @@ Authentication:
   - example --> *16_Websecurity/Part_2*
 
 ### 16.3. Configure CSP for express
-  - possible with for example Helmet (https://helmetjs.github.io)
+  - possible with for example [Helmet](https://helmetjs.github.io)
   - to install Helmet just use node.js "npm install helmet" -> "node start.js"
   - example --> *16_Websecurity/Part_3*
 
@@ -2271,12 +2271,12 @@ Authentication:
 ------------------------------------------------------------------------------------------------------------
 ## 17. Organize and manage web projects
 
-### [Git](https://git-scm.com/)
-### [GitHub](https://github.com/)
-### [GitLab](https://gitlab.com/)
-### [GitHub Desktop](https://desktop.github.com)
-### [SourceTree](https://www.sourcetreeapp.com)
-### [Visual Studio Code](https://code.visualstudio.com/)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [GitLab](https://gitlab.com/)
+- [GitHub Desktop](https://desktop.github.com)
+- [SourceTree](https://www.sourcetreeapp.com)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 
   ![Preview](Images/gitcommands.PNG)
@@ -2320,4 +2320,4 @@ Authentication:
 
 
 #### Thanks for reading. I hope you enjoyed it. 
-#### On my Twitter account you can find more useful stuff about web development [@bella_mrx](https://twitter.com/bella_mrx).
+#### On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about web development.
