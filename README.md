@@ -530,7 +530,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ### Introduction
 * a simple CSS file
-  - example --> *2_CSS/Part_1/index.html*
+  - example --> *2_CSS/Part_1/style.css*
     ```
       body {
         font-family: Arial;
@@ -548,7 +548,9 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ### Include CSS in HTML
 * embed CSS file, external, inline, internal
-  - example --> *2_CSS/Part_2/index.html*
+  - example --> *2_CSS/Part_2/external.html*
+  - example --> *2_CSS/Part_2/inline.html*
+  - example --> *2_CSS/Part_2/internal.html*
   - internal:
     ```
         <head>
@@ -834,74 +836,331 @@ Basics Guide for web developers. This is a small overview of what you should kno
  ![Preview](Images/CSSpropertiesOfTheGridLayout.png)
 
 
----------------------------------------------------------------------------------------------------------------
- ## 3 - JavaScript (JS) - making websites interactive with JavaScript
+-------------------------------------------------------------------------------------------------------------
+## 3. JavaScript (JS) - making websites interactive with JavaScript
+###  Basics
+  - JavaScript can be included in a web page in several ways. However, you should get into the habit of managing JavaScript code in separate files.
+  - Variables can be defined in JavaScript using the let keyword, while constants can be defined using the const keyword.
+  - There are different data types in JavaScript: on the one hand, the standard primitive data types for numbers, strings, and Boolean values, as well as the special data types undefined and null, and on the other hand, objects.
+  - In JavaScript there are different types of operations available: arithmetic operators, operators for working with strings, logical operations for working with boolean values, bitwise operators for working with bits, operators for comparing values, special operators for type checking, among others.
+  - You can control the control flow of a JavaScript_program using conditional statements, branching, multiple branching, counting loops, and header-controlled and footer-controlled loops.
+  - You can define reusable program parts via functions. Functions can be called with arguments and return a return value.
+  - In JavaScript there are different types of errors: syntx errors, runtime errors, logical errors. 
+  - When an error occurs during the execution of a program, you can react to such errors: Using the keyword try you mark the statements that could potentially throw errors, using the keyword catch you define the statements that should be executed in case of an error.
+  - With JavaScript you have the possibility to generate HTML code dynamically.
 
+### Introduction
+* JavaScript code that calls a function
+  - example --> *1_JS/Part_1/script.js*
+    ```
+      alert('Hello World');
+    ```
 
-   ###  Basics
-   - JavaScript can be included in a web page in several ways. However, you should get into the habit of managing JavaScript code in separate files.
-   - Variables can be defined in JavaScript using the let keyword, while constants can be defined using the const keyword.
-   - There are different data types in JavaScript: on the one hand, the standard primitive data types for numbers, strings, and Boolean values, as well as the special data types undefined and null, and on the other hand, objects.
-   - In JavaScript there are different types of operations available: arithmetic operators, operators for working with strings, logical operations for working with boolean values, bitwise operators for working with bits, operators for comparing values, special operators for type checking, among others.
-   - You can control the control flow of a JavaScript_program using conditional statements, branching, multiple branching, counting loops, and header-controlled and footer-controlled loops.
-   - You can define reusable program parts via functions. Functions can be called with arguments and return a return value.
-   - In JavaScript there are different types of errors: syntx errors, runtime errors, logical errors. 
-   - When an error occurs during the execution of a program, you can react to such errors: Using the keyword try you mark the statements that could potentially throw errors, using the keyword catch you define the statements that should be executed in case of an error.
-   - With JavaScript you have the possibility to generate HTML code dynamically.
+* embedding JavaScript in HTML
+  - example --> *1_JS/Part_2/index.html*
+    ```
+      <body>
+        <script src="scripts/script.js"></script>
+      </body>
+    ```
 
+* a simple hint dialog generated via JavaScript (a simple information dialog generated via JavaScript only makes sense in exceptional cases: definitions of JavaScript directly in an HTML file)
+  - example --> *1_JS/Part_3/index.html*
+    ```
+      <body>
+      <script>
+         alert('Hello World');
+      </script>
+      </body>
+    ```
 
-  * #### Part_1 - Introduction
-    - JavaScript code that calls a function
-  * #### Part_2
-    - embedding JavaScript in HTML
-  * #### Part_3 
-    - a simple hint dialog generated via JavaScript (a simple information dialog generated via JavaScript only makes sense in exceptional cases: definitions of JavaScript directly in an HTML file)
-  * #### Part_4 - Use developer console
-    - output to the console via the "console" object
-  * #### Part_5
-    - using the "console" object
-  * #### Part_6 - Define variables
-    - declaration of variables with the "let" keyword
-  * #### Part_7 - Define constant
-    - declaration of a constant
-  * #### Part_8 - Use data types
-    - definition of different number variables
-  * #### Part_9
-    - examples for the definition of strings
-  * #### Part_10
-    - definition of boolean variables
-  * #### Part_11 - Control structures
-    - example of a conditional statement including branching
-  * #### Part_12
-    - example of a branch with several paths
-  * #### Part_13
-    - use of the "switch" application
-  * #### Part_14 - Use loops
-    - a simple "for" loop that outputs the numbers from 1 to 10
-  * #### Part_15
-    - a simple "while" loop that outputs the numbers from 1 to 10
-  * #### Part_16
-    - a simple "do-while" loop that outputs the numbers from 1 to 10
-  * #### Part_17 - Functions and error handling
-    - creating a function using a function declaration
-  * #### Part_18
-    - creating a function using a function expression
-  * #### Part_19
-    - create a function using the Arrow function notation
-  * #### Part_20
-    - call a function
-  * #### Part_21
-    - use of function parameters
-  * #### Part_22
-    - a function that returns a value
-  * #### Part_23
-    - example of the use of a "try-catch" block
-  * #### Part_24 - Objects and arrays
-    - creating an object via the objelt-literal notation
-  * #### Part_25
-    - create an array via the shorthand
-  * #### Part_26
-    - iteration over an array
+### Use developer console
+* output to the console via the "console" object
+  - example --> *1_JS/Part_4/script.js*
+    ```
+      console.log('Hello World');
+    ```
+
+* using the "console" object
+  - example --> *1_JS/Part_5/script.js*
+    ```
+      console.log('Hello world'); // output a normal message
+      console.debug('Hello world'); // output a debug message
+      console.error('Hello world'); // output an error message
+      console.info('Hello world'); // output an info message
+      console.warn('Hello world'); // output a warning message
+    ```
+
+### Define variables
+* declaration of variables with the "let" keyword
+  - example --> *1_JS/Part_6/script.js*
+    ```
+      let firstName;                  // variable declaration
+      firstName = 'John';             // Variable initialization
+      let lastName = 'Doe';           // combined variable declaration
+                                      // and variable initialization
+      console.log(firstName);         // "John"; // "John".
+      console.log(lastName);          // "Doe".
+    ```
+
+### Define constant
+* declaration of a constant
+  - example --> *1_JS/Part_7/script.js*
+    ```
+      const MAXIMUM = 5000;
+    ```
+
+### Use data types
+* definition of different number variables
+  - example --> *1_JS/Part_8/script.js*
+    ```
+      const number1 = 5; // Definition of an integer number
+      const number2 = 0.5; // Definition of a decimal number
+      const number3 = -22; // Definition of a negative integer
+      const number4 = -0.9; // Definition of a negative decimal number
+    ```
+
+* examples for the definition of strings
+  - example --> *1_JS/Part_9/script.js*
+    ```
+      const firstName = 'John';        // single quotes
+      const lastName = "Doe";         // double quotes
+      const age = "22";               // not a number, but a character string 
+      // const street = 'Milky Way";  // syntax error: mixed form
+    ```
+
+* definition of boolean variables
+  - example --> *1_JS/Part_10/script.js*
+    ```
+      const isLoggedIn = true;
+      const isAdmin = false;
+    ```
+
+### Control structures
+* example of a conditional statement including branching
+  - example --> *1_JS/Part_11/script.js*
+    ```
+      let passwordTooShort = password.length < 10;
+      let message = '';
+      if (passwordTooShort) {
+        message = 'The password must contain at least 10 characters.';
+      } else {
+        message = 'The password meets all conditions.';
+      }
+      document.getElementById('info').textContent = message;
+    ```
+
+* example of a branch with several paths
+  - example --> *1_JS/Part_12/script.js*
+    ```
+      let passwordTooShort = password.length < 10;
+      let passwordTooLong = password.length > 50;
+      let message = '';
+      if (passwordTooShort) {
+        message = 'The password must contain at least 10 characters.';
+      } else if (passwordTooLong) {
+        message = 'The password may contain a maximum of 50 characters.';
+      } else {
+        message = 'The password meets all conditions.';
+      }
+      document.getElementById('info').textContent = message;
+    ```
+
+* use of the "switch" application
+  - example --> *1_JS/Part_13/script.js*
+    ```
+      const testResultElement = document.getElementById('testResult');
+
+      const testResult = 0;
+      let icon = null;
+
+      switch (testResult) {
+        case 0:
+          icon = 'pass.png';
+          break;
+        case 1:
+          icon = 'info.png';
+          break;
+        case 2:
+          icon = 'warning.png';
+          break;
+        case 3:
+          icon = 'error.png';
+          break;
+        default:
+          icon = 'unknown.png';
+      }
+      testResultElement.src = 'img/' + icon;
+    ```
+
+### Use loops
+* a simple "for" loop that outputs the numbers from 1 to 10
+  - example --> *1_JS/Part_14/script.js*
+    ```
+      for (let i = 1; i <= 10; i++) {
+        console.log(i);
+      }
+    ```
+
+* a simple "while" loop that outputs the numbers from 1 to 10
+  - example --> *1_JS/Part_15/script.js*
+    ```
+      let i = 1;            // Initialization
+      while (i <= 10) {     // condition
+        console.log(i);     // statement
+        i++;                // increment
+      }
+    ```
+
+* a simple "do-while" loop that outputs the numbers from 1 to 10
+  - example --> *1_JS/Part_16/script.js*
+    ```
+      let i = 1; do {       // Initialization
+        console.log(i);     // statement
+        i++;                // increment
+      } while (i <= 10)     // condition
+    ```
+
+### Functions and error handling
+* creating a function using a function declaration
+  - example --> *1_JS/Part_17/script.js*
+    ```
+      function printNumbersFrom1To10() {
+        for (let i = 1; i <= 10; i++) {
+          console.log(i);
+        }
+      }
+    ```
+
+* creating a function using a function expression
+  - example --> *1_JS/Part_18/script.js*
+    ```
+      const printNumbersFrom1To10 = function() {
+        for (let i = 1; i <= 10; i++) {
+          console.log(i);
+        }
+      }
+    ```
+
+* create a function using the Arrow function notation
+  - example --> *1_JS/Part_19/script.js*
+    ```
+      const printNumbersFrom1To10 = () => {
+        for (let i = 1; i <= 10; i++) {
+          console.log(i);
+        }
+      }
+    ```
+
+* call a function
+  - example --> *1_JS/Part_20/script.js*
+    ```
+      const printNumbersFrom1To10 = () => {
+          for (let i = 1; i <= 10; i++) {
+            console.log(i);
+          }
+      }
+      printNumbersFrom1To10();        // calls the function
+    ```
+
+* use of function parameters
+  - example --> *1_JS/Part_21/script.js*
+    ```
+      function printNumbersFromXToY(x, y) {
+          for (let i = x; i <= y; i++) {
+              console.log(i);
+          }
+      }
+      printNumbersFromXToY(1, 10);
+      printNumbersFromXToY(1, 100);
+      printNumbersFromXToY(100, 1000);
+    ```
+    
+* a function that returns a value
+  - example --> *1_JS/Part_22/script.js*
+    ```
+      function sum(x, y) {
+          let result = x + y;
+          return result;
+      }
+      const z = sum(5, 6);
+      console.log(z);
+    ```
+
+* example of the use of a "try-catch" block
+  - example --> *1_JS/Part_23/script.js*
+    ```
+      function checkPassword(password) {
+          if (password.length < 10) {
+              throw new Error('The password must contain at least 10 characters.');
+          } else if (password.length > 50) {
+              throw new Error('The password must contain at least 10 characters.');
+          }
+          return 'The password meets all conditions';
+      }
+      try {
+          const password = 'simple';
+          checkPassword(password);
+          const message = 'The password meets all conditions.'; // ... further processing here ...
+      } catch (error) {
+          console.error(error)
+      }
+    ```
+
+### Objects and arrays
+* creating an object via the objelt-literal notation
+  - example --> *1_JS/Part_24/script.js*
+    ```
+      const book = {
+          title: 'Christmas is bad',
+          Preis: 109.90,
+          author: 'Grinch',
+          isbn: '111-1-1111-1111-1',
+          printDescription() {
+              console.log(`${this.author}: ${this.title}`);
+          }
+      }
+      console.log(book.title); // "Christmas is bad"
+      console.log(buch.preis); // 109,90
+      console.log(buch.autor); // "Grinch"
+      console.log(buch.isbn); // "111-1-1111-1111-1"
+      book.printDescription(); // "Grinch:Christmas is bad."
+    ```
+
+* create an array via the shorthand
+  - example --> *1_JS/Part_25/script.js*
+    ```
+      // create an array with specified values
+      const names = ['Max', 'John', 'Peter'];
+      // access to the elements of an array
+      console.log(names[0]); // "Max"
+      console.log(names[1]); // "John"
+      console.log(names[2]); // "Peter"
+      // create an empty array
+      const colors = [];
+      // adding values
+      colors.push('red');
+      colors.push('green');
+      colors.push('blue');
+      // adding values via index notation
+      colors[3] = 'orange';
+      colors[4] = 'yellow';
+      console.log(colors); // ["red", "green", "blue", "orange", "yellow"]
+    ```
+
+* iteration over an array
+  - example --> *1_JS/Part_26/script.js*
+    ```
+      const colors = [];
+      colors.push('red');
+      colors.push('green');
+      colors.push('blue');
+
+      // iteration over an array
+      for (let i = 0; i < colors.length; i++) {
+          console.log(colors[i]);
+      }
+    ```
 
 
  ![Preview](Images/ImportantArrayMethods.png)
