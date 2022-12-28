@@ -1,78 +1,513 @@
 # WebDevelopment_Basics
 
- ### Basics Guide for web developers 
-  This is a small overview of what you should know as a web developer.
+Basics Guide for web developers. This is a small overview of what you should know as a web developer.
 
-  #### Contents:
-   - 1 - HTML - structure web pages with HTML
-   - 2 - CSS - design websites with CSS
-   - 3 - JavaScript (JS) - making websites interactive with JavaScript
-   - 4 - Weblogs
-   - 5 - Webformats - use web formats
-   - 6 - Web APIs
-   - 7 - Accessibility (ally) - Optimize websites for accessibility
-   - 8 - Single Page Applications (SPA)
-   - 9 - Understanding web architectures
-   - 10 - Programming languages on the server side
-   - 11 - Use Javascript on the server side - Node.js
-   - 12 - Implementing web services 
-   - 13 - Store data in databases
-   - 14 - Testing web applications (Testing)
-   - 15 - Deploying and hosting web applications
-   - 16 - Websecurity
-   - 17 - Organize and manage web projects
-   - 18 - Manage web projects
-
-
----------------------------------------------------------------------------------------------------------------
- ## 1 - HTML - structure web pages with HTML
+## Contents:
+1. HTML - structure web pages with HTML
+2. CSS - design websites with CSS
+3. JavaScript (JS) - making websites interactive with JavaScript
+4. Weblogs
+5. Webformats - use web formats
+6. Web APIs
+7. Accessibility (ally) - Optimize websites for accessibility
+8. Single Page Applications (SPA)
+9. Understanding web architectures
+10. Programming languages on the server side
+11. Use Javascript on the server side - Node.js
+12. Implementing web services 
+13. Store data in databases
+14. Testing web applications (Testing)
+15. Deploying and hosting web applications
+16. Websecurity
+17. Organize and manage web projects
+18. Manage web projects
 
 
-   ###  Basics
-   - HTML stands for Hypertext Markup Language and is a markup language that allows defining the structure and semantics of web pages using elements.
-   - HTML elements have an opening and a closing tag
-   - Attributes can be used to pass additional information to an opening tag.
-   - Attributes consist of a name and an associated value.
-   - There are HTML elements that can contain other elements (child elements) and text, as well as empty elements that must not contain text or other elements.
-   - Web pages or HTML documents are simply text documents.
-   - There are many different HTML elements. Among the most important are headings, text paragraphs, lists, links, images, tables, and forms.
+--------------------------------------------------------------------------------------------------------------
+## 1. HTML - structure web pages with HTML
+
+###  Basics
+  - HTML stands for Hypertext Markup Language and is a markup language that allows defining the structure and semantics of web pages using elements.
+  - HTML elements have an opening and a closing tag
+  - Attributes can be used to pass additional information to an opening tag.
+  - Attributes consist of a name and an associated value.
+  - There are HTML elements that can contain other elements (child elements) and text, as well as empty elements that must not contain text or other elements.
+  - Web pages or HTML documents are simply text documents.
+  - There are many different HTML elements. Among the most important are headings, text paragraphs, lists, links, images, tables, and forms.
 
 
-  * #### Part_1 - Use elements and attributes
-    - a simple website
-  * #### Part_2 - Parameterize elements via attributes
-    - use attributes
-  * #### Part_3 - Lists
-    - ordered list
-  * #### Part_4
-    - unordered list
-  * #### Part_5
-    - definition list
-  * #### Part_6
-    - nested lists
-  * #### Part_7 - Links
-    - use of external links
-  * #### Part_8
-    - relative links (links on the same page)
-  * #### Part_9
-    - internal links (links on the same website)
-  * #### Part_10 - Images
-    - embedding images
-  * #### Part_11 - Captions
-    - use of captions
-  * #### Part_12 - Tables
-    - representation of users with the help of tables
-  * #### Part_13
-    - Definition of table header (thead), table body (tbody) table footer row (tfoot)
-  * #### Part_14
-    - combine columns
-  * #### Part_15
-    - merging rows
-  * #### Part_16 - Forms
-    - use of the different form elements
+### Use elements and attributes
+* a simple website
+  - example --> *1_HTML/Part_1/index.html*
+    ```
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>My first website</title>
+        </head>
+        <body>
+          <h1>This is a headline</h1>
+          <p>This is a paragraph.</p>
+          <h2>This is a subheading</h2>
+          <p>Here is another paragraph with <i>italicized text</i> and 
+        <b>bold text</b>.</p>
+          <h2>This is another subheading</h2>
+        </body>
+      </html>
+    ```
 
+* Parameterize elements via attributes
+  - use attributes
+  - example --> *1_HTML/Part_2/index.html*
+    ```
+      <body>
+        <a href="https://github.com/BellaMrx">Here you can find my Github account.</a>
+      </body>
+    ```
+### Lists
+* ordered list
+  - example --> *1_HTML/Part_3/index.html*
+    ```
+      <body>
+        <ol>
+          <li>First entry</li>
+          <li>Second entry</li>
+          <li>Third entry</li>
+          <li>Fourth entry</li>
+          <li>Fifth entry</li>
+        </ol>
+      </body>
+    ```
 
- ### HTML-Tags
+* unordered list
+  - example --> *1_HTML/Part_4/index.html*
+    ```
+      <body>
+        <ul>
+          <li>5 apples</li>
+          <li>bread</li>
+          <li>10 eggs</li>
+          <li>1 carton of milk</li>
+          <li>soap</li>
+        </ul>
+      </body>
+    ```
+
+* definition list
+  - example --> *1_HTML/Part_5/index.html*
+    ```
+      <body>
+        <dl>
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets</dd>
+          <dt>DOM</dt>
+          <dd>Document Object Model</dd>
+          <dt>HTML</dt>
+          <dd>Hypertext Markup Language</dd>
+        </dl>
+      </body>
+    ```
+
+* nested lists
+  - example --> *1_HTML/Part_6/index.html*
+    ```
+      <body>
+        <ul>
+          <li>
+              Fruit
+              <ul>
+                <li>Apples</li>
+                <li>Banana</li>
+                <li>Oranges</li>
+              </ul>
+          </li>
+          <li>
+              Vegetables
+              <ul>
+                <li>Tomatos</li>
+                <li>Carrots</li>
+                <li>Peppers</li>
+              </ul>
+          </li>
+        </ul>
+      </body>
+    ```
+
+### Links
+* use of external links
+  - example --> *1_HTML/Part_7/index.html*
+    ```
+      <body>
+        <p>
+          Important websites:
+        <ul>
+          <li>
+            <a href="https://www.google.com/">
+                Google
+            </a>
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/">
+                stackoverflow
+            </a>
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/">
+                w3school
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/">
+                youtube
+            </a>
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/">
+                Developer Mozilla
+            </a>
+          </li>
+        </ul>
+        </p>
+      </body>
+    ```
+
+* relative links (links on the same page)
+  - example --> *1_HTML/Part_8/index.html*
+    ```
+      <body>
+        <p>
+          Web page on this website
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="main.html">Main</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        </p>
+      </body>
+    ```
+
+* internal links (links on the same website)
+  - example --> *1_HTML/Part_9/index.html*
+    ```
+      <body>
+        <h1>My E-Book</h1>
+        <ul>
+          <li>
+            <a href="#chapter01">Chapter 1</a>
+          </li>
+          <li>
+            <a href="#chapter02">Chapter 2</a>
+          </li>
+          <li>
+            <a href="#chapter03">Chapter 3</a>
+          </li>
+          <li>
+            <a href="#chapter04">Chapter 4</a>
+          </li>
+          <li>
+            <a href="#chapter05">Chapter 5</a>
+          </li>
+        </ul>
+        <h2 id="chapter01"></h2>
+        <p>...</p>
+        <h2 id="chapter02"></h2>
+        <p>...</p>
+        <h2 id="chapter03"></h2>
+        <p>...</p>
+        <h2 id="chapter04"></h2>
+        <p>...</p>
+        <h2 id="chapter05"></h2>
+        <p>...</p>
+      </body>
+    ```
+
+### Images
+* embedding images
+  - example --> *1_HTML/Part_10/index.html*
+    ```
+      <body>
+        <p>
+          <img src="images/profile.png" alt="my profile picture" title="Bella Mrx" />
+        </p>
+      </body>
+    ```
+
+### Captions
+* use of captions + embedding images
+  - example --> *1_HTML/Part_11/index.html*
+    ```
+      <body>
+        <figure>
+          <img src="images/profile.png" alt="My profile picture" title="Bella Mrx" />
+          <br />
+          <figcaption>
+            Bella Mrx profile picture
+          </figcaption>
+        </figure>
+      </body>
+    ```
+
+### Tables
+* representation of users with the help of tables
+  - example --> *1_HTML/Part_12/index.html*
+    ```
+      <body>
+        <h1>Users</h1>
+        <table>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Title</th>
+          </tr>
+          <tr>
+            <td>Albert</td>
+            <td>Einstein</td>
+            <td>Genius</td>
+          </tr>
+          <tr>
+            <td>Nikola</td>
+            <td>Tesla</td>
+            <td>Inventor</td>
+          </tr>
+          <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>CEO of everything</td>
+          </tr>
+          <tr>
+            <td>Marie</td>
+            <td>Curie</td>
+            <td>Physicist</td>
+          </tr>
+          <tr>
+            <td>Katherine</td>
+            <td>Johnson</td>
+            <td>Mathematician</td>
+          </tr>
+        </table>
+      </body>
+    ```
+
+* Definition of table header (thead), table body (tbody) table footer row (tfoot)
+  - example --> *1_HTML/Part_13/index.html*
+    ```
+      <body>
+        <h1>Users</h1>
+        <table>
+          <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Albert</td>
+                <td>Einstein</td>
+                <td>Genius</td>
+            </tr>
+            <tr>
+                <td>Nikola</td>
+                <td>Tesla</td>
+                <td>Inventor</td>
+            </tr>
+            <tr>
+                <td>Marie</td>
+                <td>Curie</td>
+                <td>Physicist</td>
+            </tr>
+            <tr>
+                <td>Katherine</td>
+                <td>Johnson</td>
+                <td>Mathematician</td>
+            </tr>
+            <tr>
+                <td>Elon</td>
+                <td>Musk</td>
+                <td>CEO of everything</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Title</th>
+            </tr>
+          </tfoot>
+        </table>
+      </body>
+    ```
+
+* combine columns
+  - example --> *1_HTML/Part_14/index.html*
+    ```
+      <body>
+        <table>
+          <tr>
+            <th></th>
+            <th>8:00</th>
+            <th>9:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+          </tr>
+          <tr>
+            <th>Monday</th>
+            <td colspan="2">Dentist</td>
+            <td>Telephone conference</td>
+            <td>Customer meeting</td>
+            <td>Lunch</td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td>Car repair shop</td>
+            <td colspan="3">Shopping</td>
+            <td>Lunch</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td colspan="5">Vacation</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td colspan="5">Vacation</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td colspan="5">Vacation</td>
+          </tr>
+        </table>
+      </body>
+    ```
+
+* merging rows
+  - example --> *1_HTML/Part_15/index.html*
+    ```
+      <body>
+        <table>
+          <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+          <tr>
+            <th>8:00</th>
+            <td rowspan="2">Dentist</td>
+            <td>Car repair shop</td>
+            <td rowspan="5">Vacation</td>
+            <td rowspan="5">Vacation</td>
+            <td rowspan="5">Vacation</td>
+          </tr>
+          <tr>
+            <th>9:00</th>
+            <td rowspan="3">Shopping</td>
+          </tr>
+          <tr>
+            <th>10:00</th>
+            <td>Teleconference</td>
+          </tr>
+          <tr>
+            <th>11:00</th>
+            <td>Customer meeting</td>
+          </tr>
+          <tr>
+            <th>12:00</th>
+            <td>Lunch</td>
+            <td>Lunch</td>
+          </tr>
+        </table>
+      </body>
+    ```
+### Forms
+* use of the different form elements
+  - example --> *1_HTML/Part_16/index.html*
+    ```
+      <body>
+        <form action="/services/handle-form" method="POST">
+          <fieldset>
+            <legend>Personal data</legend>
+            <label>
+                First name:
+                <input type="text" name="firstname" size="20" maxlength="50" />
+            </label>
+            <br />
+            <label>
+                Last name:
+                <input type="text" name="lastname" size="30" maxlength="70" />
+            </label>
+            <br />
+            <label>
+                E-mail:
+                <input type="email" name="email" size="30" maxlength="70" />
+            </label>
+            <br />
+            <label>
+                Password:
+                <input type="password" name="password" size="20" maxlength="30" />
+            </label>
+            <br />
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Questionaire</legend>
+            <p>
+                <label for="browser">
+                    Which browser do you use?
+                </label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Google Chrome</option>
+                    <option value="edge">Microsoft Edge</option>
+                    <option value="firefox">Mozilla Firefox</option>
+                    <option value="opera">Opera</option>
+                    <option value="safari">Safari</option>
+                </select>
+            </p>
+            <p>
+                Do you like our website?
+                <br />
+                <label>
+                    <input type="radio" name="feedback" value="yes" />
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="feedback" value="no" />
+                    No
+                </label>
+            </p>
+            <p>
+                <br />
+                <label for="improvements">
+                    Do you have any suggestions for improvement?
+                </label>
+                <br />
+                <textarea id="improvements" rows="5" cols="50"> </textarea>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="newsletter" />
+                    Would you like to subscribe to our newsletter?
+                </label>
+            </p>
+          </fieldset>
+          <input type="submit" value="Submit form" />
+        </form>
+      </body>
+    ```
+
+### HTML-Tags
 
 
  ![Preview](Images/html5_cheat_sheet_tags.png)
@@ -688,5 +1123,5 @@
   - mdn https://developer.mozilla.org/
 
 
-  Thanks for reading. I hope you enjoyed it. 
-  https://twitter.com/bella_mrx
+  #### Thanks for reading. I hope you enjoyed it. 
+  #### On my Twitter account you can find more useful material about web development
