@@ -1763,85 +1763,283 @@ Basics Guide for web developers. This is a small overview of what you should kno
     ```
 
 
----------------------------------------------------------------------------------------------------------------
- ## 8 - Single Page Applications (SPA)
+-------------------------------------------------------------------------------------------------------------
+ 
+## 8. Single Page Applications (SPA)
+### Basics
+  - React is a library with a focus on user interface implementations and is complemented by a very rich ecosystem of third-party packages.
+  - You can either initilize a React app yourself, or use the Create React app project to do so.
+  - A React application consists of a tree of components.
+  - React uses JSX, a syntax extension for JavaScript, to build components. It distinguishes between elements, which are translated directly into HTML elements, and components, which you use to model the structure of your application.
+  - There are two types of components: the older class components, which have lost much of their importance in the meantime, and the function components, which have established themselves as a quasi-standard.
+  - A component can administer its own state. A change to this state causes the component to be redrawn. The state is managed with the help of the useState function.
+  - The lifecycle with the mount, update and unmount phases is mapped using the useEffect function.
+  - Child components receive information through attributes called props. A prop can be a string as well as an object or a function.
+  - Using functions as props, child components can communicate with their parent components.
+  - React provides predefined props, such as onclick, for event handling, where they can register their callback functions.
+  - The context API allows you to break out of the classic data flow from parent to child components and make values available to all child nodes.
+  - React Router gives you a way to navigate within a React application without completely reloading the page.
 
 
-   ### Basics
-   - React is a library with a focus on user interface implementations and is complemented by a very rich ecosystem of third-party packages.
-   - You can either initilize a React app yourself, or use the Create React app project to do so.
-   - A React application consists of a tree of components.
-   - React uses JSX, a syntax extension for JavaScript, to build components. It distinguishes between elements, which are translated directly into HTML elements, and components, which you use to model the structure of your application.
-   - There are two types of components: the older class components, which have lost much of their importance in the meantime, and the function components, which have established themselves as a quasi-standard.
-   - A component can administer its own state. A change to this state causes the component to be redrawn. The state is managed with the help of the useState function.
-   - The lifecycle with the mount, update and unmount phases is mapped using the useEffect function.
-   - Child components receive information through attributes called props. A prop can be a string as well as an object or a function.
-   - Using functions as props, child components can communicate with their parent components.
-   - React provides predefined props, such as onclick, for event handling, where they can register their callback functions.
-   - The context API allows you to break out of the classic data flow from parent to child components and make values available to all child nodes.
-   - React Router gives you a way to navigate within a React application without completely reloading the page.
+### 8.1. Structure of the application
+  - [Create React App](https://create-react-app.dev/docs/getting-started)
+  - [React](https://reactjs.org)
+  - example --> *8_Single Page Applications/Part_1*
 
+### 8.2. Local state of a component
+* local state in the list component
+  - example --> *8_Single Page Applications/Part_2/src/List.js*
+    ```
+      import { useState } from 'react';
 
-  * #### Part_1 - Structure of the application
-    - create react app https://create-react-app.dev/docs/getting-started  /  https://reactjs.org
-  * #### Part_2 - Local state of a component
-    - local state in the list component
-  * #### Part_3 - The life cycle of a component
-    - server communication in the list component (src/List.js)
-  * #### Part_4 - styling of components
-    - inline styling in react components
-  * #### Part_5 - CSS classes and external stylessheets
-    - integration of the stylessheets (src/List.js)
-  * #### Part_6 - component hierarchy
-    - inclusion of the listItem component (src/List.js)
-  * #### Part_7 - Inverse data flow
-    - embedding the delete routine in the ListItem component (src/ListItem.js)
-  * #### Part_8 - Forms
-    - the form component for creating new records (src/Form.js)
-  * #### Part_9 - Context API
-    - adapting the list component to the context (src/List.js)
-  * #### Part_10 - Routing
-    - routine definitions in the app component (src/App.js)
+      const initialContacts = [
+        {
+          id: 1,
+          firstName: 'Max',
+          lastName: 'Miller',
+          email: 'maxmiller@example.com',
+        },
+        {
+          id: 2,
+          firstName: 'Erika',
+          lastName: 'Miller',
+          email: 'erikamiller@example.com',
+        },
+      ];
+
+      function List() {
+        const [contacts, setContacts] = useState(initialContacts);
+        return (
+          <table>...</table>
+        );
+      }
+
+      export default List;
+    ```
+
+### 8.3. The life cycle of a component
+* server communication in the list component
+  - example --> *8_Single Page Applications/Part_3/src/List.js*
+    ```
+      import { useState, useEffect } from 'react';
+
+      function List() {
+        const [contacts, setContacts] = useState([]);
+
+        useEffect(() => {
+          fetch('http://localhost:8001/api/contacts')
+            .then((response) => response.json())
+            .then((data) => setContacts(data));
+        }, []);
+
+        return (
+          <table>...</table>
+        );
+      }
+
+      export default List;
+    ```
+
+### 8.4. styling of components
+* inline styling in react components
+  - example --> *8_Single Page Applications/Part_4/src/List.js*
+    ```
+      function List() {
+        ...
+
+        return (
+          <>
+            <h1 style={{ textDecoration: 'underline' }}>Contact list</h1>
+            <table>...</table>
+          </>
+        );
+      }
+
+      export default List;
+    ```
+
+### 8.5. CSS classes and external stylessheets
+* integration of the stylessheets
+  - example --> *8_Single Page Applications/Part_5/src/List.js*
+    ```
+      import { useState, useEffect } from 'react';
+      import './List.css';
+
+      function List() {
+        ...
+
+        return (
+          <>
+            <h1 style={{ textDecoration: 'underline' }}>Contact list</h1>
+            <table className="contactTable">
+              ...
+            </table>
+          </>
+        );
+      }
+
+      export default List;
+    ```
+
+### 8.6. component hierarchy
+* inclusion of the listItem component
+  - example --> *8_Single Page Applications/Part_6/src/List.js*
+    ```
+      import ListItem from './ListItem';
+
+      function List() {
+        ...
+
+        return (
+          <>
+            <h1 style={{ textDecoration: 'underline' }}>Contact list</h1>
+            <table className="contactTable">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>First name</th>
+                  <th>Last name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                {contacts.map((contact) => (
+                  <ListItem key={contact.id} contact={contact} />
+                ))}
+              </tbody>
+            </table>
+          </>
+        );
+      }
+
+      export default List;
+    ```
+
+### 8.7. Inverse data flow
+* embedding the delete routine in the ListItem component
+  - example --> *8_Single Page Applications/Part_7/src/ListItem.js*
+    ```
+      function ListItem({ contact, onDelete }) {
+        return (
+          <tr>
+            <td>{contact.id}</td>
+            <td>{contact.firstName}</td>
+            <td>{contact.lastName}</td>
+            <td>{contact.email}</td>
+            <td>
+              <button onClick={() => onDelete(contact)}>delete</button>
+            </td>
+          </tr>
+        );
+      }
+
+      export default ListItem;
+    ```
+
+### 8.8. Forms
+* the form component for creating new records
+  - example --> *8_Single Page Applications/Part_8/src/Form.js*
+
+### 8.9. Context API
+* adapting the list component to the context
+  - example --> *8_Single Page Applications/Part_9/src/List.js*
+    ```
+      import { useEffect, useContext } from 'react';
+      import { ContactContext } from './ContactContext';
+      import Form from './Form';
+      import './List.css';
+      import ListItem from './ListItem';
+
+      function List() {
+        const [contacts, setContacts] = useContext(ContactContext);
+
+        useEffect(() => { ... }, []);
+
+        function handleDelete(contact) {...}
+
+        return (
+          <>
+            <h1 style={{ textDecoration: 'underline' }}>Contact list</h1>
+            <table className="contactTable">
+              ...
+            </table>
+          </>
+        );
+      }
+
+      export default List;
+    ```
+
+### 8.10. Routing
+* routine definitions in the app component
+  - example --> *8_Single Page Applications/Part_9/src/App.js*
+    ```
+      import {
+        BrowserRouter as Router,
+        Switch,
+        Route,
+        Redirect,
+      } from 'react-router-dom';
+      import { ContactProvider } from './ContactContext';
+      import List from './List';
+      import Form from './Form';
+
+      function App() {
+        return (
+          <ContactProvider>
+            <Router>
+              <Switch>
+                <Route path="/list">
+                  <List />
+                </Route>
+                <Route path="/form">
+                  <Form />
+                </Route>
+                <Route path="/" exact>
+                  <Redirect to="/list" />
+                </Route>
+              </Switch>
+            </Router>
+          </ContactProvider>
+        );
+      }
+    ```
   
-
----------------------------------------------------------------------------------------------------------------
- ## 9 - Understanding web architectures
-
-
-   ### Basics
-   - The architecture of software is about how to break down or divide the software into smaller components and how to organize the interaction of these components.
-   - A client-server architecture divides an application into two parts: the client and the server are connected via a network. Because this architecture consists of two layers, it is also called a two-tier architecture.
-   - In an N-tier architecture, the server layer is divided into further layers: a data tier and the logic tier, which contains the application logic or business logic.
-   - In monolithic architecture, an application consists of a single unit that contains all the code.
-   - In service-oriented architecture (SOA), the application is divided into smaller reusable services.
-   - In microservice architecture, the application is divided into even smaller services.
-   - In component-based architecture, the front end of an application is divided into individual reusable UI components.
-   - Mircofrontends architecture divides the frontend of an application into individual features.
-   - The messaging architecture ensures that individual components of an application do not communicate with each other directly, but via a message broker or message bus.
-   - In the web service architecture, services are made available via the web. Web protocols are used for communication and web formats for data exchange.
-   - MV* architectures are used in the front end of an application and divide the responsibility into model, view and a component responsible for communication: Controller(MVC), Presenter(MVP), and View Model(MVVM). 
-
----------------------------------------------------------------------------------------------------------------
- ## 10 - Programming languages on the server side
+------------------------------------------------------------------------------------------------------------
+## 9. Understanding web architectures
+### Basics
+  - The architecture of software is about how to break down or divide the software into smaller components and how to organize the interaction of these components.
+  - A client-server architecture divides an application into two parts: the client and the server are connected via a network. Because this architecture consists of two layers, it is also called a two-tier architecture.
+  - In an N-tier architecture, the server layer is divided into further layers: a data tier and the logic tier, which contains the application logic or business logic.
+  - In monolithic architecture, an application consists of a single unit that contains all the code.
+  - In service-oriented architecture (SOA), the application is divided into smaller reusable services.
+  - In microservice architecture, the application is divided into even smaller services.
+  - In component-based architecture, the front end of an application is divided into individual reusable UI components.
+  - Mircofrontends architecture divides the frontend of an application into individual features.
+  - The messaging architecture ensures that individual components of an application do not communicate with each other directly, but via a message broker or message bus.
+  - In the web service architecture, services are made available via the web. Web protocols are used for communication and web formats for data exchange.
+  - MV* architectures are used in the front end of an application and divide the responsibility into model, view and a component responsible for communication: Controller(MVC), Presenter(MVP), and View Model(MVVM). 
 
 
-   ### Basics
-   - Programming languages can be classified into several categories.
-   - Subdivision according to degree of abstraction:
-	 - Higher level programming languages abstract very far from the machine code the computer understands.
-	 - Assembly languages abstract less strongly, are however for developers usually not so simple to understand as higher programming languages.
-   - Division into compiled and interpreted languages:
-	 - In compiled programming languages, a computer translates the source code into machine code.
-	 - In interpreted programming languages, an interpreter interprets the source code and executes it.
-   - Subdivision by programming paradigm:
-	 - In imperative programming languages, a developer defines exactly how a program works.
-	 - With declarative programming languages, one defines what a program should do.
-	 - Subgroups of the imperative programming paradigm include structured programming, procedural programming, modular programming, and object-oriented programming.
-	 - Subgroups of the declarative programming paradigm include logical programming and functional programming.
-   - Some languages support multiple programming paradigms. For example, in JavaScript it is possible to program object-oriented and functional.
-   - Object-oriented programming focuses on objects. Object-oriented languages can also be divided into class-based and classless, depending on whether the object orientation is based on classes or objects.
-   - Functional programming focuses on functions. Here, functions are treated like objects and can be assigned to variables like these, used as parameters for other functions or as their return value.
-   - Developers are faced with a real variety of languages when choosing the right programming language. 
+------------------------------------------------------------------------------------------------------------
+## 10. Programming languages on the server side
+### Basics
+  - Programming languages can be classified into several categories.
+  - Subdivision according to degree of abstraction:
+  - Higher level programming languages abstract very far from the machine code the computer understands.
+  - Assembly languages abstract less strongly, are however for developers usually not so simple to understand as higher programming languages.
+  - Division into compiled and interpreted languages:
+  - In compiled programming languages, a computer translates the source code into machine code.
+  - In interpreted programming languages, an interpreter interprets the source code and executes it.
+  - Subdivision by programming paradigm:
+  - In imperative programming languages, a developer defines exactly how a program works.
+  - With declarative programming languages, one defines what a program should do.
+  - Subgroups of the imperative programming paradigm include structured programming, procedural programming, modular programming, and object-oriented programming.
+  - Subgroups of the declarative programming paradigm include logical programming and functional programming.
+  - Some languages support multiple programming paradigms. For example, in JavaScript it is possible to program object-oriented and functional.
+  - Object-oriented programming focuses on objects. Object-oriented languages can also be divided into class-based and classless, depending on whether the object orientation is based on classes or objects.
+  - Functional programming focuses on functions. Here, functions are treated like objects and can be assigned to variables like these, used as parameters for other functions or as their return value.
+  - Developers are faced with a real variety of languages when choosing the right programming language. 
 
 
  ![Preview](Images/FrontendDev.png)
@@ -1850,55 +2048,62 @@ Basics Guide for web developers. This is a small overview of what you should kno
  ![Preview](Images/BackendDev.png)
 
 
----------------------------------------------------------------------------------------------------------------
- ## 11 - Use Javascript on the server side - Node.js
+------------------------------------------------------------------------------------------------------------
+## 11. Use Javascript on the server side - Node.js
+### Basics
+  - Node.js is a runtime environment for JavaScript, thanks to which JavaScript can be executed outside of browsers.
+  - In addition to the runtime environment, Node.js provides various modules, with the help of which they can, for example, access the file system, implement web servers and much more.
+  - About the Node.js Package Manager (npm) can also install many other packages.
+  - npm also helps with the initialization of own packages.
+  - The meta information of a package like name, version number and dependencies are managed in the configuration file named package.json.
+  - Node.js provides many methods in a synchronous variant and an ansynchronous variant. As a rule, it is recommended to use the ansynchronous variant.
+  - The web framework express is one of the most popular web frameworks and facilitates the implementation of web servers.
 
 
-   ### Basics
-   - Node.js is a runtime environment for JavaScript, thanks to which JavaScript can be executed outside of browsers.
-   - In addition to the runtime environment, Node.js provides various modules, with the help of which they can, for example, access the file system, implement web servers and much more.
-   - About the Node.js Package Manager (npm) can also install many other packages.
-   - npm also helps with the initialization of own packages.
-   - The meta information of a package like name, version number and dependencies are managed in the configuration file named package.json.
-   - Node.js provides many methods in a synchronous variant and an ansynchronous variant. As a rule, it is recommended to use the ansynchronous variant.
-   - The web framework express is one of the most popular web frameworks and facilitates the implementation of web servers.
+#### before you start please install Node.js, you can do that at [Download/Node.js](https://nodejs.org/en/download)
+  - for macOS download the pkd file
+  - for windows download the msi file
+  - for linux a binary package is available start there in the directory bin/node file
+#### you can check if the installation was successful
+  - macOS - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v"** and $ "npx -v"
+  - window - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
+  - linux - $ "bin/node -v", $ "bin/npm -v", $ "bin/npx -v"
 
 
-  ### before you start please install Node.js, you can do that at https://nodejs.org/en/download
-   - for macOS download the pkd file
-   - for windows download the msi file
-   - for linux a binary package is available start there in the directory bin/node file
-  ### you can check if the installation was successful
-   - macOS - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
-   - window - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
-   - linux - $ "bin/node -v", $ "bin/npm -v", $ "bin/npx -v"
+### 11.1. A simple node.js application
+  - example --> *11_Node/Part_1/main.js*
+  - open the terminal and start the main.js with $ "node main.js" (pay attention to where the file is stored)
+  - "Server is running on http://localhost:8000" open this in your browser
 
+### 11.2. Use built-in modules
+  - read files, write files, delete files (synchronous, asynchronous)
+  - example --> *11_Node/Part_2*
 
-  * #### Part_1 - A simple node.js application
-    - open the terminal and start the main.js with $ "node main.js" (pay attention to where the file is stored)
-    - "Server is running on http://localhost:8000" open this in your browser
-  * #### Part_2 - Use built-in modules
-    - read files, write files, delete files (synchronous, asynchronous)
-  * #### Part_3 - Deploy static files
-    - customized webserver now deploys the HTML file and CSS file
-    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
-    - "Server is running on http://localhost:8000" open this in your browser
-  * #### Part_4 - Use web framework "express" (http://expressjs.com)
-    - ##### first please install express, open the project and open the terminal and enter "npm install express" then express will be installed locally for this project
-    - a webserver with the web framework express
-    - customized webserver now deploys the HTML file and CSS file
-    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
-    - "Server is running on http://localhost:8000" open this in your browser
-  * #### Part_5 - Use web framework "express" (http://expressjs.com)customized webserver processes the data
-    - customized webserver processes the data
-    - customized webserver now deploys the HTML file and CSS file
-    - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
-    - "Server is running on http://localhost:8000" open this in your browser
+### 11.3. Deploy static files
+  - example --> *11_Node/Part_3/start.js*
+  - customized webserver now deploys the HTML file and CSS file
+  - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
+  - "Server is running on http://localhost:8000" open this in your browser
+
+### 11.4. Use web framework [Express](http://expressjs.com)
+##### first please install express, open the project and open the terminal and enter "npm install express" then express will be installed locally for this project
+  - example --> *11_Node/Part_4/start.js*
+  - a webserver with the web framework express
+  - customized webserver now deploys the HTML file and CSS file
+  - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
+  - "Server is running on http://localhost:8000" open this in your browser
+
+### 11.5. Use web framework [Express](http://expressjs.com) customized webserver processes the data
+  - example --> *11_Node/Part_5/start.js*
+  - customized webserver processes the data
+  - customized webserver now deploys the HTML file and CSS file
+  - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
+  - "Server is running on http://localhost:8000" open this in your browser
 
 
  ![Preview](Images/nodeJSexpress.PNG)
 
- ##### if the installation of express was successful the folder node_module should have been created
+#### if the installation of express was successful the folder node_module should have been created
 
 
 ---------------------------------------------------------------------------------------------------------------
