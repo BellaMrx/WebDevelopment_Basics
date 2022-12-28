@@ -63,7 +63,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
         <a href="https://github.com/BellaMrx">Here you can find my Github account.</a>
       </body>
     ```
-    
+
 ### Lists
 * ordered list
   - example --> *1_HTML/Part_3/index.html*
@@ -508,7 +508,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </body>
     ```
 
-### HTML-Tags
+### HTML Tags
 
 
  ![Preview](Images/html5_cheat_sheet_tags.png)
@@ -516,41 +516,313 @@ Basics Guide for web developers. This is a small overview of what you should kno
  ![Preview](Images/html5_cheat_sheet_event_attributes.png)
 
 
----------------------------------------------------------------------------------------------------------------
- ## 2 - CSS - design websites with CSS
+-------------------------------------------------------------------------------------------------------------
+
+## 2. CSS - design websites with CSS
+###  Basics
+  - CSS rules let you define how the content of certain HTML elements should be displayed.
+  - CSS rules consist of two parts: The selector defines which HTML elements the CSS rule should be applied to. The declaration defines how exactly these HTML elements are to be displayed.
+  - Individual declarations in turn consist of a property and a value. 
+  - There are several ways to include CSS in an HTML document: External Stylesheet, Internal Stylesheet, Inline Styles.
+  - CSS can be used to design all components of a web page. For texts, for example, the font, font style, text color and alignment can be adjusted. It can also be used to design tables, lists, forms and much more. 
+  - In CSS there are several layout systems for arranging elements: Float layout, Flexbox layout, Grid layout.
 
 
-   ###  Basics
-   - CSS rules let you define how the content of certain HTML elements should be displayed.
-   - CSS rules consist of two parts: The selector defines which HTML elements the CSS rule should be applied to. The declaration defines how exactly these HTML elements are to be displayed.
-   - Individual declarations in turn consist of a property and a value. 
-   - There are several ways to include CSS in an HTML document: External Stylesheet, Internal Stylesheet, Inline Styles.
-   - CSS can be used to design all components of a web page. For texts, for example, the font, font style, text color and alignment can be adjusted. It can also be used to design tables, lists, forms and much more. 
-   - In CSS there are several layout systems for arranging elements: Float layout, Flexbox layout, Grid layout.
+### Introduction
+* a simple CSS file
+  - example --> *2_CSS/Part_1/index.html*
+    ```
+      body {
+        font-family: Arial;
+        background-color: darkblue;
+      }
 
+      h1 {
+        color: lightgreen;
+      }
 
-  * #### Part_1 - Introduction
-    - a simple CSS file
-  * #### Part_2 - Include CSS in HTML
-    - embed CSS file, external, inline, internal
-  * #### Part_3 - Texts
-    - format texts with CSS
-  * #### Part_4 - Lists
-    - format unordered lists with CSS
-  * #### Part_5
-    - formatting an ordered list
-  * #### Part_6
-    - use images as bullets
-  * #### Part_7
-    - setting the position of bullets
-  * #### Part_8 - Tables
-    - design tables with CSS
-  * #### Part_9 - Forms
-    - designing forms with float layout
-  * #### Part_10
-    - designing forms with flexbox layout
-  * #### Part_11
-    - designing forms with grid layout
+      h2 {
+        text-transform: uppercase;
+      }
+    ```
+
+### Include CSS in HTML
+* embed CSS file, external, inline, internal
+  - example --> *2_CSS/Part_2/index.html*
+  - internal:
+    ```
+        <head>
+          <title>My first website with CSS</title>
+          <style type="text/css">
+            body {
+              font-family: Arial;
+              background-color: lightpink;
+            }
+
+            h1 {
+              color: darkblue;
+            }
+
+            h2 {
+              text-transform: uppercase;
+            }
+          </style>
+        </head>
+        <body>
+          <h1>This is a headline</h1>
+          <p>This is a paragraph.</p>
+          <h2>This is a subheading</h2>
+          <p>Here is another paragraph with <i>italicized text</i> and 
+          <b>bold text</b>.</p>
+          <h2>This is another subheading</h2>
+        </body>
+    ```
+
+### Texts
+* format texts with CSS
+  - example --> *2_CSS/Part_3/index.html*
+    ```
+      body {
+        font-family: 'Times New Roman', Times, serif;
+
+        /* line height 1.5 times the normal font size  */
+        line-height: 1.5em;
+      }
+
+      h1, h2 {
+        font-family: Arial;
+
+        /* character spacing 0.2 times the normal font size  */
+        letter-spacing: 0.2em;
+
+        /* character spacing 0.3 times the normal font size  */
+        word-spacing: 0.3em;
+      }
+
+      h1 {
+        /* 150% of the normal font size */
+        font-size: 150%;
+      }
+    ```
+
+### Lists
+* format unordered lists with CSS
+  - example --> *2_CSS/Part_4/index.html*
+    ```
+      <style type="text/css">
+        ul.web-technologies li {
+          list-style-type: circle;
+        }
+      </style>
+    ```
+
+* formatting an ordered list
+  - example --> *2_CSS/Part_5/index.html*
+    ```
+      <head>
+        <title>formatting ordered lists</title>
+        <style type="text/css">
+          ol.web-technologies li {
+            list-style-type: lower-roman;
+          }
+        </style>
+      </head>
+      <body>
+      <article>
+        <p>
+          <ol class="web-technologies">
+            <li>
+              HTML
+            </li>
+            <li>
+              CSS
+            </li>
+            <li>
+              JavaScript
+            </li>
+            <li>
+              Node.js
+            </li>
+            <li>
+              Docker
+            </li>
+          </ol>
+        </p>
+      </article>
+      </body>
+    ```
+
+* use images as bullets
+  - example --> *2_CSS/Part_6/index.html*
+    ```
+      <head>
+        <title>Use images as bullets</title>
+        <style type="text/css">
+          ul.books {
+            list-style-image: url("images/star.png");
+          }
+        </style>
+      </head>
+      <body>
+      <article>
+        <p>
+          <ul class="books">
+            <li>
+              Cal Newport: "Deep Work"
+            </li>
+            <li>
+              James Clear: "Atomic Habits"
+            </li>
+            <li>
+              Jake Knapp, John Zeratsky: "Make Time"
+            </li>
+            <li>
+              Greg McKeown: "Essentialism"
+            </li>
+            <li>
+              Nir Eyal: "Indistractable"
+            </li>
+          </ul>
+        </p>
+      </article>
+      </body>
+    ```
+
+* setting the position of bullets
+  - example --> *2_CSS/Part_7/index.html*
+    ```
+        <style type="text/css">
+          ul.web-technologies {
+            list-style-position: inside;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 300px;
+          }
+        </style>
+      </head>
+      <body>
+      <article>
+        <p>
+          <ul class="web-technologies">
+            <li>
+              HTML: Hypertext Markup Language
+            </li>
+            <li>
+              CSS: Cascading Style Sheets
+            </li>
+            <li>
+              JavaScript: THE language of the web
+            </li>
+            <li>
+              Node.js: JavaScript runtime environment
+            </li>
+            <li>
+              Docker: Software for container virtualization
+            </li>
+          </ul>
+        </p>
+      </article>
+    ```
+
+### Tables
+* design tables with CSS
+  - example --> *2_CSS/Part_8/index.html*
+    ```
+        body {
+          font-family: Verdana, sans-serif;
+        }
+
+        table {
+        /* thin continuous black border */
+          border: thin solid #000000;
+
+        /* no double borders for adjacent cells */
+          border-collapse: collapse;
+        }
+
+        /* table headings */
+        th {
+          background-color: #000000;
+          color: #FFFFFF;
+          text-align: left;
+        }
+
+        /* Table headings and cells */
+        th, td {
+          padding: 11px;
+        }
+    ```
+
+### Forms
+* designing forms with float layout
+  - example --> *2_CSS/Part_9/index.html*
+    ```
+      label {
+        float: left;
+        width: 200px;
+      }
+
+      input {
+        float: left;
+        width: calc(100% - 200px);
+      }
+
+      button {
+        float: right;
+        width: calc(100% - 200px);
+      }
+    ```
+
+* designing forms with flexbox layout
+  - example --> *2_CSS/Part_10/index.html*
+    ```
+      form {
+        padding: 1em;
+        background: #f9f9f9;
+        border: 1px solid lightgrey;
+        margin: 2rem auto auto auto;
+        max-width: 600px;
+        border-radius: 5px;
+      }
+
+      form input {
+        margin-bottom: 1rem;
+        background: white;
+        border: 1px solid darkgray;
+      }
+
+      form button {
+        background: lightgrey;
+        padding: 0.8em;
+        border: 0;
+      }
+    
+      form button:hover {
+        background: deepskyblue;
+      }
+    ```
+
+* designing forms with grid layout
+  - example --> *2_CSS/Part_11/index.html*
+    ```
+      label {
+        padding: 0.5em 0.5em 0.5em 0;
+        text-align: right;
+        grid-column: 1 / 2;
+      }
+
+      input {
+        padding: 0.7em;
+      }
+
+      input:focus {
+        outline: 3px solid deepskyblue;
+      }
+
+      input,
+      button {
+        grid-column: 2 / 3;
+      }
+    ```
 
 
  ![Preview](Images/PseudoElements.PNG)
