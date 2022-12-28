@@ -2191,137 +2191,133 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - to run jest just enter command "npx"(node.js) then "npx jest:" ( https://jestjs.io/docs/en/expect )
   - example --> *14_Testing/Part_1*
 
----------------------------------------------------------------------------------------------------------------
- ## 15 - Deploying and hosting web applications
+
+------------------------------------------------------------------------------------------------------------
+## 15. Deploying and hosting web applications
+### Basics
+  - For a web application to be accessible to users over the Internet, it must be hosted on a (hosting) server. You need web space on the one hand and a domain on the other.
+  - Basically, there are different types of hosting:
+	  - Shared hosting: here your web application shares the corresponding server with other web applications.
+	  - VPS Hosting: Here your web application is operated within a virtual private server.
+	  - Dedicated Hosting: where your web application is the only one running on the respective server.
+	  - Cloud Hosting: Here your web application runs on a cloud infrastructure based on a network of multiple servers.
+  - The step of copying an application to a server is called deployment.
+  - Using Docker, web applications, or applications in general, can be pegged so that they can be installed and run within the Docker runtime environment very easily.
+  - Docker Compose can be used to configure and launch setups of multiple Docker images ( https://docs.docker.com/compose/ and https://github.com/docker/awesome-compose ).
+  - Types deployment: FPS, SCP, Container Management
 
 
-   ### Basics
-   - For a web application to be accessible to users over the Internet, it must be hosted on a (hosting) server. You need web space on the one hand and a domain on the other.
-   - Basically, there are different types of hosting:
-	    - Shared hosting: here your web application shares the corresponding server with other web applications.
-	    - VPS Hosting: Here your web application is operated within a virtual private server.
-	    - Dedicated Hosting: where your web application is the only one running on the respective server.
-	    - Cloud Hosting: Here your web application runs on a cloud infrastructure based on a network of multiple servers.
-   - The step of copying an application to a server is called deployment.
-   - Using Docker, web applications, or applications in general, can be pegged so that they can be installed and run within the Docker runtime environment very easily.
-   - Docker Compose can be used to configure and launch setups of multiple Docker images ( https://docs.docker.com/compose/ and https://github.com/docker/awesome-compose ).
-   - Types deployment: FPS, SCP, Container Management
-
-
-  * #### Part_1 - Package a web application with Docker
-    - Install Docker ( https://docs.docker.com )
-    - all available commands can be found at https://docs.docker.com/engine/reference/builder
-    - Docker images for all major Node.js versions: https://github.com/nodejs/docker-node , https://hub.docker.com/_/node
+### 15.1. Package a web application with Docker
+  - Install Docker ( https://docs.docker.com )
+  - all available commands can be found at https://docs.docker.com/engine/reference/builder
+  - Docker images for all major Node.js versions: https://github.com/nodejs/docker-node , https://hub.docker.com/_/node
+  - example --> *15_Deploy_Host/Part_1*
 
    
----------------------------------------------------------------------------------------------------------------
- ## 16 - Websecurity
+------------------------------------------------------------------------------------------------------------
+## 16. Websecurity
+### Basics
+Security vulnerabilities:
+  - OWASP stands for Open Web Application Security Project and refers to an organization of security experts concerned with the security of Web applications and Web services (https://owasp.org/).
+  - The OWASP Top Ten is a list of the ten most frequently encountered security vulnerabilities at present:
+	  - Injection of malicious code "Injection".
+	  - Incorrect authentication "Broken Authentication
+	  - Sensitive Data Exposure
+	  - Attacks via XML External Entities
+	  - Broken Access Control
+	  - Security Misconfiguration
+	  - Injection of malicious JavaScript code Cross-Site Scripting
+	  - Insecure Deserialization
+    - Using Components with Known Vulnerabilities
+	  - Insufficient logging and monitoring Insufficient Logging & Monitoring
 
 
-   ### Basics
+Cryptography, SSL, TSL, HTTPS :
+  - In symmetric cryptography, data is encrypted and decrypted using the same key.
+  - In contrast, asymmetric cryptography encrypts data with one key and decrypts it with another key.
+  - Asymmetric cryptography is used, for example, in SSL(Secure Sockets Layer), TLS(Transport Layer Security) and HTTPS(Hypertext Transfer Protocol Secure).
 
 
-   Security vulnerabilities:
-   - OWASP stands for Open Web Application Security Project and refers to an organization of security experts concerned with the security of Web applications and Web services (https://owasp.org/).
-   - The OWASP Top Ten is a list of the ten most frequently encountered security vulnerabilities at present:
-	    - Injection of malicious code "Injection".
-	    - Incorrect authentication "Broken Authentication
-	    - Sensitive Data Exposure
-	    - Attacks via XML External Entities
-	    - Broken Access Control
-	    - Security Misconfiguration
-	    - Injection of malicious JavaScript code Cross-Site Scripting
-	    - Insecure Deserialization
-	    - Using Components with Known Vulnerabilities
-	    - Insufficient logging and monitoring Insufficient Logging & Monitoring
+SOP, CORS, CSP:
+  - Via Same Origin Policy (SOP), it is specified that code from one source (domain) must not access content from another source (domain).
+  - Cross-Origin Resource Sharing (CORS) allows you to relax the SOP by allowing access to resources from one domain to certain other domains.
+  - Via Content Security Policy (CSP), you can further restrict the SOP and, for example, determine very finely which Java Script code is allowed to run on a web page and which is not.
 
 
-   Cryptography, SSL, TSL, HTTPS :
-   - In symmetric cryptography, data is encrypted and decrypted using the same key.
-   - In contrast, asymmetric cryptography encrypts data with one key and decrypts it with another key.
-   - Asymmetric cryptography is used, for example, in SSL(Secure Sockets Layer), TLS(Transport Layer Security) and HTTPS(Hypertext Transfer Protocol Secure).
+Authentication:
+  - Authentication refers to verifying that a user is who they say they are.
+  - Authorization refers to checking whether a user is allowed to perform a particular action.
+  - Various authentication mechanisms are available for authentication:
+	  - Basic Authentication, in which credentials are sent to the server with each request after successful authentication.
+	  - Session Based Authentication, in which a session ID is generated by the server after successful authentication, which the client sends with every request from then on and which the server can uniquely assign to a session.
+	  - Token-based authentication, in which a token is generated by the server after successful authentication, which is then sent by the client to the server with every request and which contains the user's complete session information.
 
 
-   SOP, CORS, CSP:
-   - Via Same Origin Policy (SOP), it is specified that code from one source (domain) must not access content from another source (domain).
-   - Cross-Origin Resource Sharing (CORS) allows you to relax the SOP by allowing access to resources from one domain to certain other domains.
-   - Via Content Security Policy (CSP), you can further restrict the SOP and, for example, determine very finely which Java Script code is allowed to run on a web page and which is not.
+### 16.1. Configure CORS for express (https://github.com/expressjs/cors)
+  - can be easily installed via node.js with "npm install cors"
+  - example --> *16_Websecurity/Part_1*
+
+### 16.2. Configure CSP in HTML
+  - example --> *16_Websecurity/Part_2*
+
+### 16.3. Configure CSP for express
+  - possible with for example Helmet (https://helmetjs.github.io)
+  - to install Helmet just use node.js "npm install helmet" -> "node start.js"
+  - example --> *16_Websecurity/Part_3*
+
+#### Under Node.js, you can create digital signatures using the crypto module included in the Node.js installation (https://nodejs.org/api/crypto.html).
 
 
-   Authentication:
-   - Authentication refers to verifying that a user is who they say they are.
-   - Authorization refers to checking whether a user is allowed to perform a particular action.
-   - Various authentication mechanisms are available for authentication:
-	    - Basic Authentication, in which credentials are sent to the server with each request after successful authentication.
-	    - Session Based Authentication, in which a session ID is generated by the server after successful authentication, which the client sends with every request from then on and which the server can uniquely assign to a session.
-	    - Token-based authentication, in which a token is generated by the server after successful authentication, which is then sent by the client to the server with every request and which contains the user's complete session information.
+------------------------------------------------------------------------------------------------------------
+## 17. Organize and manage web projects
 
-
-  * #### Part_1 - Configure CORS for express (https://github.com/expressjs/cors)
-    - can be easily installed via node.js with "npm install cors"
-  * #### Part_2 - Configure CSP in HTML
-  * #### Part_3 - Configure CSP for express
-    - possible with for example Helmet (https://helmetjs.github.io)
-    - to install Helmet just use node.js "npm install helmet" -> "node start.js".
-
-
-   ##### Under Node.js, you can create digital signatures using the crypto module included in the Node.js installation (https://nodejs.org/api/crypto.html).
-
-
----------------------------------------------------------------------------------------------------------------
- ## 17 - Organize and manage web projects
-
-
-  #### Git https://git-scm.com/
-  #### GitHub https://github.com/ 
-  #### GitLab https://gitlab.com/
-  #### GitHub Desktop https://desktop.github.com
-  #### SourceTree https://www.sourcetreeapp.com
-  #### Visual Studio Code https://code.visualstudio.com/
+### [Git](https://git-scm.com/)
+### [GitHub](https://github.com/)
+### [GitLab](https://gitlab.com/)
+### [GitHub Desktop](https://desktop.github.com)
+### [SourceTree](https://www.sourcetreeapp.com)
+### [Visual Studio Code](https://code.visualstudio.com/)
 
 
   ![Preview](Images/gitcommands.PNG)
 
 
----------------------------------------------------------------------------------------------------------------
- ## 18 - Manage web projects
+------------------------------------------------------------------------------------------------------------
+## 18. Manage web projects
+### Basics
+  - Basically, a distinction is made between classic project management and agile project management. For both categories, there are different process models that describe exactly how project management is to be implemented in each case.
+  - Scrum is an iterative and incremental process model to be implemented in each case.
+  - Srcum defines different roles, events and artifacts.
+  - The following roles are defined:
+	  - The Pruduct Owner is responsible for the product release and communication with the Business Owner and stakeholders.
+	  - The development team consists not only of developers, but of all persons responsible for the implementation of the requirements, for example also designers or UX professionals.
+	  - The Scrum Master supports the correct use of Scrum and, if necessary, conveys the required knowledge to the other Scrum team members.
+  - The following events are defined:
+	  - Sprint Planning is used to plan the tasks (user stories, tasks, etc.) for the upcoming sprint.
+	  - In the sprint, the tasks are then implemented the development team.
+	  - In daily Scrum, the development team meets to exchange information about the current status and any obstacles or problems.
+  - The following artifacts are defined:
+	  - The Product Backlog contains a prioritized list of planned requirements for the software.
+	  - The Sprint Backlog contains the entries from the Product Backlog that are to be implemented in a Sprint.
+	  - The Product Increment designates a new state of the software that contains the requirements or new features implemented in a Sprint.
 
 
-   ### Basics
-   - Basically, a distinction is made between classic project management and agile project management. For both categories, there are different process models that describe exactly how project management is to be implemented in each case.
-   - Scrum is an iterative and incremental process model to be implemented in each case.
-   - Srcum defines different roles, events and artifacts.
-   - The following roles are defined:
-	    - The Pruduct Owner is responsible for the product release and communication with the Business Owner and stakeholders.
-	    - The development team consists not only of developers, but of all persons responsible for the implementation of the requirements, for example also designers or UX professionals.
-	    - The Scrum Master supports the correct use of Scrum and, if necessary, conveys the required knowledge to the other Scrum team members.
-   - The following events are defined:
-	    - Sprint Planning is used to plan the tasks (user stories, tasks, etc.) for the upcoming sprint.
-	    - In the sprint, the tasks are then implemented the development team.
-	    - In daily Scrum, the development team meets to exchange information about the current status and any obstacles or problems.
-   - The following artifacts are defined:
-	    - The Product Backlog contains a prioritized list of planned requirements for the software.
-	    - The Sprint Backlog contains the entries from the Product Backlog that are to be implemented in a Sprint.
-	    - The Product Increment designates a new state of the software that contains the requirements or new features implemented in a Sprint.
+#### [Agile manifest](https://agilemanifesto.org)
 
 
+------------------------------------------------------------------------------------------------------------
 
-   ##### Agile manifest https://agilemanifesto.org
-
-
----------------------------------------------------------------------------------------------------------------
-
-   ### Free learning websites
-  - Google https://www.google.com/
-  - YouTube https://www.youtube.com/
-  - GitHub https://github.com/
-  - FreeCodeCamp https://www.freecodecamp.org/
-  - w3school https://www.w3schools.com/
-  - codewars https://www.codewars.com/
-  - code Academy https://www.codecademy.com/
-  - stack oveflow https://stackoverflow.com/
-  - mdn https://developer.mozilla.org/
+### Free learning websites
+  - [Google](https://www.google.com/)
+  - [YouTube](https://www.youtube.com/)
+  - [GitHub](https://github.com/)
+  - [FreeCodeCamp](https://www.freecodecamp.org/)
+  - [w3school](https://www.w3schools.com/)
+  - [codewars](https://www.codewars.com/)
+  - [code Academy](https://www.codecademy.com/)
+  - [stack overflow](https://stackoverflow.com/ )
+  - [mdn](https://developer.mozilla.org/)
 
 
-  #### Thanks for reading. I hope you enjoyed it. 
-  #### On my Twitter account you can find more useful material about web development
+#### Thanks for reading. I hope you enjoyed it. 
+#### On my Twitter account you can find more useful stuff about web development [@bella_mrx](https://twitter.com/bella_mrx).
