@@ -4,21 +4,82 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 ## Contents:
 1. HTML - structure web pages with HTML
+  - 1.1. Use elements and attributes
+  - 1.2. Lists
+  - 1.3. Links
+  - 1.4. Images
+  - 1.5. Captions
+  - 1.6. Tables
+  - 1.7. Forms
+  - 1.8. HTML Tags
 2. CSS - design websites with CSS
+  - 2.1. Introduction
+  - 2.2. Include CSS in HTML
+  - 2.3. Texts
+  - 2.4. Lists
+  - 2.5. Tables
+  - 2.6. Forms
 3. JavaScript (JS) - making websites interactive with JavaScript
+  - 3.1. Introduction
+  - 3.2. Use developer console
+  - 3.3. Define variables
+  - 3.4. Define constant
+  - 3.5. Use data types
+  - 3.6. Control structures
+  - 3.7. Use loops
+  - 3.8. Functions and error handling
+  - 3.9. Objects and arrays
 4. Weblogs
 5. Webformats - use web formats
+  - 5.1. Data formats
+  - 5.2. JSON
+  - 5.3. Vector graphics with SVG format
+  - 5.4. Audio and video formats
 6. Web APIs
+  - 6.1. Select elements
+  - 6.2. Change elements
+  - 6.3. Dynamically create a table
+  - 6.4. Load data asynchronously with Ajax and the Fetch API
+  - 6.5. JavaScript - HTML DOM Methods
 7. Accessibility (ally) - Optimize websites for accessibility
+  - 7.1. Semantically structure web pages
+  - 7.2. Making forms accessible
+  - 7.3. Making tables accessible
+  - 7.4. Define language for web pages
+  - 7.5. Offer keyboard support
+  - 7.6. use subtitles
 8. Single Page Applications (SPA)
+  - 8.1. Structure of the application
+  - 8.2. Local state of a component
+  - 8.3. The life cycle of a component
+  - 8.4. styling of components
+  - 8.5. CSS classes and external stylessheets
+  - 8.6. Component hierarchy
+  - 8.7. Inverse data flow
+  - 8.8. Forms
+  - 8.9. Context API
+  - 8.10. Routing
 9. Understanding web architectures
 10. Programming languages on the server side
 11. Use Javascript on the server side - Node.js
-12. Implementing web services 
+  - 11.1. A simple node.js application
+  - 11.2. Use built-in modules
+  - 11.3. Deploy static files
+  - 11.4. Use web framework Express
+  - 11.5. Express - customized web server processes the data
+12. Implementing web services
+  - 12.1. SOAP  (Simple Object Access Protocol)
+  - 12.2. REST (Representational State Transfer 
 13. Store data in databases
+  - 13.1. using relational databases in Node.js
 14. Testing web applications (Testing)
+  - 14.1. Run automated test in JavaScript
 15. Deploying and hosting web applications
+  - 15.1. Package a web application with Docker
 16. Websecurity
+  - 16.1. Configure CORS for express
+  - 16.2. Configure CSP in HTML
+  - 16.3. Configure CSP for express
 17. Organize and manage web projects
 18. Manage web projects
 
@@ -1737,7 +1798,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </body>
     ```
 
-### 7.6. use subtitles
+### 7.6. Use subtitles
 * defining alternative subtitles for videos
   - example --> *7_Ally/Part_9/index.html*
     ```
@@ -1840,7 +1901,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       export default List;
     ```
 
-### 8.4. styling of components
+### 8.4. Styling of components
 * inline styling in react components
   - example --> *8_Single Page Applications/Part_4/src/List.js*
     ```
@@ -1881,7 +1942,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
       export default List;
     ```
 
-### 8.6. component hierarchy
+### 8.6. Component hierarchy
 * inclusion of the listItem component
   - example --> *8_Single Page Applications/Part_6/src/List.js*
     ```
@@ -2093,7 +2154,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
   - "Server is running on http://localhost:8000" open this in your browser
 
-### 11.5. Use web framework [Express](http://expressjs.com) customized webserver processes the data
+### 11.5. [Express](http://expressjs.com) - customized web server processes the data 
   - example --> *11_Node/Part_5/start.js*
   - customized webserver processes the data
   - customized webserver now deploys the HTML file and CSS file
@@ -2232,7 +2293,7 @@ Security vulnerabilities:
     - Insufficient logging and monitoring Insufficient Logging & Monitoring
 
 
-Cryptography, SSL, TSL, HTTPS :
+Cryptography, SSL, TLS, HTTPS :
   - In symmetric cryptography, data is encrypted and decrypted using the same key.
   - In contrast, asymmetric cryptography encrypts data with one key and decrypts it with another key.
   - Asymmetric cryptography is used, for example, in SSL(Secure Sockets Layer), TLS(Transport Layer Security) and HTTPS(Hypertext Transfer Protocol Secure).
