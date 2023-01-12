@@ -2597,7 +2597,7 @@ Authentication:
  The guide is an overview that a WebDeveloper should know. But there is more to know and also always something new. You never stop learning in this business.
 
 
- On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. 
+ On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about web development. 
 
  Or check out my [GitHub](https://github.com/BellaMrx) profile.
 
