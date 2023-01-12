@@ -87,7 +87,7 @@
 17. Organize and manage web projects
 18. Manage web projects
 
---------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 
 
 # 1. HTML - structure web pages with HTML
@@ -613,7 +613,9 @@
  ![Preview](Images/html5_cheat_sheet_event_attributes.png)
 
 
--------------------------------------------------------------------------------------------------------------
+## If you want to know more about HTML then check this out: [GitHub - HTML Guide](https://github.com/BellaMrx/HTML_Guide)
+
+--------------------------------------------------------------------------------------------------
 
 # 2. CSS - design websites with CSS
 ##  Basics
@@ -915,7 +917,7 @@
         background: deepskyblue;
       }
     ```
-![Preview](2_CSS/Images/Preview_2_10.PNG)
+  ![Preview](2_CSS/Images/Preview_2_10.PNG)
 
 
 ### designing forms with grid layout
@@ -942,6 +944,7 @@
     ```
   ![Preview](2_CSS/Images/Preview_2_11.PNG)
 
+-----------------------------------------------------------------------------
 
  ![Preview](Images/PseudoElements.PNG)
 
@@ -952,9 +955,10 @@
  ![Preview](Images/CSSpropertiesOfTheGridLayout.png)
 
 
--------------------------------------------------------------------------------------------------------------
-## 3. JavaScript (JS) - making websites interactive with JavaScript
-###  Basics
+----------------------------------------------------------------------------------------------------
+
+# 3. JavaScript (JS) - making websites interactive with JavaScript
+##  Basics
   - JavaScript can be included in a web page in several ways. However, you should get into the habit of managing JavaScript code in separate files.
   - Variables can be defined in JavaScript using the let keyword, while constants can be defined using the const keyword.
   - There are different data types in JavaScript: on the one hand, the standard primitive data types for numbers, strings, and Boolean values, as well as the special data types undefined and null, and on the other hand, objects.
@@ -965,22 +969,25 @@
   - When an error occurs during the execution of a program, you can react to such errors: Using the keyword try you mark the statements that could potentially throw errors, using the keyword catch you define the statements that should be executed in case of an error.
   - With JavaScript you have the possibility to generate HTML code dynamically.
 
-### 3.1. Introduction
-* JavaScript code that calls a function
+## 3.1. Introduction
+### JavaScript code that calls a function
   - example --> *3_JS/Part_1/script.js*
     ```
       alert('Hello World');
     ```
 
-* embedding JavaScript in HTML
+
+### embedding JavaScript in HTML
   - example --> *3_JS/Part_2/index.html*
     ```
       <body>
         <script src="scripts/script.js"></script>
       </body>
     ```
+  ![Preview](3_JS/Images/Preview_3_2.PNG)
 
-* a simple hint dialog generated via JavaScript (a simple information dialog generated via JavaScript only makes sense in exceptional cases: definitions of JavaScript directly in an HTML file)
+
+### a simple hint dialog generated via JavaScript (a simple information dialog generated via JavaScript only makes sense in exceptional cases: definitions of JavaScript directly in an HTML file)
   - example --> *3_JS/Part_3/index.html*
     ```
       <body>
@@ -989,15 +996,17 @@
       </script>
       </body>
     ```
+  ![Preview](3_JS/Images/Preview_3_3.PNG)
 
-### 3.2. Use developer console
-* output to the console via the "console" object
+
+## 3.2. Use developer console
+### output to the console via the "console" object
   - example --> *3_JS/Part_4/script.js*
     ```
       console.log('Hello World');
     ```
 
-* using the "console" object
+### using the "console" object
   - example --> *3_JS/Part_5/script.js*
     ```
       console.log('Hello world'); // output a normal message
@@ -1007,8 +1016,8 @@
       console.warn('Hello world'); // output a warning message
     ```
 
-### 3.3. Define variables
-* declaration of variables with the "let" keyword
+## 3.3. Define variables
+### declaration of variables with the "let" keyword
   - example --> *3_JS/Part_6/script.js*
     ```
       let firstName;                  // variable declaration
@@ -1019,15 +1028,15 @@
       console.log(lastName);          // "Doe".
     ```
 
-### 3.4. Define constant
-* declaration of a constant
+## 3.4. Define constant
+### declaration of a constant
   - example --> *3_JS/Part_7/script.js*
     ```
       const MAXIMUM = 5000;
     ```
 
-### 3.5. Use data types
-* definition of different number variables
+## 3.5. Use data types
+### definition of different number variables
   - example --> *3_JS/Part_8/script.js*
     ```
       const number1 = 5; // Definition of an integer number
@@ -1036,7 +1045,7 @@
       const number4 = -0.9; // Definition of a negative decimal number
     ```
 
-* examples for the definition of strings
+### examples for the definition of strings
   - example --> *3_JS/Part_9/script.js*
     ```
       const firstName = 'John';        // single quotes
@@ -1045,15 +1054,15 @@
       // const street = 'Milky Way";  // syntax error: mixed form
     ```
 
-* definition of boolean variables
+### definition of boolean variables
   - example --> *3_JS/Part_10/script.js*
     ```
       const isLoggedIn = true;
       const isAdmin = false;
     ```
 
-### 3.6. Control structures
-* example of a conditional statement including branching
+## 3.6. Control structures
+### example of a conditional statement including branching
   - example --> *3_JS/Part_11/script.js*
     ```
       let passwordTooShort = password.length < 10;
@@ -1066,7 +1075,7 @@
       document.getElementById('info').textContent = message;
     ```
 
-* example of a branch with several paths
+### example of a branch with several paths
   - example --> *3_JS/Part_12/script.js*
     ```
       let passwordTooShort = password.length < 10;
@@ -1082,7 +1091,7 @@
       document.getElementById('info').textContent = message;
     ```
 
-* use of the "switch" application
+### use of the "switch" application
   - example --> *3_JS/Part_13/script.js*
     ```
       const testResultElement = document.getElementById('testResult');
@@ -1109,8 +1118,8 @@
       testResultElement.src = 'img/' + icon;
     ```
 
-### 3.7. Use loops
-* a simple "for" loop that outputs the numbers from 1 to 10
+## 3.7. Use loops
+## a simple "for" loop that outputs the numbers from 1 to 10
   - example --> *3_JS/Part_14/script.js*
     ```
       for (let i = 1; i <= 10; i++) {
@@ -1118,7 +1127,7 @@
       }
     ```
 
-* a simple "while" loop that outputs the numbers from 1 to 10
+### a simple "while" loop that outputs the numbers from 1 to 10
   - example --> *3_JS/Part_15/script.js*
     ```
       let i = 1;            // Initialization
@@ -1128,7 +1137,7 @@
       }
     ```
 
-* a simple "do-while" loop that outputs the numbers from 1 to 10
+### a simple "do-while" loop that outputs the numbers from 1 to 10
   - example --> *3_JS/Part_16/script.js*
     ```
       let i = 1; do {       // Initialization
@@ -1137,8 +1146,8 @@
       } while (i <= 10)     // condition
     ```
 
-### 3.8. Functions and error handling
-* creating a function using a function declaration
+## 3.8. Functions and error handling
+### creating a function using a function declaration
   - example --> *3_JS/Part_17/script.js*
     ```
       function printNumbersFrom1To10() {
@@ -1148,7 +1157,7 @@
       }
     ```
 
-* creating a function using a function expression
+### creating a function using a function expression
   - example --> *3_JS/Part_18/script.js*
     ```
       const printNumbersFrom1To10 = function() {
@@ -1158,7 +1167,7 @@
       }
     ```
 
-* create a function using the Arrow function notation
+### create a function using the Arrow function notation
   - example --> *3_JS/Part_19/script.js*
     ```
       const printNumbersFrom1To10 = () => {
@@ -1168,7 +1177,7 @@
       }
     ```
 
-* call a function
+### call a function
   - example --> *3_JS/Part_20/script.js*
     ```
       const printNumbersFrom1To10 = () => {
@@ -1179,7 +1188,7 @@
       printNumbersFrom1To10();        // calls the function
     ```
 
-* use of function parameters
+### use of function parameters
   - example --> *3_JS/Part_21/script.js*
     ```
       function printNumbersFromXToY(x, y) {
@@ -1192,7 +1201,7 @@
       printNumbersFromXToY(100, 1000);
     ```
     
-* a function that returns a value
+### a function that returns a value
   - example --> *3_JS/Part_22/script.js*
     ```
       function sum(x, y) {
@@ -1203,7 +1212,7 @@
       console.log(z);
     ```
 
-* example of the use of a "try-catch" block
+### example of the use of a "try-catch" block
   - example --> *3_JS/Part_23/script.js*
     ```
       function checkPassword(password) {
@@ -1223,8 +1232,8 @@
       }
     ```
 
-### 3.9. Objects and arrays
-* creating an object via the objelt-literal notation
+## 3.9. Objects and arrays
+### creating an object via the objelt-literal notation
   - example --> *3_JS/Part_24/script.js*
     ```
       const book = {
@@ -1243,7 +1252,7 @@
       book.printDescription(); // "Grinch:Christmas is bad."
     ```
 
-* create an array via the shorthand
+### create an array via the shorthand
   - example --> *3_JS/Part_25/script.js*
     ```
       // create an array with specified values
@@ -1264,7 +1273,7 @@
       console.log(colors); // ["red", "green", "blue", "orange", "yellow"]
     ```
 
-* iteration over an array
+### iteration over an array
   - example --> *3_JS/Part_26/script.js*
     ```
       const colors = [];
@@ -1284,10 +1293,10 @@
  ![Preview](Images/important_methods_console.PNG)
 
 
--------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
  
-## 4. Weblogs
-###  Basics
+# 4. Weblogs
+##  Basics
   - HTTP, the Hypertext Transfer Protocol is a unidirectional client/server protocol where the HTTP client makes HTTP requests to the HTTP server and the server responds with an HTTP response.
   - Using headers, it can pass additional meta-information to HTTP requests and HTTP responses.
   - HTTP methods define what actions should be performed on the HTTP server.
@@ -1301,10 +1310,10 @@
  ![Preview](Images/Statuscodes.png)
 
 
--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
  
-##  5. Webformats - use web formats
-### Basics
+#  5. Webformats - use web formats
+## Basics
   - CSV format is a very simple data format, suitable for defining records line by line and separated by commas.
   - For the structuring of complex data, for example nested data, the XML and JSON data formats are suitable.
   - XML and JSON are the two most important data exchange formats on the web.
@@ -1314,8 +1323,8 @@
   - There are many different video and audio formats, but thanks to the HTML elements you can include several formats for one video or for one audio file.
 
 
-### 5.1. Data formats
-* example of a CSV document
+## 5.1. Data formats
+### example of a CSV document
   - example --> *5_Webformats/Part_1/data.csv*
     ```
       firstname,lastname,phone,email
@@ -1324,7 +1333,7 @@
       Peter,Smith,3456789,peter.smith@example.com
     ```
 
-* example of XML document
+### example of XML document
   - example --> *5_Webformats/Part_2/contacts.xml*
     ```
       <?xml version="1.0" encoding="UTF-8"?>
@@ -1346,11 +1355,11 @@
         </contact>
     ```
 
-* example of XML schema
+### example of XML schema
   - example --> *5_Webformats/Part_3/contacts.xsd*
 
-### 5.2. JSON
-* example of a JSON document
+## 5.2. JSON
+### example of a JSON document
   - example --> *5_Webformats/Part_4/contacts.json*
     ```
       {
@@ -1374,7 +1383,7 @@
       }
     ```
 
-* parsing JSON in JavaScript
+### parsing JSON in JavaScript
   - example --> *5_Webformats/Part_5/contacts.js*
     ```
       const jsonString = `{
@@ -1405,7 +1414,7 @@
       console.log(person.address.city);   // "Sampleville"
     ```
 
-* JSON can be embedded directly within JavaScript code
+### JSON can be embedded directly within JavaScript code
   - example --> *5_Webformats/Part_6/contacts.js*
     ```
       const person = {
@@ -1435,11 +1444,11 @@
       console.log(person.address.city);   // "Sampleville"
     ```
 
-* example of a JSON schema
+### example of a JSON schema
   - example --> *5_Webformats/Part_7/contacts.schema.json*
 
-### 5.3. Vector graphics with SVG format
-* example of SVG document
+## 5.3. Vector graphics with SVG format
+### example of SVG document
   - example --> *5_Webformats/Part_8/graphic.svg*
     ```
       <?xml version="1.0"?>
@@ -1472,8 +1481,8 @@
       </svg>
     ```
 
-### 5.4. Audio and video formats
-* embedding video files in HTML
+## 5.4. Audio and video formats
+### embedding video files in HTML
   - example --> *5_Webformats/Part_9/index.html*
     ```
       <body>
@@ -1485,16 +1494,20 @@
           </video>
       </body>
     ```
+  ![Preview](5_Webformats/Images/Preview_5_9.PNG)
 
-* embedding video files in HTML
+
+### embedding video files in HTML
   - example --> *5_Webformats/Part_10/index.html*
     ```
       <body>
           <video controls src="my-video.mp4"></video>
       </body>
     ```
+  ![Preview](5_Webformats/Images/Preview_5_10.PNG)
 
-* embedding audio files in HTML
+
+### embedding audio files in HTML
   - example --> *5_Webformats/Part_11/index.html*
     ```
       <body>
@@ -1504,6 +1517,7 @@
           </audio>
       </body>
     ```
+  ![Preview](5_Webformats/Images/Preview_5_11.PNG)
 
 
  ![Preview](Images/ImageFormats.PNG)
@@ -1511,10 +1525,10 @@
  ![Preview](Images/AudioVideoAttributes.png)
 
 
--------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
-## 6. Web APIs
-### Basics
+# 6. Web APIs
+## Basics
   - The DOM API allows programmatic access to the Document Object Model(DOM), a hierarchical tree structure that represents the object model for a web page.
   - The individual components in this tree structure are called nodes, and there are several types of nodes. The most important are document nodes, element nodes, text nodes, and attribute nodes.
   - The DOM API defines properties and methods that you can use to access or modify the DOM tree of a web page.
@@ -1527,8 +1541,8 @@
   - Using the Fetch API, they can load data asynchronously from servers.
   - Beyond that, there is a veritable wealth of web APIs to explore.
 
-### 6.1. Select elements
-* selection of all elements with the CSS class "even" and subsequent iteration over the elements
+## 6.1. Select elements
+### selection of all elements with the CSS class "even" and subsequent iteration over the elements
   - example --> *6_Web APIs/Part_1/index.html*
     ```
       <script>
@@ -2435,5 +2449,15 @@ Authentication:
   - [mdn](https://developer.mozilla.org/)
 
 
-#### Thanks for reading. I hope you enjoyed it. 
-#### On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about web development.
+### The end
+
+ The guide is an overview that a WebDeveloper should know. But there is more to know and also always something new. You never stop learning in this business.
+
+
+ On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. 
+
+ Or check out my [GitHub](https://github.com/BellaMrx) profile.
+
+
+ Thanks for reading. 
+ I hope you enjoyed it or at least learned something.
