@@ -1,6 +1,10 @@
 # WebDevelopment_Basics
 
-Basics Guide for web developers. This is a small overview of what you should know as a web developer.
+ Basics Guide for web developers. This is a small overview of what you should know as a web developer.
+
+ The code examples in the guide can be found in the listed folders.
+
+---------------------------------------------------------------------------------------------
 
 ## Contents:
 1. HTML - structure web pages with HTML
@@ -83,10 +87,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
 17. Organize and manage web projects
 18. Manage web projects
 
+--------------------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------------------
-## 1. HTML - structure web pages with HTML
-###  Basics
+
+# 1. HTML - structure web pages with HTML
+##  Basics
   - HTML stands for Hypertext Markup Language and is a markup language that allows defining the structure and semantics of web pages using elements.
   - HTML elements have an opening and a closing tag
   - Attributes can be used to pass additional information to an opening tag.
@@ -96,10 +101,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - There are many different HTML elements. Among the most important are headings, text paragraphs, lists, links, images, tables, and forms.
 
 
-### 1.1. Use elements and attributes
-* a simple website
+## 1.1. Use elements and attributes
+### a simple website
   - example --> *1_HTML/Part_1/index.html*
-    ```
+   ```
       <!DOCTYPE html>
       <html>
         <head>
@@ -114,9 +119,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
           <h2>This is another subheading</h2>
         </body>
       </html>
-    ```
+   ```
+  ![Preview](1_HTML/Images/Preview_1_1.PNG)
 
-* Parameterize elements via attributes
+
+### Parameterize elements via attributes
   - use attributes
   - example --> *1_HTML/Part_2/index.html*
     ```
@@ -124,9 +131,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
         <a href="https://github.com/BellaMrx">Here you can find my Github account.</a>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_2.PNG)
 
-### 1.2. Lists
-* ordered list
+
+## 1.2. Lists
+### ordered list
   - example --> *1_HTML/Part_3/index.html*
     ```
       <body>
@@ -139,8 +148,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </ol>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_3.PNG)
 
-* unordered list
+
+### unordered list
   - example --> *1_HTML/Part_4/index.html*
     ```
       <body>
@@ -153,8 +164,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </ul>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_4.PNG)
 
-* definition list
+
+### definition list
   - example --> *1_HTML/Part_5/index.html*
     ```
       <body>
@@ -168,8 +181,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </dl>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_5.PNG)
 
-* nested lists
+
+### nested lists
   - example --> *1_HTML/Part_6/index.html*
     ```
       <body>
@@ -193,9 +208,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </ul>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_6.PNG)
 
-### 1.3. Links
-* use of external links
+
+## 1.3. Links
+### use of external links
   - example --> *1_HTML/Part_7/index.html*
     ```
       <body>
@@ -231,8 +248,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </p>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_7.PNG)
 
-* relative links (links on the same page)
+
+### relative links (links on the same page)
   - example --> *1_HTML/Part_8/index.html*
     ```
       <body>
@@ -255,8 +274,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </p>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_8.PNG)
 
-* internal links (links on the same website)
+
+### internal links (links on the same website)
   - example --> *1_HTML/Part_9/index.html*
     ```
       <body>
@@ -290,9 +311,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
         <p>...</p>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_9.PNG)
 
-### 1.4. Images
-* embedding images
+
+## 1.4. Images
+### embedding images
   - example --> *1_HTML/Part_10/index.html*
     ```
       <body>
@@ -301,9 +324,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </p>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_10.PNG)
 
-### 1.5. Captions
-* use of captions + embedding images
+
+## 1.5. Captions
+### use of captions + embedding images
   - example --> *1_HTML/Part_11/index.html*
     ```
       <body>
@@ -316,9 +341,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </figure>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_11.PNG)
 
-### 1.6. Tables
-* representation of users with the help of tables
+
+## 1.6. Tables
+### representation of users with the help of tables
   - example --> *1_HTML/Part_12/index.html*
     ```
       <body>
@@ -357,8 +384,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </table>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_12.PNG)
 
-* Definition of table header (thead), table body (tbody) table footer row (tfoot)
+
+### Definition of table header (thead), table body (tbody) table footer row (tfoot)
   - example --> *1_HTML/Part_13/index.html*
     ```
       <body>
@@ -408,8 +437,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </table>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_13.PNG)
 
-* combine columns
+
+### combine columns
   - example --> *1_HTML/Part_14/index.html*
     ```
       <body>
@@ -450,8 +481,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </table>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_14.PNG)
 
-* merging rows
+
+### merging rows
   - example --> *1_HTML/Part_15/index.html*
     ```
       <body>
@@ -492,9 +525,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </table>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_15.PNG)
 
-### 1.7. Forms
-* use of the different form elements
+## 1.7. Forms
+### use of the different form elements
   - example --> *1_HTML/Part_16/index.html*
     ```
       <body>
@@ -568,8 +602,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </form>
       </body>
     ```
+  ![Preview](1_HTML/Images/Preview_1_16.PNG)
 
-### 1.8. HTML Tags
+
+## 1.8. HTML Tags
 
 
  ![Preview](Images/html5_cheat_sheet_tags.png)
@@ -579,8 +615,8 @@ Basics Guide for web developers. This is a small overview of what you should kno
 
 -------------------------------------------------------------------------------------------------------------
 
-## 2. CSS - design websites with CSS
-###  Basics
+# 2. CSS - design websites with CSS
+##  Basics
   - CSS rules let you define how the content of certain HTML elements should be displayed.
   - CSS rules consist of two parts: The selector defines which HTML elements the CSS rule should be applied to. The declaration defines how exactly these HTML elements are to be displayed.
   - Individual declarations in turn consist of a property and a value. 
@@ -589,8 +625,8 @@ Basics Guide for web developers. This is a small overview of what you should kno
   - In CSS there are several layout systems for arranging elements: Float layout, Flexbox layout, Grid layout.
 
 
-### 2.1. Introduction
-* a simple CSS file
+## 2.1. Introduction
+### a simple CSS file
   - example --> *2_CSS/Part_1/style.css*
     ```
       body {
@@ -607,9 +643,9 @@ Basics Guide for web developers. This is a small overview of what you should kno
       }
     ```
 
-### 2.2. Include CSS in HTML
-* embed CSS file, external, inline, internal
-  - example --> *2_CSS/Part_2/external.html*
+## 2.2. Include CSS in HTML
+### embed CSS file, external, inline, internal
+  - example --> *2_CSS/Part_2/external.html* 
   - example --> *2_CSS/Part_2/inline.html*
   - example --> *2_CSS/Part_2/internal.html*
   - internal:
@@ -640,9 +676,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
           <h2>This is another subheading</h2>
         </body>
     ```
+  ![Preview](2_CSS/Images/Preview_2_2.PNG)
 
-### 2.3. Texts
-* format texts with CSS
+
+## 2.3. Texts
+### format texts with CSS
   - example --> *2_CSS/Part_3/index.html*
     ```
       body {
@@ -667,9 +705,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
         font-size: 150%;
       }
     ```
+  ![Preview](2_CSS/Images/Preview_2_3.PNG)
 
-### 2.4. Lists
-* format unordered lists with CSS
+
+## 2.4. Lists
+### format unordered lists with CSS
   - example --> *2_CSS/Part_4/index.html*
     ```
       <style type="text/css">
@@ -678,8 +718,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         }
       </style>
     ```
+![Preview](2_CSS/Images/Preview_2_4.PNG)
 
-* formatting an ordered list
+
+### formatting an ordered list
   - example --> *2_CSS/Part_5/index.html*
     ```
       <head>
@@ -714,8 +756,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </article>
       </body>
     ```
+![Preview](2_CSS/Images/Preview_2_5.PNG)
 
-* use images as bullets
+
+### use images as bullets
   - example --> *2_CSS/Part_6/index.html*
     ```
       <head>
@@ -750,8 +794,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
       </article>
       </body>
     ```
+![Preview](2_CSS/Images/Preview_2_6.PNG)
 
-* setting the position of bullets
+
+### setting the position of bullets
   - example --> *2_CSS/Part_7/index.html*
     ```
         <style type="text/css">
@@ -785,9 +831,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
         </p>
       </article>
     ```
+![Preview](2_CSS/Images/Preview_2_7.PNG)
 
-### 2.5. Tables
-* design tables with CSS
+
+## 2.5. Tables
+### design tables with CSS
   - example --> *2_CSS/Part_8/index.html*
     ```
         body {
@@ -814,9 +862,11 @@ Basics Guide for web developers. This is a small overview of what you should kno
           padding: 11px;
         }
     ```
+![Preview](2_CSS/Images/Preview_2_8.PNG)
 
-### 2.6. Forms
-* designing forms with float layout
+
+## 2.6. Forms
+### designing forms with float layout
   - example --> *2_CSS/Part_9/index.html*
     ```
       label {
@@ -834,8 +884,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         width: calc(100% - 200px);
       }
     ```
+![Preview](2_CSS/Images/Preview_2_9.PNG) 
 
-* designing forms with flexbox layout
+
+### designing forms with flexbox layout
   - example --> *2_CSS/Part_10/index.html*
     ```
       form {
@@ -863,8 +915,10 @@ Basics Guide for web developers. This is a small overview of what you should kno
         background: deepskyblue;
       }
     ```
+![Preview](2_CSS/Images/Preview_2_10.PNG)
 
-* designing forms with grid layout
+
+### designing forms with grid layout
   - example --> *2_CSS/Part_11/index.html*
     ```
       label {
@@ -886,6 +940,7 @@ Basics Guide for web developers. This is a small overview of what you should kno
         grid-column: 2 / 3;
       }
     ```
+  ![Preview](2_CSS/Images/Preview_2_11.PNG)
 
 
  ![Preview](Images/PseudoElements.PNG)
