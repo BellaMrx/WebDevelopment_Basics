@@ -945,6 +945,7 @@
   ![Preview](2_CSS/Images/Preview_2_11.PNG)
 
 -----------------------------------------------------------------------------
+ More stuff:
 
  ![Preview](Images/PseudoElements.PNG)
 
@@ -1288,6 +1289,8 @@
     ```
 
 
+ More stuff:
+
  ![Preview](Images/ImportantArrayMethods.png)
 
  ![Preview](Images/important_methods_console.PNG)
@@ -1520,6 +1523,8 @@
   ![Preview](5_Webformats/Images/Preview_5_11.PNG)
 
 
+ More stuff:
+
  ![Preview](Images/ImageFormats.PNG)
 
  ![Preview](Images/AudioVideoAttributes.png)
@@ -1557,9 +1562,11 @@
         });
       </script>
     ```
+  ![Preview](Images/Images/Preview_6_1.PNG)
 
-### 6.2. Change elements
-* create and add a text node
+
+## 6.2. Change elements
+### create and add a text node
   - example --> *6_Web APIs/Part_2*
     ```
       document.addEventListener('DOMContentLoaded', () => {
@@ -1571,17 +1578,81 @@
           element.appendChild(childElement);
       });
     ```
+  ![Preview](Images/Images/Preview_6_2.PNG)
 
-### 6.3. Dynamically create a table
-* create an object using the object literal notation
+
+## 6.3. Dynamically create a table
+### create an object using the object literal notation
   - example --> *6_Web APIs/Part_3*
+    ```
+      const persons = [
+          {
+              firstName: 'Albert',
+              lastName: 'Einstein',
+              profession: 'Genius'
+          },
+          {
+              firstName: 'Nikola',
+              lastName: 'Tesla',
+              profession: 'Inventor'
+          },  
+          {
+              firstName: 'Elon',
+              lastName: 'Musk',
+              profession: 'Rich guy'
+          }
+      ];
 
-### 6.4. Load data asynchronously with Ajax and the Fetch API
-* load JSON data via Ajax and via Fetch API
+      function createTable(persons) {
+          // select container element
+          const container = document.getElementById('container');
+          // create table
+          const table = document.createElement('table');
+          // create table header
+          const thead = document.createElement('thead');
+          thead.innerHTML = '<tr><th>First Name</th><th>Last Name</th><th>Profession</th>';
+
+          // create table body
+          const tbody = document.createElement('tbody');
+          for (let i = 0; i < persons.length; i++) {
+            const person = persons[i];
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+              <td>
+                ${person.firstName}
+              </td>
+              <td>
+                ${person.lastName}
+              </td>
+              <td>
+                ${person.profession}
+              </td>
+            `;
+            tbody.appendChild(tr);
+          }
+
+          // add header to table
+          table.appendChild(thead);
+          // add table body to table
+          table.appendChild(tbody);
+          // add table body to container
+          container.appendChild(table);
+
+      }// registration of the eventlisterner
+      document.addEventListener('DOMContentLoaded', (event) => {
+          createTable(persons);
+        });
+
+    ```
+  ![Preview](Images/Images/Preview_6_3.PNG)
+
+
+## 6.4. Load data asynchronously with Ajax and the Fetch API
+### load JSON data via Ajax and via Fetch API
   - example --> *6_Web APIs/Part_4*
 
 
-### 6.5. JavaScript - HTML DOM Methods
+## 6.5. JavaScript - HTML DOM Methods
 
 
  ![Preview](Images/DOM_1.PNG)
@@ -1590,18 +1661,18 @@
  ![Preview](Images/DOM_2.PNG)
  
 
--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
  
-## 7. Accessibility (ally) - Optimize websites for accessibility
-### Basics
+# 7. Accessibility (ally) - Optimize websites for accessibility
+## Basics
   - Web accessibility means that the content of websites is accessible and understandable for all users, especially for people with disabilities.
   - The Web Content Accessibility Guidelines (WCAG) define guidelines that a web page must meet to be accessible.
   - Where possible, you should use semantic HTML elements, for example for the definition of header, footer and navigation, etc.
   - Where it is not possible or there is no standard HTML element for a particular UI component, you should define the semantics using ARIA (Accessible Rich Internet Applications).
 
 
-### 7.1. Semantically structure web pages
-* definition of structures with the help of the div element (no longer up-to-date)
+## 7.1. Semantically structure web pages
+### definition of structures with the help of the div element (no longer up-to-date)
   - example --> *7_Ally/Part_1/index.html*
     ```
       <body>
@@ -1628,8 +1699,10 @@
         </div>
       </body>
     ```
+  ![Preview](7_Ally/Images/Preview_7_1.PNG)
 
-* definition of structure with the help of the semantic elements for it
+
+### definition of structure with the help of the semantic elements for it
   - example --> *7_Ally/Part_2/index.html*
     ```
       <body>
@@ -1656,9 +1729,11 @@
         </footer>
       </body>
     ```
+  ![Preview](7_Ally/Images/Preview_7_2.PNG)
 
-### 7.2. Making forms accessible
-* use of different form elements
+
+## 7.2. Making forms accessible
+### use of different form elements
   - example --> *7_Ally/Part_3/form.html*
     ```
       <form action="/services/handle-form" method="POST">
@@ -1716,9 +1791,11 @@
       </form>
 
     ```
+  ![Preview](7_Ally/Images/Preview_7_3.PNG)
 
-### 7.3. Making tables accessible
-* definition of table description, table header, table body and table footer
+
+## 7.3. Making tables accessible
+### definition of table description, table header, table body and table footer
   - example --> *7_Ally/Part_4/table.html*
     ```
     <table>
@@ -1766,14 +1843,20 @@
       </tfoot>
     </table>
     ```
+  ![Preview](7_Ally/Images/Preview_7_4.PNG)
 
-* definition of table headings that refer to table columns
+
+### definition of table headings that refer to table columns
   - example --> *7_Ally/Part_5/table.html*
+  ![Preview](7_Ally/Images/Preview_7_5.PNG)
 
-* definition of table headings that refer to table columns
+
+### definition of table headings that refer to table columns
   - example --> *7_Ally/Part_6/table.html*
+  ![Preview](7_Ally/Images/Preview_7_6.PNG)
 
-* definition of table headings that refer to table columns
+
+### definition of table headings that refer to table columns
   - example --> *7_Ally/Part_7/list.html*
     ```
       <body>
@@ -1824,9 +1907,11 @@
         </ul>
       </body>
     ```
+  ![Preview](7_Ally/Images/Preview_7_7.PNG)
 
-### 7.4. Define language for web pages
-* definition of the language used for the web page and for a single HTML element
+
+## 7.4. Define language for web pages
+### definition of the language used for the web page and for a single HTML element
   - example --> *7_Ally/Part_8/index.html*
     ```
       <body>
@@ -1834,9 +1919,11 @@
         <p lang="de">Aber dieser Absatz hier ist auf Englisch geschrieben.</p>
       </body>
     ```
+  ![Preview](7_Ally/Images/Preview_7_8.PNG)
 
-### 7.5. Offer keyboard support
-* definition of keyboard shortcuts and tab order for links and form elements
+
+## 7.5. Offer keyboard support
+### definition of keyboard shortcuts and tab order for links and form elements
   - example --> *7_Ally/Part_9/index.html*
     ```
       <body>
@@ -1866,10 +1953,12 @@
         </form>
       </body>
     ```
+  ![Preview](7_Ally/Images/Preview_7_9.PNG)
 
-### 7.6. Use subtitles
-* defining alternative subtitles for videos
-  - example --> *7_Ally/Part_9/index.html*
+
+## 7.6. Use subtitles
+### defining alternative subtitles for videos
+  - example --> *7_Ally/Part_10/index.html*
     ```
       <body>
         <video controls>
@@ -1891,12 +1980,13 @@
         </video>
       </body>
     ```
+  ![Preview](7_Ally/Images/Preview_7_10.PNG)
 
 
--------------------------------------------------------------------------------------------------------------
- 
-## 8. Single Page Applications (SPA)
-### Basics
+-------------------------------------------------------------------------------------------------- 
+
+# 8. Single Page Applications (SPA)
+## Basics
   - React is a library with a focus on user interface implementations and is complemented by a very rich ecosystem of third-party packages.
   - You can either initilize a React app yourself, or use the Create React app project to do so.
   - A React application consists of a tree of components.
@@ -1911,13 +2001,13 @@
   - React Router gives you a way to navigate within a React application without completely reloading the page.
 
 
-### 8.1. Structure of the application
+## 8.1. Structure of the application
   - [Create React App](https://create-react-app.dev/docs/getting-started)
   - [React](https://reactjs.org)
   - example --> *8_Single Page Applications/Part_1*
 
-### 8.2. Local state of a component
-* local state in the list component
+## 8.2. Local state of a component
+### local state in the list component
   - example --> *8_Single Page Applications/Part_2/src/List.js*
     ```
       import { useState } from 'react';
@@ -1947,8 +2037,8 @@
       export default List;
     ```
 
-### 8.3. The life cycle of a component
-* server communication in the list component
+## 8.3. The life cycle of a component
+### server communication in the list component
   - example --> *8_Single Page Applications/Part_3/src/List.js*
     ```
       import { useState, useEffect } from 'react';
@@ -1970,8 +2060,8 @@
       export default List;
     ```
 
-### 8.4. Styling of components
-* inline styling in react components
+## 8.4. Styling of components
+### inline styling in react components
   - example --> *8_Single Page Applications/Part_4/src/List.js*
     ```
       function List() {
@@ -1988,8 +2078,8 @@
       export default List;
     ```
 
-### 8.5. CSS classes and external stylessheets
-* integration of the stylessheets
+## 8.5. CSS classes and external stylessheets
+### integration of the stylessheets
   - example --> *8_Single Page Applications/Part_5/src/List.js*
     ```
       import { useState, useEffect } from 'react';
@@ -2011,8 +2101,8 @@
       export default List;
     ```
 
-### 8.6. Component hierarchy
-* inclusion of the listItem component
+## 8.6. Component hierarchy
+### inclusion of the listItem component
   - example --> *8_Single Page Applications/Part_6/src/List.js*
     ```
       import ListItem from './ListItem';
@@ -2045,8 +2135,8 @@
       export default List;
     ```
 
-### 8.7. Inverse data flow
-* embedding the delete routine in the ListItem component
+## 8.7. Inverse data flow
+### embedding the delete routine in the ListItem component
   - example --> *8_Single Page Applications/Part_7/src/ListItem.js*
     ```
       function ListItem({ contact, onDelete }) {
@@ -2066,12 +2156,12 @@
       export default ListItem;
     ```
 
-### 8.8. Forms
-* the form component for creating new records
+## 8.8. Forms
+### the form component for creating new records
   - example --> *8_Single Page Applications/Part_8/src/Form.js*
 
-### 8.9. Context API
-* adapting the list component to the context
+## 8.9. Context API
+### adapting the list component to the context
   - example --> *8_Single Page Applications/Part_9/src/List.js*
     ```
       import { useEffect, useContext } from 'react';
@@ -2100,8 +2190,8 @@
       export default List;
     ```
 
-### 8.10. Routing
-* routine definitions in the app component
+## 8.10. Routing
+### routine definitions in the app component
   - example --> *8_Single Page Applications/Part_9/src/App.js*
     ```
       import {
@@ -2135,9 +2225,10 @@
       }
     ```
   
-------------------------------------------------------------------------------------------------------------
-## 9. Understanding web architectures
-### Basics
+-------------------------------------------------------------------------------------------------
+
+# 9. Understanding web architectures
+## Basics
   - The architecture of software is about how to break down or divide the software into smaller components and how to organize the interaction of these components.
   - A client-server architecture divides an application into two parts: the client and the server are connected via a network. Because this architecture consists of two layers, it is also called a two-tier architecture.
   - In an N-tier architecture, the server layer is divided into further layers: a data tier and the logic tier, which contains the application logic or business logic.
@@ -2151,9 +2242,10 @@
   - MV* architectures are used in the front end of an application and divide the responsibility into model, view and a component responsible for communication: Controller(MVC), Presenter(MVP), and View Model(MVVM). 
 
 
-------------------------------------------------------------------------------------------------------------
-## 10. Programming languages on the server side
-### Basics
+---------------------------------------------------------------------------------------------------
+
+# 10. Programming languages on the server side
+## Basics
   - Programming languages can be classified into several categories.
   - Subdivision according to degree of abstraction:
   - Higher level programming languages abstract very far from the machine code the computer understands.
@@ -2178,9 +2270,10 @@
  ![Preview](Images/BackendDev.png)
 
 
-------------------------------------------------------------------------------------------------------------
-## 11. Use Javascript on the server side - Node.js
-### Basics
+----------------------------------------------------------------------------------------------------
+
+# 11. Use Javascript on the server side - Node.js
+## Basics
   - Node.js is a runtime environment for JavaScript, thanks to which JavaScript can be executed outside of browsers.
   - In addition to the runtime environment, Node.js provides various modules, with the help of which they can, for example, access the file system, implement web servers and much more.
   - About the Node.js Package Manager (npm) can also install many other packages.
@@ -2190,54 +2283,55 @@
   - The web framework express is one of the most popular web frameworks and facilitates the implementation of web servers.
 
 
-#### before you start please install Node.js, you can do that at [Node.js](https://nodejs.org/en/download)
+### before you start please install Node.js, you can do that at [Node.js](https://nodejs.org/en/download)
   - for macOS download the pkd file
   - for windows download the msi file
   - for linux a binary package is available start there in the directory bin/node file
-#### you can check if the installation was successful
+### you can check if the installation was successful
   - macOS - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v"** and $ "npx -v"
   - window - with $ "node -v" the installed version is displayed, with $ "node -v" the installed version is  displayed, and check if npm and npx are also installed with $ "npm -v" and $ "npx -v"
   - linux - $ "bin/node -v", $ "bin/npm -v", $ "bin/npx -v"
 
 
-### 11.1. A simple node.js application
+## 11.1. A simple node.js application
   - example --> *11_Node/Part_1/main.js*
   - open the terminal and start the main.js with $ "node main.js" (pay attention to where the file is stored)
   - "Server is running on http://localhost:8000" open this in your browser
 
-### 11.2. Use built-in modules
+## 11.2. Use built-in modules
   - read files, write files, delete files (synchronous, asynchronous)
   - example --> *11_Node/Part_2*
 
-### 11.3. Deploy static files
+## 11.3. Deploy static files
   - example --> *11_Node/Part_3/start.js*
   - customized webserver now deploys the HTML file and CSS file
   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
   - "Server is running on http://localhost:8000" open this in your browser
 
-### 11.4. Use web framework [Express](http://expressjs.com)
-##### first please install express, open the project and open the terminal and enter "npm install express" then express will be installed locally for this project
+## 11.4. Use web framework [Express](http://expressjs.com)
+### first please install express, open the project and open the terminal and enter "npm install express" then express will be installed locally for this project
   - example --> *11_Node/Part_4/start.js*
   - a webserver with the web framework express
   - customized webserver now deploys the HTML file and CSS file
   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
   - "Server is running on http://localhost:8000" open this in your browser
 
-### 11.5. [Express](http://expressjs.com) - customized web server processes the data 
+## 11.5. [Express](http://expressjs.com) - customized web server processes the data 
   - example --> *11_Node/Part_5/start.js*
   - customized webserver processes the data
   - customized webserver now deploys the HTML file and CSS file
   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
   - "Server is running on http://localhost:8000" open this in your browser
 
-#### if the installation of express was successful the folder node_module should have been created
+### if the installation of express was successful the folder node_module should have been created
 
  ![Preview](Images/nodeJSexpress.PNG)
 
 
-------------------------------------------------------------------------------------------------------------
-## 12. Implementing web services 
-### Basics
+------------------------------------------------------------------------------------------------------
+
+# 12. Implementing web services 
+## Basics
   - Web services make functionality of a server-side component available via the Web using an API.
   - Web services use web standards such as HTTP, XML and JSON.
   - In principle, web services can be implemented in different ways or using different technologies and concepts. Three of the best known are the SOAP protocol, the REST architectural style, and the GraphQL query language.
@@ -2249,28 +2343,70 @@
   - REST based web services are expected to make up, the majority of web service implementations.
   - If it is expected that the structure of the data provided by a web service will have to be adapted frequently to the client-side requirements, GraphQL-based web services are the right choice. With them, the client can define exactly the structure of the data as it needs it via a GraphQL query. 
 
-### 12.1. SOAP  (Simple Object Access Protocol)
-* example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
+## 12.1. SOAP  (Simple Object Access Protocol)
+### example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
   - example --> *12_Webservices/Part_1*
 
-### 12.2. REST (Representational State Transfer)
-* example for the resource https://www.alberteinstein.com/api/books/4
+## 12.2. REST (Representational State Transfer)
+### example for the resource https://www.alberteinstein.com/api/books/4
   - example --> *12_Webservices/Part_2/book.json*
+    ```
+      {
+        "id": "4",
+        "isbn": "321-4-8765-1110-9",
+        "title": "The Theory of Relativity",
+        "author": {
+          "firstName": "Albert",
+          "lastName": "Einstein",
+          "href": "https://www.alberteinstein.com/api/authors/1"
+        }
+      }
+    ```
 
-* example for the resource https://www.alberteinstein.com/api/authors/1
+
+### example for the resource https://www.alberteinstein.com/api/authors/1
   - example --> *12_Webservices/Part_3/author.json*
+    ```
+      {
+        "firstName": "Alber",
+        "lastName": "Einstein",
+        "books": [
+          {
+            "title": "The Theory of Relativity",
+            "href": "https://www.alberteinstein.com/api/books/1"
+          },
+          {
+            "title": "The Ultimate Quotable Einstein",
+            "href": "https://www.alberteinstein.com/api/books/2"
+          },
+          {
+            "title": "Albert Einstein in His Own Voice",
+            "href": "https://alberteinstein.com/api/books/3"
+          },
+          {
+            "title": "Einstein on Cosmic Religion and Other Opinions and Aphorisms",
+            "href": "https://alberteinstein.com/api/books/4"
+          },
+          {
+            "title": "The World As I See It",
+            "href": "https://www.alberteinstein.com/api/books/5"
+          }
+        ]
+      }
+    ```
 
 
-* implement a REST-API (npm install express  -->  node start.js)
+### implement a REST-API (npm install express  -->  node start.js)
   - example --> *12_Webservices/Part_4/start.js*
+
 
 
 #### Tip -> [Postman](https://postman.com/) - has a graphical interface instead of a command line
 
 
-------------------------------------------------------------------------------------------------------------
-## 13. Store data in databases
-### Basics
+----------------------------------------------------------------------------------------------------
+# 13. Store data in databases
+## Basics
   - Basically, a distinction is made between relational databases and non-relational databases.
   - Relational databases are called SQL (Structured Query Language) because of the query language used, while non-relational databases are called NoSQL databases, even if the latter is not quite correct, strictly speaking, because non-relational databases also use query languages that are very similar to SQL, at least in terms of syntax.
   - In relational databases, data is stored in relations. 
@@ -2283,7 +2419,7 @@
     - Column-oriented databases store the data in columns, where the individual columns are not part of a table, but are managed separately ( https://cassandra.apache.org/ and https://hbase.apache.org )
 
 
-### 13.1. using relational databases in Node.js
+## 13.1. using relational databases in Node.js
   - for this example I use SQLite under Node.js with sqlite3 (https://www.npmjs.com/package/sqlite3)
   - can be installed with the help of Node.js Package Manager using the command "npm install sqlite3".
   - for starting the webservice again "node start.js".
@@ -2292,9 +2428,10 @@
 #### A good introduction to the commands supported by SQLite can be found, for example, on the SQLite homepage at [SQLite](https://sqlite.org/lang.html).
 
 
-------------------------------------------------------------------------------------------------------------
-## 14. Testing web applications (Testing)
-### Basics
+---------------------------------------------------------------------------------------------------
+
+# 14. Testing web applications (Testing)
+## Basics
   - Automated tests help you produce more robust code that has a clean interface, is easier to test, and that you can safely optimize.
   - There are several types of tests, of which the following are particularly relevant for web development:
 	  - Over component testsas they test individual components on code level for example classes or functions.
@@ -2315,16 +2452,17 @@
 	  - Mock objects can be used to check the indirect outputs of the component under test.
 
 
-### 14.1. Run automated test in JavaScript
+## 14.1. Run automated test in JavaScript
   - Unit testing in JavaScript
   - for this example I use the test framework [Jest](https://jest.io/) to write unit tests for JavaScript
   - to run jest just enter command "npx"(node.js) then "npx jest:" ( https://jestjs.io/docs/en/expect )
   - example --> *14_Testing/Part_1*
 
 
-------------------------------------------------------------------------------------------------------------
-## 15. Deploying and hosting web applications
-### Basics
+---------------------------------------------------------------------------------------------------
+
+# 15. Deploying and hosting web applications
+## Basics
   - For a web application to be accessible to users over the Internet, it must be hosted on a (hosting) server. You need web space on the one hand and a domain on the other.
   - Basically, there are different types of hosting:
 	  - Shared hosting: here your web application shares the corresponding server with other web applications.
@@ -2337,16 +2475,17 @@
   - Types deployment: FPS, SCP, Container Management
 
 
-### 15.1. Package a web application with Docker
+## 15.1. Package a web application with Docker
   - Install Docker ( https://docs.docker.com )
   - all available commands can be found at https://docs.docker.com/engine/reference/builder
   - Docker images for all major Node.js versions: https://github.com/nodejs/docker-node , https://hub.docker.com/_/node
   - example --> *15_Deploy_Host/Part_1*
 
    
-------------------------------------------------------------------------------------------------------------
-## 16. Websecurity
-### Basics
+----------------------------------------------------------------------------------------------------
+
+# 16. Websecurity
+## Basics
 Security vulnerabilities:
   - OWASP stands for Open Web Application Security Project and refers to an organization of security experts concerned with the security of Web applications and Web services (https://owasp.org/).
   - The OWASP Top Ten is a list of the ten most frequently encountered security vulnerabilities at present:
@@ -2383,14 +2522,14 @@ Authentication:
 	  - Token-based authentication, in which a token is generated by the server after successful authentication, which is then sent by the client to the server with every request and which contains the user's complete session information.
 
 
-### 16.1. Configure CORS for express (https://github.com/expressjs/cors)
+## 16.1. Configure CORS for express (https://github.com/expressjs/cors)
   - can be easily installed via node.js with "npm install cors"
   - example --> *16_Websecurity/Part_1*
 
-### 16.2. Configure CSP in HTML
+## 16.2. Configure CSP in HTML
   - example --> *16_Websecurity/Part_2*
 
-### 16.3. Configure CSP for express
+## 16.3. Configure CSP for express
   - possible with for example [Helmet](https://helmetjs.github.io)
   - to install Helmet just use node.js "npm install helmet" -> "node start.js"
   - example --> *16_Websecurity/Part_3*
@@ -2398,7 +2537,8 @@ Authentication:
 #### Under Node.js, you can create digital signatures using the crypto module included in the Node.js installation (https://nodejs.org/api/crypto.html).
 
 
-------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+
 ## 17. Organize and manage web projects
 
 - [Git](https://git-scm.com/)
@@ -2412,9 +2552,10 @@ Authentication:
   ![Preview](Images/gitcommands.PNG)
 
 
-------------------------------------------------------------------------------------------------------------
-## 18. Manage web projects
-### Basics
+-----------------------------------------------------------------------------------------------
+
+# 18. Manage web projects
+## Basics
   - Basically, a distinction is made between classic project management and agile project management. For both categories, there are different process models that describe exactly how project management is to be implemented in each case.
   - Scrum is an iterative and incremental process model to be implemented in each case.
   - Srcum defines different roles, events and artifacts.
@@ -2432,12 +2573,12 @@ Authentication:
 	  - The Product Increment designates a new state of the software that contains the requirements or new features implemented in a Sprint.
 
 
-#### [Agile manifest](https://agilemanifesto.org)
+### [Agile manifest](https://agilemanifesto.org)
 
 
-------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 
-### Free learning websites
+## Free learning websites
   - [Google](https://www.google.com/)
   - [YouTube](https://www.youtube.com/)
   - [GitHub](https://github.com/)
@@ -2449,7 +2590,9 @@ Authentication:
   - [mdn](https://developer.mozilla.org/)
 
 
-### The end
+---------------------------------------------------------------------------------------------
+
+## The end
 
  The guide is an overview that a WebDeveloper should know. But there is more to know and also always something new. You never stop learning in this business.
 
