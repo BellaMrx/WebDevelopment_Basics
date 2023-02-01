@@ -608,10 +608,9 @@
 ## 1.8. HTML Tags
 
 
- ![Preview](Images/html5_cheat_sheet_tags.png)
+ ![Preview](Images/HTML_Cheat_Sheet.png)
 
- ![Preview](Images/html5_cheat_sheet_event_attributes.png)
-
+## Here you can find all HTML elements and their attributes: [GitHub - HTML Cheat Sheet](https://github.com/BellaMrx/HTML_Cheat_Sheets)
 
 ## If you want to know more about HTML then check this out: [GitHub - HTML Guide](https://github.com/BellaMrx/HTML_Guide)
 
