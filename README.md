@@ -73,7 +73,7 @@
     - 11.5. Express - customized web server processes the data
 12. Implementing web services
     - 12.1. SOAP  (Simple Object Access Protocol)
-    - 12.2. REST (Representational State Transfer 
+    - 12.2. REST (Representational State Transfer)
 13. Store data in databases
     - 13.1. using relational databases in Node.js
 14. Testing web applications (Testing)
@@ -103,7 +103,8 @@
 
 ## 1.1. Use elements and attributes
 ### a simple website
-  - example --> *1_HTML/Part_1/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_1/index.html) --> *1_HTML/Part_1/index.html*
+
    ```
       <!DOCTYPE html>
       <html>
@@ -125,7 +126,8 @@
 
 ### Parameterize elements via attributes
   - use attributes
-  - example --> *1_HTML/Part_2/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_2/index.html) *1_HTML/Part_2/index.html*
+
     ```
       <body>
         <a href="https://github.com/BellaMrx">Here you can find my Github account.</a>
@@ -136,7 +138,8 @@
 
 ## 1.2. Lists
 ### ordered list
-  - example --> *1_HTML/Part_3/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_3/index.html) --> *1_HTML/Part_3/index.html*
+
     ```
       <body>
         <ol>
@@ -152,7 +155,8 @@
 
 
 ### unordered list
-  - example --> *1_HTML/Part_4/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_4/index.html) --> *1_HTML/Part_4/index.html*
+
     ```
       <body>
         <ul>
@@ -168,7 +172,8 @@
 
 
 ### definition list
-  - example --> *1_HTML/Part_5/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_5/index.html) --> *1_HTML/Part_5/index.html*
+
     ```
       <body>
         <dl>
@@ -185,7 +190,8 @@
 
 
 ### nested lists
-  - example --> *1_HTML/Part_6/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_6/index.html) --> *1_HTML/Part_6/index.html*
+
     ```
       <body>
         <ul>
@@ -213,7 +219,8 @@
 
 ## 1.3. Links
 ### use of external links
-  - example --> *1_HTML/Part_7/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_7/index.html) --> *1_HTML/Part_7/index.html*
+
     ```
       <body>
         <p>
@@ -252,7 +259,8 @@
 
 
 ### relative links (links on the same page)
-  - example --> *1_HTML/Part_8/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_8/index.html) --> *1_HTML/Part_8/index.html*
+
     ```
       <body>
         <p>
@@ -278,7 +286,8 @@
 
 
 ### internal links (links on the same website)
-  - example --> *1_HTML/Part_9/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_9/index.html) --> *1_HTML/Part_9/index.html*
+
     ```
       <body>
         <h1>My E-Book</h1>
@@ -316,7 +325,8 @@
 
 ## 1.4. Images
 ### embedding images
-  - example --> *1_HTML/Part_10/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_10/index.html) --> *1_HTML/Part_10/index.html*
+
     ```
       <body>
         <p>
@@ -329,7 +339,8 @@
 
 ## 1.5. Captions
 ### use of captions + embedding images
-  - example --> *1_HTML/Part_11/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_11/index.html) --> *1_HTML/Part_11/index.html*
+
     ```
       <body>
         <figure>
@@ -346,7 +357,8 @@
 
 ## 1.6. Tables
 ### representation of users with the help of tables
-  - example --> *1_HTML/Part_12/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_12/index.html) --> *1_HTML/Part_12/index.html*
+
     ```
       <body>
         <h1>Users</h1>
@@ -388,7 +400,8 @@
 
 
 ### Definition of table header (thead), table body (tbody) table footer row (tfoot)
-  - example --> *1_HTML/Part_13/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_13/index.html) --> *1_HTML/Part_13/index.html*
+
     ```
       <body>
         <h1>Users</h1>
@@ -441,7 +454,8 @@
 
 
 ### combine columns
-  - example --> *1_HTML/Part_14/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_14/index.html) --> *1_HTML/Part_14/index.html*
+
     ```
       <body>
         <table>
@@ -485,7 +499,8 @@
 
 
 ### merging rows
-  - example --> *1_HTML/Part_15/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_15/index.html) --> *1_HTML/Part_15/index.html*
+
     ```
       <body>
         <table>
@@ -529,7 +544,8 @@
 
 ## 1.7. Forms
 ### use of the different form elements
-  - example --> *1_HTML/Part_16/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_16/index.html) --> *1_HTML/Part_16/index.html*
+
     ```
       <body>
         <form action="/services/handle-form" method="POST">
@@ -628,7 +644,8 @@
 
 ## 2.1. Introduction
 ### a simple CSS file
-  - example --> *2_CSS/Part_1/style.css*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_1/styles.css) --> *2_CSS/Part_1/style.css*
+
     ```
       body {
         font-family: Arial;
@@ -646,9 +663,11 @@
 
 ## 2.2. Include CSS in HTML
 ### embed CSS file, external, inline, internal
-  - example --> *2_CSS/Part_2/external.html* 
-  - example --> *2_CSS/Part_2/inline.html*
-  - example --> *2_CSS/Part_2/internal.html*
+
+ [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_2/external.html) --> *2_CSS/Part_2/external.html* 
+ [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_2/inline.html) --> *2_CSS/Part_2/inline.html*
+
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_2/internal.html) --> *2_CSS/Part_2/internal.html*
   - internal:
     ```
         <head>
@@ -682,7 +701,8 @@
 
 ## 2.3. Texts
 ### format texts with CSS
-  - example --> *2_CSS/Part_3/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_3/index.html) --> *2_CSS/Part_3/index.html*
+
     ```
       body {
         font-family: 'Times New Roman', Times, serif;
@@ -711,7 +731,8 @@
 
 ## 2.4. Lists
 ### format unordered lists with CSS
-  - example --> *2_CSS/Part_4/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_4/index.html) --> *2_CSS/Part_4/index.html*
+
     ```
       <style type="text/css">
         ul.web-technologies li {
@@ -723,7 +744,8 @@
 
 
 ### formatting an ordered list
-  - example --> *2_CSS/Part_5/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_5/index.html) --> *2_CSS/Part_5/index.html*
+
     ```
       <head>
         <title>formatting ordered lists</title>
@@ -761,7 +783,8 @@
 
 
 ### use images as bullets
-  - example --> *2_CSS/Part_6/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_6/index.html) --> *2_CSS/Part_6/index.html*
+
     ```
       <head>
         <title>Use images as bullets</title>
@@ -799,7 +822,8 @@
 
 
 ### setting the position of bullets
-  - example --> *2_CSS/Part_7/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_7/index.html) --> *2_CSS/Part_7/index.html*
+
     ```
         <style type="text/css">
           ul.web-technologies {
@@ -837,7 +861,8 @@
 
 ## 2.5. Tables
 ### design tables with CSS
-  - example --> *2_CSS/Part_8/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_8/index.html) --> *2_CSS/Part_8/index.html*
+
     ```
         body {
           font-family: Verdana, sans-serif;
@@ -868,7 +893,8 @@
 
 ## 2.6. Forms
 ### designing forms with float layout
-  - example --> *2_CSS/Part_9/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_9/index.html) --> *2_CSS/Part_9/index.html*
+
     ```
       label {
         float: left;
@@ -889,7 +915,8 @@
 
 
 ### designing forms with flexbox layout
-  - example --> *2_CSS/Part_10/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_10/index.html) --> *2_CSS/Part_10/index.html*
+
     ```
       form {
         padding: 1em;
@@ -920,7 +947,8 @@
 
 
 ### designing forms with grid layout
-  - example --> *2_CSS/Part_11/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/2_CSS/Part_11/index.html) --> *2_CSS/Part_11/index.html*
+
     ```
       label {
         padding: 0.5em 0.5em 0.5em 0;
@@ -971,14 +999,16 @@
 
 ## 3.1. Introduction
 ### JavaScript code that calls a function
-  - example --> *3_JS/Part_1/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_1/script.js) --> *3_JS/Part_1/script.js*
+
     ```
       alert('Hello World');
     ```
 
 
 ### embedding JavaScript in HTML
-  - example --> *3_JS/Part_2/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_2/index.html) --> *3_JS/Part_2/index.html*
+
     ```
       <body>
         <script src="scripts/script.js"></script>
@@ -988,7 +1018,8 @@
 
 
 ### a simple hint dialog generated via JavaScript (a simple information dialog generated via JavaScript only makes sense in exceptional cases: definitions of JavaScript directly in an HTML file)
-  - example --> *3_JS/Part_3/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_3/index.html) --> *3_JS/Part_3/index.html*
+
     ```
       <body>
       <script>
@@ -1001,13 +1032,15 @@
 
 ## 3.2. Use developer console
 ### output to the console via the "console" object
-  - example --> *3_JS/Part_4/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_4/script.js) --> *3_JS/Part_4/script.js*
+
     ```
       console.log('Hello World');
     ```
 
 ### using the "console" object
-  - example --> *3_JS/Part_5/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_5/script.js) --> *3_JS/Part_5/script.js*
+
     ```
       console.log('Hello world'); // output a normal message
       console.debug('Hello world'); // output a debug message
@@ -1018,7 +1051,8 @@
 
 ## 3.3. Define variables
 ### declaration of variables with the "let" keyword
-  - example --> *3_JS/Part_6/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_6/script.js) --> *3_JS/Part_6/script.js*
+
     ```
       let firstName;                  // variable declaration
       firstName = 'John';             // Variable initialization
@@ -1030,14 +1064,16 @@
 
 ## 3.4. Define constant
 ### declaration of a constant
-  - example --> *3_JS/Part_7/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_7/script.js) --> *3_JS/Part_7/script.js*
+
     ```
       const MAXIMUM = 5000;
     ```
 
 ## 3.5. Use data types
 ### definition of different number variables
-  - example --> *3_JS/Part_8/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_8/script.js) --> *3_JS/Part_8/script.js*
+
     ```
       const number1 = 5; // Definition of an integer number
       const number2 = 0.5; // Definition of a decimal number
@@ -1046,7 +1082,8 @@
     ```
 
 ### examples for the definition of strings
-  - example --> *3_JS/Part_9/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_9/script.js) --> *3_JS/Part_9/script.js*
+
     ```
       const firstName = 'John';        // single quotes
       const lastName = "Doe";         // double quotes
@@ -1055,7 +1092,8 @@
     ```
 
 ### definition of boolean variables
-  - example --> *3_JS/Part_10/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_10/script.js) --> *3_JS/Part_10/script.js*
+
     ```
       const isLoggedIn = true;
       const isAdmin = false;
@@ -1063,7 +1101,8 @@
 
 ## 3.6. Control structures
 ### example of a conditional statement including branching
-  - example --> *3_JS/Part_11/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_11/script.js) --> *3_JS/Part_11/script.js*
+
     ```
       let passwordTooShort = password.length < 10;
       let message = '';
@@ -1076,7 +1115,8 @@
     ```
 
 ### example of a branch with several paths
-  - example --> *3_JS/Part_12/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_12/script.js) --> *3_JS/Part_12/script.js*
+
     ```
       let passwordTooShort = password.length < 10;
       let passwordTooLong = password.length > 50;
@@ -1092,7 +1132,8 @@
     ```
 
 ### use of the "switch" application
-  - example --> *3_JS/Part_13/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_13/script.js) --> *3_JS/Part_13/script.js*
+
     ```
       const testResultElement = document.getElementById('testResult');
 
@@ -1120,7 +1161,8 @@
 
 ## 3.7. Use loops
 ## a simple "for" loop that outputs the numbers from 1 to 10
-  - example --> *3_JS/Part_14/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_14/script.js) --> *3_JS/Part_14/script.js*
+
     ```
       for (let i = 1; i <= 10; i++) {
         console.log(i);
@@ -1128,7 +1170,8 @@
     ```
 
 ### a simple "while" loop that outputs the numbers from 1 to 10
-  - example --> *3_JS/Part_15/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_15/script.js) --> *3_JS/Part_15/script.js*
+
     ```
       let i = 1;            // Initialization
       while (i <= 10) {     // condition
@@ -1138,7 +1181,8 @@
     ```
 
 ### a simple "do-while" loop that outputs the numbers from 1 to 10
-  - example --> *3_JS/Part_16/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_16/script.js) --> *3_JS/Part_16/script.js*
+
     ```
       let i = 1; do {       // Initialization
         console.log(i);     // statement
@@ -1148,7 +1192,8 @@
 
 ## 3.8. Functions and error handling
 ### creating a function using a function declaration
-  - example --> *3_JS/Part_17/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_17/script.js) --> *3_JS/Part_17/script.js*
+
     ```
       function printNumbersFrom1To10() {
         for (let i = 1; i <= 10; i++) {
@@ -1158,7 +1203,8 @@
     ```
 
 ### creating a function using a function expression
-  - example --> *3_JS/Part_18/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_18/script.js) --> *3_JS/Part_18/script.js*
+
     ```
       const printNumbersFrom1To10 = function() {
         for (let i = 1; i <= 10; i++) {
@@ -1168,7 +1214,8 @@
     ```
 
 ### create a function using the Arrow function notation
-  - example --> *3_JS/Part_19/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_19/script.js) --> *3_JS/Part_19/script.js*
+
     ```
       const printNumbersFrom1To10 = () => {
         for (let i = 1; i <= 10; i++) {
@@ -1178,7 +1225,8 @@
     ```
 
 ### call a function
-  - example --> *3_JS/Part_20/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_20/script.js) --> *3_JS/Part_20/script.js*
+
     ```
       const printNumbersFrom1To10 = () => {
           for (let i = 1; i <= 10; i++) {
@@ -1189,7 +1237,8 @@
     ```
 
 ### use of function parameters
-  - example --> *3_JS/Part_21/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_21/script.js) --> *3_JS/Part_21/script.js*
+
     ```
       function printNumbersFromXToY(x, y) {
           for (let i = x; i <= y; i++) {
@@ -1202,7 +1251,8 @@
     ```
     
 ### a function that returns a value
-  - example --> *3_JS/Part_22/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_22/script.js) --> *3_JS/Part_22/script.js*
+
     ```
       function sum(x, y) {
           let result = x + y;
@@ -1213,7 +1263,8 @@
     ```
 
 ### example of the use of a "try-catch" block
-  - example --> *3_JS/Part_23/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_23/script.js) --> *3_JS/Part_23/script.js*
+
     ```
       function checkPassword(password) {
           if (password.length < 10) {
@@ -1234,7 +1285,8 @@
 
 ## 3.9. Objects and arrays
 ### creating an object via the objelt-literal notation
-  - example --> *3_JS/Part_24/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_24/script.js) --> *3_JS/Part_24/script.js*
+
     ```
       const book = {
           title: 'Christmas is bad',
@@ -1253,7 +1305,8 @@
     ```
 
 ### create an array via the shorthand
-  - example --> *3_JS/Part_25/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_25/script.js) --> *3_JS/Part_25/script.js*
+
     ```
       // create an array with specified values
       const names = ['Max', 'John', 'Peter'];
@@ -1274,7 +1327,8 @@
     ```
 
 ### iteration over an array
-  - example --> *3_JS/Part_26/script.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/3_JS/Part_26/script.js) --> *3_JS/Part_26/script.js*
+
     ```
       const colors = [];
       colors.push('red');
@@ -1327,7 +1381,8 @@
 
 ## 5.1. Data formats
 ### example of a CSV document
-  - example --> *5_Webformats/Part_1/data.csv*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_1/data.csv) --> *5_Webformats/Part_1/data.csv*
+
     ```
       firstname,lastname,phone,email
       Max,Miller,01234567,max.miller@example.com
@@ -1336,7 +1391,8 @@
     ```
 
 ### example of XML document
-  - example --> *5_Webformats/Part_2/contacts.xml*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_2/contacts.xml) --> *5_Webformats/Part_2/contacts.xml*
+
     ```
       <?xml version="1.0" encoding="UTF-8"?>
       <contacts xmlns="https://xml.web_manual.com"
@@ -1358,11 +1414,12 @@
     ```
 
 ### example of XML schema
-  - example --> *5_Webformats/Part_3/contacts.xsd*
+ [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_3/contacts.xsd) --> *5_Webformats/Part_3/contacts.xsd*
 
 ## 5.2. JSON
 ### example of a JSON document
-  - example --> *5_Webformats/Part_4/contacts.json*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_4/contacts.json) --> *5_Webformats/Part_4/contacts.json*
+
     ```
       {
         "contacts": [
@@ -1386,7 +1443,8 @@
     ```
 
 ### parsing JSON in JavaScript
-  - example --> *5_Webformats/Part_5/contacts.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_5/contacts.js) --> *5_Webformats/Part_5/contacts.js*
+
     ```
       const jsonString = `{
 	      "firstname": "Max",
@@ -1417,7 +1475,8 @@
     ```
 
 ### JSON can be embedded directly within JavaScript code
-  - example --> *5_Webformats/Part_6/contacts.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_6/contacts.js) --> *5_Webformats/Part_6/contacts.js*
+
     ```
       const person = {
 	      "firstname": "Max",
@@ -1447,11 +1506,13 @@
     ```
 
 ### example of a JSON schema
-  - example --> *5_Webformats/Part_7/contacts.schema.json*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_7/contacts.schema.json) --> *5_Webformats/Part_7/contacts.schema.json*
+
 
 ## 5.3. Vector graphics with SVG format
 ### example of SVG document
-  - example --> *5_Webformats/Part_8/graphic.svg*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_8/graphic.svg?short_path=86f97a3) --> *5_Webformats/Part_8/graphic.svg*
+
     ```
       <?xml version="1.0"?>
       <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
@@ -1485,7 +1546,8 @@
 
 ## 5.4. Audio and video formats
 ### embedding video files in HTML
-  - example --> *5_Webformats/Part_9/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_9/index.html) --> *5_Webformats/Part_9/index.html*
+
     ```
       <body>
           <video controls height="360" width="640">
@@ -1500,7 +1562,8 @@
 
 
 ### embedding video files in HTML
-  - example --> *5_Webformats/Part_10/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_10/index.html) --> *5_Webformats/Part_10/index.html*
+
     ```
       <body>
           <video controls src="my-video.mp4"></video>
@@ -1510,7 +1573,8 @@
 
 
 ### embedding audio files in HTML
-  - example --> *5_Webformats/Part_11/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/5_Webformats/Part_11/index.html) --> *5_Webformats/Part_11/index.html*
+
     ```
       <body>
           <audio controls>
@@ -1547,7 +1611,8 @@
 
 ## 6.1. Select elements
 ### selection of all elements with the CSS class "even" and subsequent iteration over the elements
-  - example --> *6_Web APIs/Part_1/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/6_Web%20APIs/Part_1/index.html) --> *6_Web APIs/Part_1/index.html*
+
     ```
       <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -1566,7 +1631,8 @@
 
 ## 6.2. Change elements
 ### create and add a text node
-  - example --> *6_Web APIs/Part_2*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/6_Web%20APIs/Part_2) --> *6_Web APIs/Part_2*
+
     ```
       document.addEventListener('DOMContentLoaded', () => {
           const element = document.getElementById('container');
@@ -1582,7 +1648,8 @@
 
 ## 6.3. Dynamically create a table
 ### create an object using the object literal notation
-  - example --> *6_Web APIs/Part_3*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/6_Web%20APIs/Part_3) --> *6_Web APIs/Part_3*
+
     ```
       const persons = [
           {
@@ -1648,7 +1715,7 @@
 
 ## 6.4. Load data asynchronously with Ajax and the Fetch API
 ### load JSON data via Ajax and via Fetch API
-  - example --> *6_Web APIs/Part_4*
+ [Example](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/6_Web%20APIs/Part_4) --> *6_Web APIs/Part_4*
 
 
 ## 6.5. JavaScript - HTML DOM Methods
@@ -1672,7 +1739,8 @@
 
 ## 7.1. Semantically structure web pages
 ### definition of structures with the help of the div element (no longer up-to-date)
-  - example --> *7_Ally/Part_1/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/7_Ally/Part_1/index.html) --> *7_Ally/Part_1/index.html*
+
     ```
       <body>
         <div id="header">
@@ -1702,7 +1770,8 @@
 
 
 ### definition of structure with the help of the semantic elements for it
-  - example --> *7_Ally/Part_2/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/7_Ally/Part_2/index.html) --> *7_Ally/Part_2/index.html*
+
     ```
       <body>
         <header>
@@ -1733,7 +1802,8 @@
 
 ## 7.2. Making forms accessible
 ### use of different form elements
-  - example --> *7_Ally/Part_3/form.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/7_Ally/Part_3/form.html) --> *7_Ally/Part_3/form.html*
+
     ```
       <form action="/services/handle-form" method="POST">
         <fieldset>
@@ -1795,7 +1865,8 @@
 
 ## 7.3. Making tables accessible
 ### definition of table description, table header, table body and table footer
-  - example --> *7_Ally/Part_4/table.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/7_Ally/Part_4/table.html) --> *7_Ally/Part_4/table.html*
+
     ```
     <table>
       <caption>Users</caption>
@@ -1846,17 +1917,18 @@
 
 
 ### definition of table headings that refer to table columns
-  - example --> *7_Ally/Part_5/table.html*
+ [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/7_Ally/Part_5/table.html) --> *7_Ally/Part_5/table.html*
   ![Preview](7_Ally/Images/Preview_7_5.PNG)
 
 
 ### definition of table headings that refer to table columns
-  - example --> *7_Ally/Part_6/table.html*
+ [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/7_Ally/Part_6/table.html) --> *7_Ally/Part_6/table.html*
   ![Preview](7_Ally/Images/Preview_7_6.PNG)
 
 
 ### definition of table headings that refer to table columns
-  - example --> *7_Ally/Part_7/list.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/7_Ally/Part_7/list.html)--> *7_Ally/Part_7/list.html*
+
     ```
       <body>
         <h3 id="tree_label">
@@ -1911,7 +1983,8 @@
 
 ## 7.4. Define language for web pages
 ### definition of the language used for the web page and for a single HTML element
-  - example --> *7_Ally/Part_8/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/7_Ally/Part_8/index.html) --> *7_Ally/Part_8/index.html*
+
     ```
       <body>
         This is an english website.
@@ -1923,7 +1996,8 @@
 
 ## 7.5. Offer keyboard support
 ### definition of keyboard shortcuts and tab order for links and form elements
-  - example --> *7_Ally/Part_9/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/7_Ally/Part_9/index.html) --> *7_Ally/Part_9/index.html*
+
     ```
       <body>
         <a href="https://www.facebook.com/" 
@@ -1957,7 +2031,8 @@
 
 ## 7.6. Use subtitles
 ### defining alternative subtitles for videos
-  - example --> *7_Ally/Part_10/index.html*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/7_Ally/Part_10/index.html) --> *7_Ally/Part_10/index.html*
+
     ```
       <body>
         <video controls>
@@ -2003,11 +2078,12 @@
 ## 8.1. Structure of the application
   - [Create React App](https://create-react-app.dev/docs/getting-started)
   - [React](https://reactjs.org)
-  - example --> *8_Single Page Applications/Part_1*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/8_Single%20Page%20Applications/Part_1) --> *8_Single Page Applications/Part_1*
 
 ## 8.2. Local state of a component
 ### local state in the list component
-  - example --> *8_Single Page Applications/Part_2/src/List.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/8_Single%20Page%20Applications/Part_2/src/List.js) --> *8_Single Page Applications/Part_2/src/List.js*
+
     ```
       import { useState } from 'react';
 
@@ -2038,7 +2114,8 @@
 
 ## 8.3. The life cycle of a component
 ### server communication in the list component
-  - example --> *8_Single Page Applications/Part_3/src/List.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/8_Single%20Page%20Applications/Part_3/src/List.js) --> *8_Single Page Applications/Part_3/src/List.js*
+
     ```
       import { useState, useEffect } from 'react';
 
@@ -2061,7 +2138,8 @@
 
 ## 8.4. Styling of components
 ### inline styling in react components
-  - example --> *8_Single Page Applications/Part_4/src/List.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/8_Single%20Page%20Applications/Part_4/src/List.js) --> *8_Single Page Applications/Part_4/src/List.js*
+
     ```
       function List() {
         ...
@@ -2079,7 +2157,8 @@
 
 ## 8.5. CSS classes and external stylessheets
 ### integration of the stylessheets
-  - example --> *8_Single Page Applications/Part_5/src/List.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/8_Single%20Page%20Applications/Part_5/src/List.js) --> *8_Single Page Applications/Part_5/src/List.js*
+
     ```
       import { useState, useEffect } from 'react';
       import './List.css';
@@ -2102,7 +2181,8 @@
 
 ## 8.6. Component hierarchy
 ### inclusion of the listItem component
-  - example --> *8_Single Page Applications/Part_6/src/List.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/8_Single%20Page%20Applications/Part_6/src/List.js) --> *8_Single Page Applications/Part_6/src/List.js*
+
     ```
       import ListItem from './ListItem';
 
@@ -2136,7 +2216,8 @@
 
 ## 8.7. Inverse data flow
 ### embedding the delete routine in the ListItem component
-  - example --> *8_Single Page Applications/Part_7/src/ListItem.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/8_Single%20Page%20Applications/Part_7/src/ListItem.js) --> *8_Single Page Applications/Part_7/src/ListItem.js*
+
     ```
       function ListItem({ contact, onDelete }) {
         return (
@@ -2157,11 +2238,12 @@
 
 ## 8.8. Forms
 ### the form component for creating new records
-  - example --> *8_Single Page Applications/Part_8/src/Form.js*
+ [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/8_Single%20Page%20Applications/Part_8/src/Form.js) --> *8_Single Page Applications/Part_8/src/Form.js*
 
 ## 8.9. Context API
 ### adapting the list component to the context
-  - example --> *8_Single Page Applications/Part_9/src/List.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/8_Single%20Page%20Applications/Part_9/src/List.js) --> *8_Single Page Applications/Part_9/src/List.js*
+
     ```
       import { useEffect, useContext } from 'react';
       import { ContactContext } from './ContactContext';
@@ -2191,7 +2273,8 @@
 
 ## 8.10. Routing
 ### routine definitions in the app component
-  - example --> *8_Single Page Applications/Part_9/src/App.js*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/8_Single%20Page%20Applications/Part_9/src/App.js) --> *8_Single Page Applications/Part_9/src/App.js*
+
     ```
       import {
         BrowserRouter as Router,
@@ -2293,30 +2376,30 @@
 
 
 ## 11.1. A simple node.js application
-  - example --> *11_Node/Part_1/main.js*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/11_Node/Part_1/main.js) --> *11_Node/Part_1/main.js*
   - open the terminal and start the main.js with $ "node main.js" (pay attention to where the file is stored)
   - "Server is running on http://localhost:8000" open this in your browser
 
 ## 11.2. Use built-in modules
   - read files, write files, delete files (synchronous, asynchronous)
-  - example --> *11_Node/Part_2*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/11_Node/Part_2) --> *11_Node/Part_2*
 
 ## 11.3. Deploy static files
-  - example --> *11_Node/Part_3/start.js*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/11_Node/Part_3/start.js) --> *11_Node/Part_3/start.js*
   - customized webserver now deploys the HTML file and CSS file
   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
   - "Server is running on http://localhost:8000" open this in your browser
 
 ## 11.4. Use web framework [Express](http://expressjs.com)
 ### first please install express, open the project and open the terminal and enter "npm install express" then express will be installed locally for this project
-  - example --> *11_Node/Part_4/start.js*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/11_Node/Part_4/start.js) --> *11_Node/Part_4/start.js*
   - a webserver with the web framework express
   - customized webserver now deploys the HTML file and CSS file
   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
   - "Server is running on http://localhost:8000" open this in your browser
 
 ## 11.5. [Express](http://expressjs.com) - customized web server processes the data 
-  - example --> *11_Node/Part_5/start.js*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/11_Node/Part_5/start.js) --> *11_Node/Part_5/start.js*
   - customized webserver processes the data
   - customized webserver now deploys the HTML file and CSS file
   - open the terminal and start the start.js with $ "node start.js" (pay attention to where the file is stored)
@@ -2344,11 +2427,12 @@
 
 ## 12.1. SOAP  (Simple Object Access Protocol)
 ### example for a: WSDL file(WSDL 2.0), SOAP request, SOAP response
-  - example --> *12_Webservices/Part_1*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/12_Webservices/Part_1) --> *12_Webservices/Part_1*
 
 ## 12.2. REST (Representational State Transfer)
 ### example for the resource https://www.alberteinstein.com/api/books/4
-  - example --> *12_Webservices/Part_2/book.json*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/12_Webservices/Part_2/book.json) --> *12_Webservices/Part_2/book.json*
+
     ```
       {
         "id": "4",
@@ -2364,7 +2448,8 @@
 
 
 ### example for the resource https://www.alberteinstein.com/api/authors/1
-  - example --> *12_Webservices/Part_3/author.json*
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/12_Webservices/Part_3/author.json) --> *12_Webservices/Part_3/author.json*
+
     ```
       {
         "firstName": "Alber",
@@ -2396,7 +2481,7 @@
 
 
 ### implement a REST-API (npm install express  -->  node start.js)
-  - example --> *12_Webservices/Part_4/start.js*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/12_Webservices/Part_4/start.js) --> *12_Webservices/Part_4/start.js*
 
 
 
@@ -2422,7 +2507,7 @@
   - for this example I use SQLite under Node.js with sqlite3 (https://www.npmjs.com/package/sqlite3)
   - can be installed with the help of Node.js Package Manager using the command "npm install sqlite3".
   - for starting the webservice again "node start.js".
-  - example --> *13_Databases/Part_1*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/13_Databases/Part_1) --> *13_Databases/Part_1*
 
 #### A good introduction to the commands supported by SQLite can be found, for example, on the SQLite homepage at [SQLite](https://sqlite.org/lang.html).
 
@@ -2455,7 +2540,7 @@
   - Unit testing in JavaScript
   - for this example I use the test framework [Jest](https://jest.io/) to write unit tests for JavaScript
   - to run jest just enter command "npx"(node.js) then "npx jest:" ( https://jestjs.io/docs/en/expect )
-  - example --> *14_Testing/Part_1*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/14_Testing/Part_1) --> *14_Testing/Part_1*
 
 
 ---------------------------------------------------------------------------------------------------
@@ -2478,7 +2563,7 @@
   - Install Docker ( https://docs.docker.com )
   - all available commands can be found at https://docs.docker.com/engine/reference/builder
   - Docker images for all major Node.js versions: https://github.com/nodejs/docker-node , https://hub.docker.com/_/node
-  - example --> *15_Deploy_Host/Part_1*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/15_Deploy_Host/Part_1) --> *15_Deploy_Host/Part_1*
 
    
 ----------------------------------------------------------------------------------------------------
@@ -2523,15 +2608,15 @@ Authentication:
 
 ## 16.1. Configure CORS for express (https://github.com/expressjs/cors)
   - can be easily installed via node.js with "npm install cors"
-  - example --> *16_Websecurity/Part_1*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/16_Websecurity/Part_1) --> *16_Websecurity/Part_1*
 
 ## 16.2. Configure CSP in HTML
-  - example --> *16_Websecurity/Part_2*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/16_Websecurity/Part_2/index.html) --> *16_Websecurity/Part_2*
 
 ## 16.3. Configure CSP for express
   - possible with for example [Helmet](https://helmetjs.github.io)
   - to install Helmet just use node.js "npm install helmet" -> "node start.js"
-  - example --> *16_Websecurity/Part_3*
+  - [Example](https://github.com/BellaMrx/WebDevelopment_Basics/tree/main/16_Websecurity/Part_3) --> *16_Websecurity/Part_3*
 
 #### Under Node.js, you can create digital signatures using the crypto module included in the Node.js installation (https://nodejs.org/api/crypto.html).
 
