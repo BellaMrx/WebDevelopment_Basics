@@ -126,7 +126,8 @@
 
 ### Parameterize elements via attributes
   - use attributes
- [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_2/index.html) *1_HTML/Part_2/index.html*
+
+ [Complete Code](https://github.com/BellaMrx/WebDevelopment_Basics/blob/main/1_HTML/Part_2/index.html) --> *1_HTML/Part_2/index.html*
 
     ```
       <body>
